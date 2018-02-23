@@ -3,16 +3,20 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 public class Match {
+	public String matchType;
 	public int matchNumber;
 	public String autoFunction;
+	public String autoPosition;
 	public String autoComments;
 	public double autoRating;
 	public int cubesEZ;
 	public int cubesSwitch;
 	public int cubesScale;
+	String robotFunctions;
 	public double cycleRating;
 	public double drivingRating;
 	public String endgameFunction;
+	public String robotGoal;
 	public String result;
 	public int alliancePoints;
 	public int opponentPoints;
@@ -20,25 +24,28 @@ public class Match {
 	
 	public Match(String[] lineInput)
 	{
-		matchNumber = getInt(lineInput[2]);
-		autoFunction = getString(lineInput[3]);
-		System.out.println(lineInput[4]);
-		autoComments = getString(lineInput[4]);
-		autoRating = getInt(lineInput[5]);
+		matchType = getString(lineInput[2]);
+		matchNumber = getInt(lineInput[3]);
+		autoFunction = getString(lineInput[4]);
+		autoPosition = getString(lineInput[5]);
+		autoComments = getString(lineInput[6]);
+		autoRating = getInt(lineInput[7]);
 		
-		cubesEZ = getInt(lineInput[6]);
-		cubesSwitch = getInt(lineInput[7]);
-		cubesScale = getInt(lineInput[8]);
+		cubesEZ = getInt(lineInput[8]);
+		cubesSwitch = getInt(lineInput[9]);
+		cubesScale = getInt(lineInput[10]);
 		
-		cycleRating = getInt(lineInput[9]);
-		drivingRating = getInt(lineInput[10]);
+		robotFunctions = getString(lineInput[11]);
+		cycleRating = getInt(lineInput[12]);
+		drivingRating = getInt(lineInput[13]);
 		
-		endgameFunction = getString(lineInput[11]);
-		result = getString(lineInput[12]);
+		endgameFunction = getString(lineInput[14]);
+		robotGoal = getString(lineInput[15]);
+		result = getString(lineInput[16]);
 
-		alliancePoints = getInt(lineInput[13]);
-		opponentPoints = getInt(lineInput[14]);
-		generalComments = getString(lineInput[15]);
+		alliancePoints = getInt(lineInput[17]);
+		opponentPoints = getInt(lineInput[18]);
+		generalComments = getString(lineInput[19]);
 	}
 	
 	public void printMatch(PrintStream output)
@@ -49,10 +56,11 @@ public class Match {
 	
 	public void writeMatch(BufferedWriter fout) throws IOException
 	{
-		fout.write("Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints);
+		fout.write(matchType + " Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints + ", ");
+		fout.write(cubesEZ + " cubes in EZ, " + cubesSwitch + " cubes in Switch, " + cubesScale + " cubes in Scale");
 		fout.newLine();
-		fout.write("\tComments: " + generalComments);
-		fout.newLine();
+		//fout.write("\tComments: " + generalComments);
+		//fout.newLine();
 	}
 	
 	private static String getString(String input)

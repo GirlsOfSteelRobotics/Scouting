@@ -1,5 +1,35 @@
+Team #3504 - 2 matches played
 
+--------------- General Stats ---------------
 Win Percentage = 100.0%
-Average Points = 200.0
-Match #1: Win, 200 - 170
-	Comments: Took a long time to put cube on scale
+Average Score Difference = -109.5
+Robot Type = Offense
+Average Auto Rating = 4.5 out of 5
+Average Robot Score = 20.5
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 50%
+% matches put cube in switch = 50%
+% matches put cube in scale = 50%
+% matches did not move = 50%
+All auto comments:
+	Match #1: Pretty quick
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 15.5
+	% cubes in EZ = 35%
+	% cubes in Switch = 32%
+	% cubes in Scale = 32%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.5 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 50%
+	% did nothing in endgame = 50%
+
+--------------- Match Data ---------------
+Qualification Match #1: Win, 200 - 150, 1 cubes in EZ, 3 cubes in Switch, 2 cubes in Scale
+Practice Match #5: Win, 110 - 379, 10 cubes in EZ, 7 cubes in Switch, 8 cubes in Scale
