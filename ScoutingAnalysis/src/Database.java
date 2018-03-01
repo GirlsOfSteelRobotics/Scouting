@@ -40,8 +40,8 @@ public class Database {
 				team = data.get(index);
 			}
 			
-			
-			team.addMatch(match);
+			//if(!match.matchType.contains("Practice"))
+				team.addMatch(match);
 		}
 		
 		file.close();

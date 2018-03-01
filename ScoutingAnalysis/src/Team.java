@@ -108,6 +108,8 @@ public class Team {
 		fout.newLine();
 		writeTeleopStats(fout);
 		fout.newLine();
+		writeGeneralComments(fout);
+		fout.newLine();
 		writeMatches(fout);
 		fout.close();
 	}
@@ -133,6 +135,7 @@ public class Team {
 		fout.write("--------------- Autonomous Stats ---------------");
 		fout.newLine();
 		double Baseline = 0; double Switch = 0; double Scale = 0; double Attempt = 0; double Nothing = 0;
+		double left = 0; double middle = 0; double right = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
 			String auto = matches.get(i).autoFunction;
@@ -141,6 +144,10 @@ public class Team {
 			if (auto.contains("Cross")) Baseline++;
 			if (auto.contains("Switch")) Switch++;
 			if (auto.contains("Scale")) Scale++;
+			
+			if (matches.get(i).autoPosition.equals("Left")) left++;
+			else if (matches.get(i).autoPosition.equals("Right")) right++;
+			else if (matches.get(i).autoPosition.equals("Middle")) middle++;
 		}
 		
 		Baseline = (Baseline / matches.size()) * 100;
@@ -149,6 +156,10 @@ public class Team {
 		Attempt = (Attempt / matches.size()) * 100;
 		Nothing = (Nothing / matches.size()) * 100;
 		
+		left = (left / matches.size()) * 100;
+		right = (right / matches.size()) * 100;
+		middle = (middle / matches.size()) * 100;
+		
 		fout.write("% matches crossed baseline = " + (int)Baseline + "%");
 		fout.newLine();
 		fout.write("% matches put cube in switch = " + (int)Switch + "%");
@@ -156,6 +167,8 @@ public class Team {
 		fout.write("% matches put cube in scale = " + (int)Scale + "%");
 		fout.newLine();
 		fout.write("% matches did not move = " + (int)Nothing + "%");
+		fout.newLine();
+		fout.write("Starting Position: " + (int)left + "% left, " + (int)middle + "% middle, " + (int)right + "% right");
 		fout.newLine();
 		fout.write("All auto comments:");
 		fout.newLine();
@@ -245,6 +258,8 @@ public class Team {
 
 	}
 	
+	
+	
 	public void writeMatches(BufferedWriter fout) throws IOException
 	{
 		fout.write("--------------- Match Data ---------------");
@@ -252,6 +267,20 @@ public class Team {
 		for (int i = 0; i < matches.size(); i++)
 		{
 			matches.get(i).writeMatch(fout);
+		}
+	}
+	
+	public void writeGeneralComments(BufferedWriter fout) throws IOException
+	{
+		fout.write("--------------- General Comments ---------------");
+		fout.newLine();
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).generalComments.length() != 0)
+			{
+				fout.write("Match #" + matches.get(i).matchNumber + ": " + matches.get(i).generalComments);
+				fout.newLine();
+			}
 		}
 	}
 
