@@ -1,0 +1,37 @@
+Team #1377 - 1 matches played
+GoS Strategy Ranking: 23
+
+--------------- General Stats ---------------
+Win Percentage = 0.0%
+Average Score Difference = -27.0
+Robot Type = Offense
+Average Auto Rating = 2.0 out of 5
+Average Robot Score = 6.0
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 100%
+% matches put cube in switch = 0%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 100% left, 0% middle, 0% right
+All auto comments:
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 4.0
+	% cubes in EZ = 0%
+	% cubes in Switch = 50%
+	% cubes in Scale = 50%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.0 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 100%
+	% did nothing in endgame = 0%
+
+--------------- General Comments ---------------
+
+--------------- Match Data ---------------
+Qualification Match #19: Loss, 261 - 288, 0 cubes in EZ, 2 cubes in Switch, 2 cubes in Scale

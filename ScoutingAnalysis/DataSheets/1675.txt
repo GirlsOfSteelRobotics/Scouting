@@ -1,0 +1,50 @@
+Team #1675 - 7 matches played
+GoS Strategy Ranking: 22
+
+--------------- General Stats ---------------
+Win Percentage = 28.57142857142857%
+Average Score Difference = -35.0
+Robot Type = Offense
+Average Auto Rating = 2.142857142857143 out of 5
+Average Robot Score = 6.0
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 85%
+% matches put cube in switch = 0%
+% matches put cube in scale = 14%
+% matches did not move = 0%
+Starting Position: 57% left, 42% middle, 0% right
+All auto comments:
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 5.714285714285714
+	% cubes in EZ = 72%
+	% cubes in Switch = 27%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.142857142857143 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 28%
+	% platform in matches = 71%
+	% did nothing in endgame = 0%
+
+--------------- General Comments ---------------
+Match #10: They have wings that drop down so the two other robots can climb%. It probably would have climbed but another robot stopped it
+Match #18: Wings lifted another robot in endgame without climbing themselves. Seemed a bit unstable with its collector mechanism and had some trouble with that
+Match #23: Very good at putting cubes into exchange zone
+Match #32: can potentially lift two robots
+Match #44: potential to lift two robots 
+Match #53: Lifted two other robots and got levitate powerup. 
+Match #63: Bad system of a carrying climber
+
+--------------- Match Data ---------------
+Qualification Match #10: Loss, 226 - 349, 2 cubes in EZ, 3 cubes in Switch, 0 cubes in Scale
+Qualification Match #18: Win, 454 - 59, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #23: Win, 287 - 113, 9 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #32: Loss, 197 - 378, 3 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #44: Loss, 175 - 449, 1 cubes in EZ, 3 cubes in Switch, 0 cubes in Scale
+Qualification Match #53: Loss, 223 - 315, 4 cubes in EZ, 3 cubes in Switch, 0 cubes in Scale
+Qualification Match #63: Loss, 265 - 409, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale

@@ -1,0 +1,47 @@
+Team #302 - 5 matches played
+GoS Strategy Ranking: 5
+
+--------------- General Stats ---------------
+Win Percentage = 100.0%
+Average Score Difference = 79.0
+Robot Type = Offense
+Average Auto Rating = 3.6 out of 5
+Average Robot Score = 9.8
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 60%
+% matches put cube in switch = 20%
+% matches put cube in scale = 40%
+% matches did not move = 0%
+Starting Position: 40% left, 40% middle, 20% right
+All auto comments:
+	Match #3: Didn’t cross baseline
+	Match #42: Almost got cube in scale
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 4.4
+	% cubes in EZ = 0%
+	% cubes in Switch = 13%
+	% cubes in Scale = 86%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.6 out of 3
+Average driver rating = 2.4 out of 3
+Can robot climb?: Yes
+	% climb in matches = 20%
+	% attempted climb in matches = 0%
+	% platform in matches = 20%
+	% did nothing in endgame = 60%
+
+--------------- General Comments ---------------
+Match #3: Very good at delicately place if cubes. Can adjust position on where it places them. 
+Match #17: Decent effort. A little wobbly. Pretty efficient. Drive team has super aggressive looking mentor man on it. I don’t know about that. 
+Match #42: Did not get onto platform but pushed struggling teammate onto pltform 
+Match #64: Good at dropping cubes in the scale
+
+--------------- Match Data ---------------
+Qualification Match #3: Win, 312 - 292, 0 cubes in EZ, 1 cubes in Switch, 4 cubes in Scale
+Qualification Match #17: Win, 311 - 291, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale
+Qualification Match #42: Win, 336 - 280, 0 cubes in EZ, 2 cubes in Switch, 3 cubes in Scale
+Qualification Match #52: Win, 373 - 98, 0 cubes in EZ, 0 cubes in Switch, 3 cubes in Scale
+Qualification Match #64: Win, 329 - 305, 0 cubes in EZ, 0 cubes in Switch, 5 cubes in Scale

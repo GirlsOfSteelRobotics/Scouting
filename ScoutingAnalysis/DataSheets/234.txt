@@ -1,0 +1,48 @@
+Team #234 - 6 matches played
+GoS Strategy Ranking: 6
+
+--------------- General Stats ---------------
+Win Percentage = 50.0%
+Average Score Difference = 43.5
+Robot Type = Offense
+Average Auto Rating = 3.3333333333333335 out of 5
+Average Robot Score = 9.666666666666666
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 83%
+% matches put cube in switch = 83%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 0% left, 83% middle, 16% right
+All auto comments:
+	Match #11: Fast
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 4.0
+	% cubes in EZ = 0%
+	% cubes in Switch = 29%
+	% cubes in Scale = 70%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.0 out of 3
+Average driver rating = 2.1666666666666665 out of 3
+Can robot climb?: Yes
+	% climb in matches = 66%
+	% attempted climb in matches = 16%
+	% platform in matches = 0%
+	% did nothing in endgame = 16%
+
+--------------- General Comments ---------------
+Match #4: Terrible collector. Dropped cubes at least a dozen times. Very tippy. Robot tipped over because it was driving at full height. 
+Match #11: Placed cubes onto scale but kept knocking its own cubes off of the scale. Knocked 2 cubes off. 
+Match #28: attempted climb off other robot
+Match #38: Struggled sometimes with collecting cubes from the floor but had a very stable lift for scale and climbing
+Match #58: Very quick and accurate. Dropped one.
+
+--------------- Match Data ---------------
+Qualification Match #4: Loss, 148 - 358, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale
+Qualification Match #11: Win, 419 - 34, 0 cubes in EZ, 1 cubes in Switch, 4 cubes in Scale
+Qualification Match #28: Loss, 237 - 343, 0 cubes in EZ, 3 cubes in Switch, 2 cubes in Scale
+Qualification Match #38: Win, 321 - 261, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
+Qualification Match #50: Win, 407 - 193, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale
+Qualification Match #58: Loss, 284 - 366, 0 cubes in EZ, 1 cubes in Switch, 5 cubes in Scale

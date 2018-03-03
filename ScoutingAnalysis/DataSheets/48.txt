@@ -1,0 +1,54 @@
+Team #48 - 7 matches played
+GoS Strategy Ranking: 42
+
+--------------- General Stats ---------------
+Win Percentage = 42.857142857142854%
+Average Score Difference = -71.57142857142857
+Robot Type = Offense
+Average Auto Rating = 3.2857142857142856 out of 5
+Average Robot Score = 4.142857142857143
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 85%
+% matches put cube in switch = 57%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 28% left, 57% middle, 14% right
+All auto comments:
+	Match #8: Was going to get two cubes into switch but missed picking a cube up from the stack
+	Match #22: Tried to do a scale and switch cube but did not align
+	Match #31: Attempted scale but dropped cube
+	Match #52: Tried to twice but only got one
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 3.0
+	% cubes in EZ = 66%
+	% cubes in Switch = 14%
+	% cubes in Scale = 19%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.8571428571428572 out of 3
+Average driver rating = 1.8571428571428572 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 42%
+	% did nothing in endgame = 57%
+
+--------------- General Comments ---------------
+Match #8: Other robots in alliance were not playing and committing fouls. Big robot with ramps that I’m guessing can lift two other bots to climb
+Match #13: Just sat there
+Match #22: Can lift two other bots for climbing. Lifted one this time. Seems like lift/collect broke halfway through match. 
+Match #31: Seemed like their robot had more capabilities than just EZ but strategically they decided to only focus on that aspect. 
+Match #42: Had a hard time gripping the cubes. 
+Match #52: Not moving 30 seconds after end of autonomous. Another robot in alliance also stopped moving
+Match #63: Poor driving ability. They kept dropping cubes and struggled a lot to do anything the whole match. They fell off of their partner’s climbing ramp.
+
+--------------- Match Data ---------------
+Qualification Match #8: Loss, 302 - 519, 3 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale
+Qualification Match #13: Win, 236 - 195, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #22: Loss, 249 - 397, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
+Qualification Match #31: Win, 385 - 209, 6 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #42: Win, 336 - 280, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #52: Loss, 133 - 398, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #63: Loss, 265 - 409, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale

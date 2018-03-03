@@ -12,7 +12,11 @@ public class MainLauncher {
 		
 		System.out.println("Loading database...");
 		Database data = new Database("MVRScoutingData.csv");
+		data.sortByRobotScore();
 		data.writeDataSheets("DataSheets");
+		data.writeRankedList("RankedList.txt");
+		data.sortByScaleScore();
+		data.writeScaleRankedList("ScaleRanking.txt");
 		/*
 		boolean done = false;
 		while(!done)

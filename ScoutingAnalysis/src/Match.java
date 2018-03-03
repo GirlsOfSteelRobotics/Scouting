@@ -26,6 +26,7 @@ public class Match {
 	{
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
+		if (matchNumber == 4611) matchNumber = 37;
 		autoFunction = getString(lineInput[4]);
 		autoPosition = getString(lineInput[5]);
 		autoComments = getString(lineInput[6]);
@@ -75,6 +76,14 @@ public class Match {
 		if (input.charAt(0) == '"')
 		{
 			input = input.substring(1, input.length()-1);
+		}
+		if (input.charAt(0) == ' ')
+		{
+			input = input.substring(1, input.length());
+		}
+		if (input.charAt(input.length()-1) == ' ')
+		{
+			input = input.substring(0, input.length()-1);
 		}
 		return Integer.parseInt(input);
 	}

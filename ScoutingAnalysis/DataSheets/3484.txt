@@ -1,0 +1,49 @@
+Team #3484 - 6 matches played
+GoS Strategy Ranking: 9
+
+--------------- General Stats ---------------
+Win Percentage = 66.66666666666666%
+Average Score Difference = 21.666666666666668
+Robot Type = Offense
+Average Auto Rating = 3.0 out of 5
+Average Robot Score = 8.333333333333334
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 66%
+% matches put cube in switch = 66%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 33% left, 0% middle, 66% right
+All auto comments:
+	Match #30: Put cube into switch onto opposit side that it started from
+	Match #56: Dropped cube outside of field after turning in wrong direction
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 5.666666666666667
+	% cubes in EZ = 47%
+	% cubes in Switch = 52%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.1666666666666665 out of 3
+Average driver rating = 2.3333333333333335 out of 3
+Can robot climb?: Yes
+	% climb in matches = 66%
+	% attempted climb in matches = 16%
+	% platform in matches = 0%
+	% did nothing in endgame = 16%
+
+--------------- General Comments ---------------
+Match #1: Dropped cubes a lot. Cube got stuck in robot in auto. Robot got stuck on scale and got most of the 125 penalty points. 
+Match #19: Tippy
+Match #30: Lift mechanism is slow but cycle time fast and accurate.
+Match #37: Robot broke down during endgame
+Match #56: Unobstructed running of cubes into EZ. Can climb but doesn’t lift others. Climbs relatively quickly
+
+--------------- Match Data ---------------
+Qualification Match #1: Loss, 274 - 446, 0 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale
+Qualification Match #19: Win, 288 - 261, 1 cubes in EZ, 3 cubes in Switch, 0 cubes in Scale
+Qualification Match #30: Win, 295 - 293, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale
+Qualification Match #37: Win, 375 - 150, 8 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #42: Loss, 280 - 336, 0 cubes in EZ, 5 cubes in Switch, 0 cubes in Scale
+Qualification Match #56: Win, 335 - 231, 7 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale

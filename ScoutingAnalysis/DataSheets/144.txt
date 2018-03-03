@@ -1,0 +1,45 @@
+Team #144 - 5 matches played
+GoS Strategy Ranking: 47
+
+--------------- General Stats ---------------
+Win Percentage = 40.0%
+Average Score Difference = 4.6
+Robot Type = Offense
+Average Auto Rating = 1.8 out of 5
+Average Robot Score = 3.6
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 80%
+% matches put cube in switch = 0%
+% matches put cube in scale = 0%
+% matches did not move = 20%
+Starting Position: 40% left, 0% middle, 60% right
+All auto comments:
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 3.2
+	% cubes in EZ = 25%
+	% cubes in Switch = 62%
+	% cubes in Scale = 12%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 1.8 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 60%
+	% did nothing in endgame = 40%
+
+--------------- General Comments ---------------
+Match #10: robot stopped working at one point but did have a successful climb by driving into another robot Platform
+Match #41: Had difficulty picking cubes off of ground but generally could place them well and consistently
+Match #48: Consistent and fast switch and scale
+Match #61: Very rocky and slow driving
+
+--------------- Match Data ---------------
+Qualification Match #10: Loss, 226 - 349, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #17: Loss, 291 - 341, 4 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #41: Win, 367 - 220, 0 cubes in EZ, 3 cubes in Switch, 1 cubes in Scale
+Qualification Match #48: Win, 380 - 240, 0 cubes in EZ, 6 cubes in Switch, 1 cubes in Scale
+Qualification Match #61: Loss, 275 - 366, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale

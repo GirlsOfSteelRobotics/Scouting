@@ -1,0 +1,48 @@
+Team #1038 - 5 matches played
+GoS Strategy Ranking: 21
+
+--------------- General Stats ---------------
+Win Percentage = 40.0%
+Average Score Difference = -54.4
+Robot Type = Offense
+Average Auto Rating = 2.2 out of 5
+Average Robot Score = 6.0
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 60%
+% matches put cube in switch = 0%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 20% left, 40% middle, 40% right
+All auto comments:
+	Match #7: Moved forward but crashed into pile of cubes
+	Match #23: Stack of cubes got in way. Could have put cube in switch
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 3.2
+	% cubes in EZ = 12%
+	% cubes in Switch = 0%
+	% cubes in Scale = 87%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.0 out of 3
+Average driver rating = 2.2 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% attempted climb in matches = 40%
+	% platform in matches = 40%
+	% did nothing in endgame = 20%
+
+--------------- General Comments ---------------
+Match #7: In scale battle against one robot from the red alliance.  Only misplaced 1 cube on scale
+Match #13: Missed the scale a few times
+Match #23: Struggling to eject cubes far enough away from bot to get it onto scale. Had difficulty picking up cubes.
+Match #37: Did not have enough time to climb but wasn’t clear that they would have made it. Lift not tall enough to reach over scale when tipped up
+Match #61: Collector kept getting stuck in tilted position so they could not collect cubes...ver slow to hook on to climbing bar
+
+--------------- Match Data ---------------
+Qualification Match #7: Loss, 232 - 237, 0 cubes in EZ, 0 cubes in Switch, 6 cubes in Scale
+Qualification Match #13: Win, 236 - 195, 2 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale
+Qualification Match #23: Loss, 113 - 287, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
+Qualification Match #37: Loss, 150 - 375, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale
+Qualification Match #61: Win, 366 - 275, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale

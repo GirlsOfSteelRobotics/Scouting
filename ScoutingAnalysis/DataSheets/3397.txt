@@ -1,0 +1,53 @@
+Team #3397 - 8 matches played
+GoS Strategy Ranking: 11
+
+--------------- General Stats ---------------
+Win Percentage = 87.5%
+Average Score Difference = 143.5
+Robot Type = Offense
+Average Auto Rating = 2.25 out of 5
+Average Robot Score = 8.25
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 87%
+% matches put cube in switch = 0%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 37% left, 12% middle, 50% right
+All auto comments:
+	Match #41: Fast
+	Match #49: Switch was on opposite side
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 7.875
+	% cubes in EZ = 92%
+	% cubes in Switch = 7%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 2.5 out of 3
+Average driver rating = 2.5 out of 3
+Can robot climb?: Yes
+	% climb in matches = 12%
+	% attempted climb in matches = 0%
+	% platform in matches = 75%
+	% did nothing in endgame = 12%
+
+--------------- General Comments ---------------
+Match #8: robot had multiple failed switch attempts
+Match #20: Very good at putitng cubes in exchange zone
+Match #20: Very good at putitng cubes in exchange zone
+Match #30: Very efficient with ez
+Match #41: Very consistent with the EZ
+Match #49: VERY EFFECTIVE IN PUTTING CUBES IN EZ
+Match #54: very efficient good at getting cubes
+
+--------------- Match Data ---------------
+Qualification Match #8: Win, 519 - 302, 3 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #20: Win, 399 - 184, 5 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #20: Win, 399 - 184, 8 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #20: Win, 399 - 184, 8 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #30: Loss, 293 - 295, 9 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #41: Win, 367 - 220, 8 cubes in EZ, 3 cubes in Switch, 0 cubes in Scale
+Qualification Match #49: Win, 364 - 258, 9 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #54: Win, 312 - 277, 8 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale

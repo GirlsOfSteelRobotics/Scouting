@@ -45,10 +45,72 @@ public class Team {
 		double total = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
+			if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).autoFunction.contains("Scale")) total+=2;
 			total += matches.get(i).cubesEZ;
 			total += matches.get(i).cubesSwitch;
 			total += 2 * (matches.get(i).cubesScale);
-			if (matches.get(i).endgameFunction.contains("Successful")) total += 5;
+			if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
+		}
+		return (total)/matches.size();
+	}
+	
+	public double getScaleRobotScore()
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			//if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).autoFunction.contains("Scale")) total+=1;
+			//total += matches.get(i).cubesEZ;
+			//total += matches.get(i).cubesSwitch;
+			total +=  (matches.get(i).cubesScale);
+			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
+		}
+		return (total)/matches.size();
+	}
+	
+	public double getMaxScaleScore()
+	{
+		double max = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			//if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).cubesScale > max) max = matches.get(i).cubesScale;
+			//total += matches.get(i).cubesEZ;
+			//total += matches.get(i).cubesSwitch;
+			//total +=  (matches.get(i).cubesScale);
+			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
+		}
+		return max;
+	}
+	
+	public double getMaxSwitchScore()
+	{
+		double max = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			//if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).cubesSwitch > max) max = matches.get(i).cubesSwitch;
+			//total += matches.get(i).cubesEZ;
+			//total += matches.get(i).cubesSwitch;
+			//total +=  (matches.get(i).cubesScale);
+			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
+		}
+		return max;
+	}
+	
+	public double getSwitchRobotScore()
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).autoFunction.contains("Switch")) total+=3;
+			if(matches.get(i).autoFunction.contains("Scale")) total+=1;
+			total += matches.get(i).cubesEZ;
+			total += 3*matches.get(i).cubesSwitch;
+			total += (matches.get(i).cubesScale);
+			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
 		}
 		return (total)/matches.size();
 	}
@@ -59,6 +121,20 @@ public class Team {
 		for (int i = 0; i < matches.size(); i++)
 		{
 			total += matches.get(i).autoRating;
+		}
+		return (total)/matches.size();
+	}
+	
+	public double getAverageCubesPlaced()
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).autoFunction.contains("Scale")) total+=1;
+			total += matches.get(i).cubesEZ;
+			total += matches.get(i).cubesSwitch;
+			total += matches.get(i).cubesScale;
 		}
 		return (total)/matches.size();
 	}
@@ -94,12 +170,14 @@ public class Team {
 		}
 	}
 	
-	public void writeStatFile(String filename) throws IOException
+	public void writeStatFile(String filename, int ranking) throws IOException
 	{
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
 		fout.write("Team #" + teamNumber + " - " + matches.size() + " matches played");
+		fout.newLine();
+		fout.write("GoS Strategy Ranking: " + ranking);
 		fout.newLine();
 		fout.newLine();
 		writeGeneralStats(fout);

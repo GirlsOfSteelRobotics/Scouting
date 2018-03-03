@@ -1,0 +1,49 @@
+Team #4521 - 6 matches played
+GoS Strategy Ranking: 18
+
+--------------- General Stats ---------------
+Win Percentage = 50.0%
+Average Score Difference = 85.5
+Robot Type = Offense
+Average Auto Rating = 2.5 out of 5
+Average Robot Score = 6.333333333333333
+
+--------------- Autonomous Stats ---------------
+% matches crossed baseline = 83%
+% matches put cube in switch = 33%
+% matches put cube in scale = 0%
+% matches did not move = 0%
+Starting Position: 0% left, 33% middle, 66% right
+All auto comments:
+	Match #54: Also dropped it on the wrong side. 
+
+--------------- Teleop Stats ---------------
+Average # cubes placed: 2.5
+	% cubes in EZ = 0%
+	% cubes in Switch = 40%
+	% cubes in Scale = 60%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.5 out of 3
+Average driver rating = 1.6666666666666667 out of 3
+Can robot climb?: Yes
+	% climb in matches = 66%
+	% attempted climb in matches = 16%
+	% platform in matches = 0%
+	% did nothing in endgame = 16%
+
+--------------- General Comments ---------------
+Match #2: They have a slow collector. They assisted another robot in a climb!
+Match #15: Helped one robot climb as well other one fell off
+Match #35: Climbed with assist but struggled with picking up cubes
+Match #46: Dropped a couple of cubes. Takes a long time to grab. 
+Match #54: Tried to lift the two teammates but wasn’t able to. 
+Match #63: Struggled with grabbing cubes
+
+--------------- Match Data ---------------
+Qualification Match #2: Win, 419 - 182, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
+Qualification Match #15: Loss, 372 - 250, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale
+Qualification Match #35: Win, 407 - 179, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale
+Qualification Match #46: Loss, 172 - 355, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale
+Qualification Match #54: Loss, 277 - 312, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
+Qualification Match #63: Win, 409 - 265, 0 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale
