@@ -14,9 +14,12 @@ public class MainLauncher {
 		Database data = new Database("MVRScoutingData.csv");
 		data.sortByRobotScore();
 		data.writeDataSheets("DataSheets");
-		data.writeRankedList("RankedList.txt");
-		data.sortByScaleScore();
-		data.writeScaleRankedList("ScaleRanking.txt");
+		data.writeRankedList("RankedList.txt"); //by robot score
+		//data.writeSwitchRankedList("MaxSwitchRanking.txt"); //by max in switch
+		//data.writeScaleRankedList("MaxScaleRanking.txt"); //by max in scale
+		data.writeGoodScaleRobots("ScaleRobots.txt");
+		data.writeGoodSwitchRobots("SwitchRobots.txt");
+		data.writeMaxCubesList("MaxCubesRanking.txt"); //by max cubes
 		/*
 		boolean done = false;
 		while(!done)

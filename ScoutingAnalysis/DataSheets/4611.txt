@@ -1,19 +1,19 @@
-Team #4611 - 6 matches played
-GoS Strategy Ranking: 7
+Team #4611 - 11 matches played
+GoS Strategy Ranking: 5
 
 --------------- General Stats ---------------
-Win Percentage = 66.66666666666666%
-Average Score Difference = 75.5
+Win Percentage = 54.54545454545454%
+Average Score Difference = 25.545454545454547
 Robot Type = Offense
-Average Auto Rating = 2.8333333333333335 out of 5
-Average Robot Score = 9.333333333333334
+Average Auto Rating = 3.1818181818181817 out of 5
+Average Robot Score = 9.909090909090908
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 83%
-% matches put cube in switch = 33%
+% matches crossed baseline = 90%
+% matches put cube in switch = 54%
 % matches put cube in scale = 0%
 % matches did not move = 0%
-Starting Position: 16% left, 66% middle, 16% right
+Starting Position: 27% left, 54% middle, 18% right
 All auto comments:
 	Match #12: Moved forward but block or cubes prevented them from crossing baseline 
 	Match #37: Tried to put cube in switch but missed
@@ -21,30 +21,39 @@ All auto comments:
 	Match #53: Very fast 
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 4.166666666666667
+Average # cubes placed: 4.2727272727272725
 	% cubes in EZ = 0%
-	% cubes in Switch = 44%
-	% cubes in Scale = 56%
+	% cubes in Switch = 38%
+	% cubes in Scale = 61%
 Can get cube from floor?: Yes
 Can get cube from portal?: No
-Average cycle time rating = 2.3333333333333335 out of 3
-Average driver rating = 1.8333333333333333 out of 3
+Average cycle time rating = 2.1818181818181817 out of 3
+Average driver rating = 2.090909090909091 out of 3
 Can robot climb?: Yes
-	% climb in matches = 83%
-	% attempted climb in matches = 0%
+	% climb in matches = 81%
+	% attempted climb in matches = 9%
 	% platform in matches = 0%
-	% did nothing in endgame = 16%
+	% did nothing in endgame = 9%
 
 --------------- General Comments ---------------
-Match #12: Knocked 2 cubes off of the scale when placing cubes. 
-Match #37: Difficulty picking up from ground. Slid off another robot’s platform when climbing
-Match #45: Missed a couple of times on scale
-Match #53: Very efficient placement. No dropping of the cube. 
+Qualification Match #12: Knocked 2 cubes off of the scale when placing cubes. 
+Qualification Match #37: Difficulty picking up from ground. Slid off another robot’s platform when climbing
+Qualification Match #45: Missed a couple of times on scale
+Qualification Match #53: Very efficient placement. No dropping of the cube. 
+Qualification Match #69: Struggled to pick up cubes. Couldn’t get on platform because it has Omni wheels. It looks incapable of putting cubes in the EZ but that is just speculation. 
+Qualification Match #81: Very good arm and collector mechanism 
+Elimination Match #2: Dropped cubes from portal on the floor to collect cubes
+Elimination Match #6: Never touches opposing switch
 
 --------------- Match Data ---------------
-Qualification Match #3: Loss, 292 - 312, 0 cubes in EZ, 1 cubes in Switch, 3 cubes in Scale
-Qualification Match #12: Win, 346 - 117, 0 cubes in EZ, 2 cubes in Switch, 3 cubes in Scale
-Qualification Match #26: Loss, 98 - 317, 0 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale
-Qualification Match #37: Win, 375 - 150, 0 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale
-Qualification Match #45: Win, 434 - 278, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale
-Qualification Match #53: Win, 340 - 258, 0 cubes in EZ, 3 cubes in Switch, 4 cubes in Scale
+Qualification Match #3: Loss, 292 - 312, 0 cubes in EZ, 1 cubes in Switch, 3 cubes in Scale, successfully climbed
+Qualification Match #12: Win, 346 - 117, 0 cubes in EZ, 2 cubes in Switch, 3 cubes in Scale, successfully climbed
+Qualification Match #26: Loss, 98 - 317, 0 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale, successfully climbed
+Qualification Match #37: Win, 375 - 150, 0 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale, no endgame
+Qualification Match #45: Win, 434 - 278, 0 cubes in EZ, 1 cubes in Switch, 2 cubes in Scale, successfully climbed
+Qualification Match #53: Win, 340 - 258, 0 cubes in EZ, 3 cubes in Switch, 4 cubes in Scale, successfully climbed
+Qualification Match #69: Win, 433 - 285, 0 cubes in EZ, 4 cubes in Switch, 1 cubes in Scale, attempted climbed
+Qualification Match #81: Win, 396 - 179, 0 cubes in EZ, 2 cubes in Switch, 3 cubes in Scale, successfully climbed
+Qualification Match #90: Loss, 169 - 465, 0 cubes in EZ, 0 cubes in Switch, 3 cubes in Scale, successfully climbed
+Elimination Match #2: Loss, 187 - 386, 0 cubes in EZ, 1 cubes in Switch, 4 cubes in Scale, successfully climbed
+Elimination Match #6: Loss, 295 - 337, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale, successfully climbed

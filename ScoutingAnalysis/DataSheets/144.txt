@@ -1,45 +1,51 @@
-Team #144 - 5 matches played
+Team #144 - 8 matches played
 GoS Strategy Ranking: 47
 
 --------------- General Stats ---------------
-Win Percentage = 40.0%
-Average Score Difference = 4.6
+Win Percentage = 50.0%
+Average Score Difference = 19.25
 Robot Type = Offense
-Average Auto Rating = 1.8 out of 5
-Average Robot Score = 3.6
+Average Auto Rating = 1.875 out of 5
+Average Robot Score = 4.125
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 80%
+% matches crossed baseline = 87%
 % matches put cube in switch = 0%
 % matches put cube in scale = 0%
-% matches did not move = 20%
-Starting Position: 40% left, 0% middle, 60% right
+% matches did not move = 12%
+Starting Position: 37% left, 0% middle, 62% right
 All auto comments:
+	Match #86: Moves way past the baseline
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 3.2
-	% cubes in EZ = 25%
-	% cubes in Switch = 62%
-	% cubes in Scale = 12%
+Average # cubes placed: 3.5
+	% cubes in EZ = 21%
+	% cubes in Switch = 60%
+	% cubes in Scale = 17%
 Can get cube from floor?: Yes
 Can get cube from portal?: Yes
-Average cycle time rating = 1.8 out of 3
-Average driver rating = 2.0 out of 3
+Average cycle time rating = 1.75 out of 3
+Average driver rating = 1.75 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
-	% platform in matches = 60%
-	% did nothing in endgame = 40%
+	% platform in matches = 75%
+	% did nothing in endgame = 25%
 
 --------------- General Comments ---------------
-Match #10: robot stopped working at one point but did have a successful climb by driving into another robot Platform
-Match #41: Had difficulty picking cubes off of ground but generally could place them well and consistently
-Match #48: Consistent and fast switch and scale
-Match #61: Very rocky and slow driving
+Qualification Match #10: robot stopped working at one point but did have a successful climb by driving into another robot Platform
+Qualification Match #41: Had difficulty picking cubes off of ground but generally could place them well and consistently
+Qualification Match #48: Consistent and fast switch and scale
+Qualification Match #61: Very rocky and slow driving
+Qualification Match #66: cube got stuck in shooter for a little
+Qualification Match #86: Very good at the switch on the opposite side of the driver station
 
 --------------- Match Data ---------------
-Qualification Match #10: Loss, 226 - 349, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #17: Loss, 291 - 341, 4 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
-Qualification Match #41: Win, 367 - 220, 0 cubes in EZ, 3 cubes in Switch, 1 cubes in Scale
-Qualification Match #48: Win, 380 - 240, 0 cubes in EZ, 6 cubes in Switch, 1 cubes in Scale
-Qualification Match #61: Loss, 275 - 366, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #10: Loss, 226 - 349, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #17: Loss, 291 - 341, 4 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #41: Win, 367 - 220, 0 cubes in EZ, 3 cubes in Switch, 1 cubes in Scale, no endgame
+Qualification Match #48: Win, 380 - 240, 0 cubes in EZ, 6 cubes in Switch, 1 cubes in Scale, platform
+Qualification Match #61: Loss, 275 - 366, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #66: Win, 437 - 120, 0 cubes in EZ, 2 cubes in Switch, 1 cubes in Scale, platform
+Qualification Match #73: Loss, 148 - 431, 2 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale, platform
+Qualification Match #86: Win, 306 - 209, 0 cubes in EZ, 5 cubes in Switch, 1 cubes in Scale, platform

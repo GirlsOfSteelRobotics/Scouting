@@ -1,32 +1,32 @@
-Team #6834 - 5 matches played
+Team #6834 - 8 matches played
 GoS Strategy Ranking: 61
 
 --------------- General Stats ---------------
-Win Percentage = 40.0%
-Average Score Difference = -39.6
+Win Percentage = 25.0%
+Average Score Difference = -72.5
 Robot Type = Offense
-Average Auto Rating = 2.2 out of 5
-Average Robot Score = 1.2
+Average Auto Rating = 2.25 out of 5
+Average Robot Score = 1.25
 
 --------------- Autonomous Stats ---------------
 % matches crossed baseline = 100%
 % matches put cube in switch = 0%
 % matches put cube in scale = 0%
 % matches did not move = 0%
-Starting Position: 0% left, 20% middle, 80% right
+Starting Position: 25% left, 12% middle, 62% right
 All auto comments:
 	Match #17: Did not start with cube
 	Match #40: Did not start with cube
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 1.2
+Average # cubes placed: 1.25
 	% cubes in EZ = 100%
 	% cubes in Switch = 0%
 	% cubes in Scale = 0%
 Can get cube from floor?: Yes
 Can get cube from portal?: No
-Average cycle time rating = 1.4 out of 3
-Average driver rating = 1.6 out of 3
+Average cycle time rating = 1.25 out of 3
+Average driver rating = 1.5 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
@@ -34,15 +34,21 @@ Can robot climb?: No
 	% did nothing in endgame = 0%
 
 --------------- General Comments ---------------
-Match #8: Had a hard time getting cubes from the floor and couldn’t lift cubes 
-Match #17: Collector was very ineffective...they tried pushing blocks to help their alliance
-Match #23: Very slow. Mostly pushed cubes around
-Match #40: Could Not pick up cubes at all...tried the whole match to pick up a cube and failed
-Match #50: Not good
+Qualification Match #8: Had a hard time getting cubes from the floor and couldn’t lift cubes 
+Qualification Match #17: Collector was very ineffective...they tried pushing blocks to help their alliance
+Qualification Match #23: Very slow. Mostly pushed cubes around
+Qualification Match #40: Could Not pick up cubes at all...tried the whole match to pick up a cube and failed
+Qualification Match #50: Not good
+Qualification Match #68: Just had two flimsy arms off the front which didn’t really hold cubes but could kind of push them
+Qualification Match #75: Worst collector I’ve seen yet. Can push around cubes if it doesn’t try to pick them up. Can only feasibly do the EZ. 
+Qualification Match #85: Robot could not pick up cubes and did nothing 
 
 --------------- Match Data ---------------
-Qualification Match #8: Win, 519 - 302, 3 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #17: Win, 331 - 291, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #23: Loss, 113 - 287, 2 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #40: Loss, 173 - 240, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #50: Loss, 193 - 407, 1 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
+Qualification Match #8: Win, 519 - 302, 3 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #17: Win, 331 - 291, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #23: Loss, 113 - 287, 2 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #40: Loss, 173 - 240, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #50: Loss, 193 - 407, 1 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #68: Loss, 149 - 375, 3 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #75: Loss, 177 - 189, 1 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #85: Loss, 275 - 419, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform

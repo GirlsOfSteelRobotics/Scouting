@@ -1,45 +1,49 @@
-Team #3844 - 5 matches played
-GoS Strategy Ranking: 55
+Team #3844 - 8 matches played
+GoS Strategy Ranking: 56
 
 --------------- General Stats ---------------
-Win Percentage = 40.0%
-Average Score Difference = -27.2
+Win Percentage = 25.0%
+Average Score Difference = -115.75
 Robot Type = Offense
-Average Auto Rating = 2.2 out of 5
-Average Robot Score = 2.0
+Average Auto Rating = 2.125 out of 5
+Average Robot Score = 2.125
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 80%
+% matches crossed baseline = 87%
 % matches put cube in switch = 0%
 % matches put cube in scale = 0%
 % matches did not move = 0%
-Starting Position: 40% left, 20% middle, 40% right
+Starting Position: 25% left, 37% middle, 37% right
 All auto comments:
 	Match #39: Switch was on opposite side
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 1.6
+Average # cubes placed: 1.875
 	% cubes in EZ = 0%
-	% cubes in Switch = 75%
-	% cubes in Scale = 25%
+	% cubes in Switch = 86%
+	% cubes in Scale = 13%
 Can get cube from floor?: Yes
 Can get cube from portal?: Yes
-Average cycle time rating = 1.2 out of 3
-Average driver rating = 1.4 out of 3
+Average cycle time rating = 1.5 out of 3
+Average driver rating = 1.375 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
-	% platform in matches = 20%
-	% did nothing in endgame = 80%
+	% platform in matches = 50%
+	% did nothing in endgame = 50%
 
 --------------- General Comments ---------------
-Match #20: Catapulting robot. Had difficulty shooting onto scale when there were many cubes on it already.
-Match #25: Tried to catapult into switch and scale but kept missing everything
-Match #39: Catapultes cubes...kept missing 
+Qualification Match #20: Catapulting robot. Had difficulty shooting onto scale when there were many cubes on it already.
+Qualification Match #25: Tried to catapult into switch and scale but kept missing everything
+Qualification Match #39: Catapultes cubes...kept missing 
+Qualification Match #66: Cannot pick up from the floor. Fairly slow. Kept dropping cubes.
 
 --------------- Match Data ---------------
-Qualification Match #9: Win, 214 - 184, 0 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
-Qualification Match #20: Loss, 184 - 399, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale
-Qualification Match #25: Loss, 231 - 293, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #39: Win, 369 - 250, 0 cubes in EZ, 1 cubes in Switch, 1 cubes in Scale
-Qualification Match #55: Loss, 268 - 276, 0 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale
+Qualification Match #9: Win, 214 - 184, 0 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #20: Loss, 184 - 399, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale, no endgame
+Qualification Match #25: Loss, 231 - 293, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #39: Win, 369 - 250, 0 cubes in EZ, 1 cubes in Switch, 1 cubes in Scale, no endgame
+Qualification Match #55: Loss, 268 - 276, 0 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #66: Loss, 120 - 437, 0 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #81: Loss, 214 - 396, 0 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #91: Loss, 159 - 450, 0 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale, platform

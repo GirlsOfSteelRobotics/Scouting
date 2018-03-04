@@ -59,6 +59,10 @@ public class Match {
 	{
 		fout.write(matchType + " Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints + ", ");
 		fout.write(cubesEZ + " cubes in EZ, " + cubesSwitch + " cubes in Switch, " + cubesScale + " cubes in Scale");
+		if (endgameFunction.contains("Successful")) fout.write(", successfully climbed");
+		else if (endgameFunction.contains("Attempted")) fout.write(", attempted climbed");
+		else if (endgameFunction.contains("Platform")) fout.write(", platform");
+		else if (endgameFunction.contains("Neither")) fout.write(", no endgame");
 		fout.newLine();
 		//fout.write("\tComments: " + generalComments);
 		//fout.newLine();

@@ -100,6 +100,26 @@ public class Team {
 		return max;
 	}
 	
+	public double getMaxCubes()
+	{
+		double max = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			double total = 0;
+			total +=matches.get(i).cubesSwitch;
+			total +=matches.get(i).cubesScale;
+			if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(matches.get(i).autoFunction.contains("Scale")) total+=1;
+			//if(matches.get(i).autoFunction.contains("Switch")) total+=1;
+			if(total > max ) max = total;
+			//total += matches.get(i).cubesEZ;
+			//total += matches.get(i).cubesSwitch;
+			//total +=  (matches.get(i).cubesScale);
+			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
+		}
+		return max;
+	}
+	
 	public double getSwitchRobotScore()
 	{
 		double total = 0;
@@ -262,6 +282,15 @@ public class Team {
 		
 	}
 	
+	public boolean canRobotClimb()
+	{
+		for(int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).endgameFunction.contains("Successful")) return true;
+		}
+		return false;
+	}
+	
 	public void writeTeleopStats(BufferedWriter fout) throws IOException
 	{
 		fout.write("--------------- Teleop Stats ---------------");
@@ -356,7 +385,7 @@ public class Team {
 		{
 			if(matches.get(i).generalComments.length() != 0)
 			{
-				fout.write("Match #" + matches.get(i).matchNumber + ": " + matches.get(i).generalComments);
+				fout.write(matches.get(i).matchType + " Match #" + matches.get(i).matchNumber + ": " + matches.get(i).generalComments);
 				fout.newLine();
 			}
 		}

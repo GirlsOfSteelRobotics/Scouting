@@ -1,46 +1,59 @@
-Team #5811 - 6 matches played
-GoS Strategy Ranking: 20
+Team #5811 - 13 matches played
+GoS Strategy Ranking: 39
 
 --------------- General Stats ---------------
-Win Percentage = 33.33333333333333%
-Average Score Difference = -3.6666666666666665
+Win Percentage = 53.84615384615385%
+Average Score Difference = 37.0
 Robot Type = Offense
-Average Auto Rating = 1.6666666666666667 out of 5
-Average Robot Score = 6.166666666666667
+Average Auto Rating = 2.076923076923077 out of 5
+Average Robot Score = 5.153846153846154
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 16%
-% matches put cube in switch = 16%
+% matches crossed baseline = 46%
+% matches put cube in switch = 23%
 % matches put cube in scale = 0%
-% matches did not move = 33%
-Starting Position: 16% left, 50% middle, 33% right
+% matches did not move = 30%
+Starting Position: 7% left, 61% middle, 30% right
 All auto comments:
 	Match #48: Drove forward and hit cube stack
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 6.0
-	% cubes in EZ = 13%
-	% cubes in Switch = 86%
+Average # cubes placed: 4.923076923076923
+	% cubes in EZ = 9%
+	% cubes in Switch = 90%
 	% cubes in Scale = 0%
 Can get cube from floor?: Yes
 Can get cube from portal?: Yes
-Average cycle time rating = 2.3333333333333335 out of 3
-Average driver rating = 2.1666666666666665 out of 3
+Average cycle time rating = 2.230769230769231 out of 3
+Average driver rating = 2.076923076923077 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
-	% platform in matches = 66%
-	% did nothing in endgame = 33%
+	% platform in matches = 69%
+	% did nothing in endgame = 30%
 
 --------------- General Comments ---------------
-Match #13: Fast robot but not very accurate (driving)
-Match #40: Kept missing switch and had to keep getting new cubes from portal
-Match #48: did well on taking cubes from portal to switch 
+Qualification Match #13: Fast robot but not very accurate (driving)
+Qualification Match #40: Kept missing switch and had to keep getting new cubes from portal
+Qualification Match #48: did well on taking cubes from portal to switch 
+Qualification Match #80: Multiple failed switch attempts 
+Qualification Match #90: Tended to shoot cubes to the far back of the scale which made it harder for the switch to tip
+Elimination Match #3: Silly mistake of trying to stack cubes on switch before there was a base layer. They should fill out the base layer first so the cubes don’t fall off too much. 
+Elimination Match #7: lost communication never moved
+Elimination Match #10: Damn good job. Very efficient 
+Elimination Match #13: Had some proboes collecting. More defense would be good. 
 
 --------------- Match Data ---------------
-Qualification Match #4: Win, 358 - 148, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale
-Qualification Match #13: Loss, 205 - 236, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale
-Qualification Match #30: Loss, 293 - 295, 0 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale
-Qualification Match #40: Loss, 173 - 240, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale
-Qualification Match #48: Loss, 240 - 380, 0 cubes in EZ, 7 cubes in Switch, 0 cubes in Scale
-Qualification Match #55: Win, 276 - 268, 5 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale
+Qualification Match #4: Win, 358 - 148, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #13: Loss, 205 - 236, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #30: Loss, 293 - 295, 0 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #40: Loss, 173 - 240, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #48: Loss, 240 - 380, 0 cubes in EZ, 7 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #55: Win, 276 - 268, 5 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #71: Loss, 264 - 290, 0 cubes in EZ, 5 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #80: Loss, 197 - 368, 0 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, no endgame
+Qualification Match #90: Win, 465 - 169, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, platform
+Elimination Match #3: Win, 376 - 241, 0 cubes in EZ, 5 cubes in Switch, 0 cubes in Scale, platform
+Elimination Match #7: Win, 380 - 260, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, no endgame
+Elimination Match #10: Win, 374 - 250, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, platform
+Elimination Match #13: Win, 287 - 262, 1 cubes in EZ, 4 cubes in Switch, 0 cubes in Scale, platform

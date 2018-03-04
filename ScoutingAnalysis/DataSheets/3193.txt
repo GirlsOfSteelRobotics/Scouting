@@ -1,31 +1,31 @@
-Team #3193 - 6 matches played
-GoS Strategy Ranking: 32
+Team #3193 - 9 matches played
+GoS Strategy Ranking: 33
 
 --------------- General Stats ---------------
-Win Percentage = 66.66666666666666%
-Average Score Difference = 68.16666666666667
+Win Percentage = 44.44444444444444%
+Average Score Difference = -26.22222222222222
 Robot Type = Offense
-Average Auto Rating = 1.6666666666666667 out of 5
-Average Robot Score = 5.333333333333333
+Average Auto Rating = 1.8888888888888888 out of 5
+Average Robot Score = 5.555555555555555
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 66%
+% matches crossed baseline = 77%
 % matches put cube in switch = 0%
 % matches put cube in scale = 0%
-% matches did not move = 33%
-Starting Position: 50% left, 16% middle, 33% right
+% matches did not move = 22%
+Starting Position: 55% left, 11% middle, 33% right
 All auto comments:
 	Match #10: Ranking point
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 2.6666666666666665
+Average # cubes placed: 3.111111111111111
 	% cubes in EZ = 0%
-	% cubes in Switch = 0%
-	% cubes in Scale = 100%
+	% cubes in Switch = 21%
+	% cubes in Scale = 78%
 Can get cube from floor?: Yes
-Can get cube from portal?: No
-Average cycle time rating = 1.8333333333333333 out of 3
-Average driver rating = 2.1666666666666665 out of 3
+Can get cube from portal?: Yes
+Average cycle time rating = 2.0 out of 3
+Average driver rating = 2.111111111111111 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
@@ -33,15 +33,21 @@ Can robot climb?: No
 	% did nothing in endgame = 0%
 
 --------------- General Comments ---------------
-Match #16: had multiple failed attempts at scale
-Match #30: Dropped one cube. Very good at putting on the scale. A little wobbly seemed like it could fall. 
-Match #35: The robot broke down during the entire teleop period and came back to life around 19 sec left.
-Match #45: Didn’t do very much and was borderline defensive
+Qualification Match #16: had multiple failed attempts at scale
+Qualification Match #30: Dropped one cube. Very good at putting on the scale. A little wobbly seemed like it could fall. 
+Qualification Match #35: The robot broke down during the entire teleop period and came back to life around 19 sec left.
+Qualification Match #45: Didn’t do very much and was borderline defensive
+Qualification Match #72: Very very tippy when extended all the way. I   n 
+Qualification Match #77: Bad at holding onto cubes. Dropped 2 when trying to put in scale. Penalty for getting stuck on scale.
+Qualification Match #84: Good.
 
 --------------- Match Data ---------------
-Qualification Match #10: Win, 349 - 226, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale
-Qualification Match #16: Win, 388 - 203, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale
-Qualification Match #30: Loss, 293 - 295, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale
-Qualification Match #35: Loss, 179 - 407, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #45: Win, 434 - 278, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale
-Qualification Match #51: Win, 416 - 241, 0 cubes in EZ, 0 cubes in Switch, 5 cubes in Scale
+Qualification Match #10: Win, 349 - 226, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale, platform
+Qualification Match #16: Win, 388 - 203, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale, platform
+Qualification Match #30: Loss, 293 - 295, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale, platform
+Qualification Match #35: Loss, 179 - 407, 0 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #45: Win, 434 - 278, 0 cubes in EZ, 0 cubes in Switch, 1 cubes in Scale, platform
+Qualification Match #51: Win, 416 - 241, 0 cubes in EZ, 0 cubes in Switch, 5 cubes in Scale, platform
+Qualification Match #72: Loss, 211 - 406, 0 cubes in EZ, 0 cubes in Switch, 4 cubes in Scale, platform
+Qualification Match #77: Loss, 180 - 378, 0 cubes in EZ, 0 cubes in Switch, 2 cubes in Scale, platform
+Qualification Match #84: Loss, 143 - 395, 0 cubes in EZ, 6 cubes in Switch, 0 cubes in Scale, platform

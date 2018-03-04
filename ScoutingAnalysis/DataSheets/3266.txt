@@ -1,31 +1,33 @@
-Team #3266 - 6 matches played
-GoS Strategy Ranking: 16
+Team #3266 - 9 matches played
+GoS Strategy Ranking: 20
 
 --------------- General Stats ---------------
-Win Percentage = 16.666666666666664%
-Average Score Difference = -91.83333333333333
+Win Percentage = 22.22222222222222%
+Average Score Difference = -92.22222222222223
 Robot Type = Offense
 Average Auto Rating = 2.6666666666666665 out of 5
-Average Robot Score = 6.333333333333333
+Average Robot Score = 6.555555555555555
 
 --------------- Autonomous Stats ---------------
-% matches crossed baseline = 83%
-% matches put cube in switch = 33%
+% matches crossed baseline = 77%
+% matches put cube in switch = 44%
 % matches put cube in scale = 0%
 % matches did not move = 0%
-Starting Position: 16% left, 33% middle, 50% right
+Starting Position: 22% left, 44% middle, 33% right
 All auto comments:
 	Match #13: Dropped cube 
+	Match #67: PUT CUBE IN WRONG COLOR 
+	Match #82: Rammed into switch. 
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 6.0
-	% cubes in EZ = 80%
-	% cubes in Switch = 19%
+Average # cubes placed: 6.111111111111111
+	% cubes in EZ = 78%
+	% cubes in Switch = 21%
 	% cubes in Scale = 0%
 Can get cube from floor?: Yes
 Can get cube from portal?: No
-Average cycle time rating = 2.0 out of 3
-Average driver rating = 2.3333333333333335 out of 3
+Average cycle time rating = 2.111111111111111 out of 3
+Average driver rating = 2.2222222222222223 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
@@ -33,14 +35,19 @@ Can robot climb?: No
 	% did nothing in endgame = 0%
 
 --------------- General Comments ---------------
-Match #6: Robot was very efficient in collecting power cubes
-Match #38: Had trouble collecting cubes when FIRST logo wasn’t on top
-Match #51: Hard time picking up cubes had to use the walls of the field. 
+Qualification Match #6: Robot was very efficient in collecting power cubes
+Qualification Match #38: Had trouble collecting cubes when FIRST logo wasn’t on top
+Qualification Match #51: Hard time picking up cubes had to use the walls of the field. 
+Qualification Match #67: Could have gotten more cubes but they ran out on threat side of the field...Good collector and quick release in switch
+Qualification Match #82: Hard time collecting every now and then. Ineffective defense
 
 --------------- Match Data ---------------
-Qualification Match #6: Win, 386 - 268, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
-Qualification Match #13: Loss, 236 - 205, 6 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #26: Loss, 98 - 367, 2 cubes in EZ, 5 cubes in Switch, 0 cubes in Scale
-Qualification Match #38: Loss, 261 - 321, 7 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #51: Loss, 241 - 416, 6 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale
-Qualification Match #60: Loss, 243 - 439, 3 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale
+Qualification Match #6: Win, 386 - 268, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #13: Loss, 236 - 205, 6 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #26: Loss, 98 - 367, 2 cubes in EZ, 5 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #38: Loss, 261 - 321, 7 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #51: Loss, 241 - 416, 6 cubes in EZ, 0 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #60: Loss, 243 - 439, 3 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #67: Win, 404 - 239, 6 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #82: Loss, 216 - 369, 5 cubes in EZ, 1 cubes in Switch, 0 cubes in Scale, platform
+Qualification Match #91: Loss, 159 - 450, 3 cubes in EZ, 2 cubes in Switch, 0 cubes in Scale, platform
