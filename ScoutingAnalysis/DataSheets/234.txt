@@ -1,5 +1,5 @@
 Team #234 - 9 matches played
-GoS Strategy Ranking: 13
+GoS Strategy Ranking: 9
 
 --------------- General Stats ---------------
 Win Percentage = 33.33333333333333%

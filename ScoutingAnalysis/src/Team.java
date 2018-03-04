@@ -47,7 +47,7 @@ public class Team {
 		{
 			if(matches.get(i).autoFunction.contains("Switch")) total+=1;
 			if(matches.get(i).autoFunction.contains("Scale")) total+=2;
-			total += matches.get(i).cubesEZ;
+			total += 0.65 *matches.get(i).cubesEZ;
 			total += matches.get(i).cubesSwitch;
 			total += 2 * (matches.get(i).cubesScale);
 			if (matches.get(i).endgameFunction.contains("Successful")) total += 3;

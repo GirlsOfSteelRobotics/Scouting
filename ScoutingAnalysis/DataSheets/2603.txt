@@ -6,7 +6,7 @@ Win Percentage = 33.33333333333333%
 Average Score Difference = -76.55555555555556
 Robot Type = Offense
 Average Auto Rating = 2.111111111111111 out of 5
-Average Robot Score = 2.4444444444444446
+Average Robot Score = 2.1333333333333333
 
 --------------- Autonomous Stats ---------------
 % matches crossed baseline = 88%

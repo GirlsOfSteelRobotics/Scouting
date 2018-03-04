@@ -32,6 +32,7 @@ public class Database {
 			if (teamNumber == 114) teamNumber = 144;
 			if (teamNumber == 3202) teamNumber = 3201;
 			if (teamNumber == 1377) teamNumber = 1317;
+			if (teamNumber == 3294) teamNumber = 3492;
 			
 			//create match
 			Match match = new Match(lineInput);

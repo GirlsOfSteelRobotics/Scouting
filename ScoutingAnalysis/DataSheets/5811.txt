@@ -1,12 +1,12 @@
 Team #5811 - 13 matches played
-GoS Strategy Ranking: 39
+GoS Strategy Ranking: 31
 
 --------------- General Stats ---------------
 Win Percentage = 53.84615384615385%
 Average Score Difference = 37.0
 Robot Type = Offense
 Average Auto Rating = 2.076923076923077 out of 5
-Average Robot Score = 5.153846153846154
+Average Robot Score = 4.992307692307692
 
 --------------- Autonomous Stats ---------------
 % matches crossed baseline = 46%
