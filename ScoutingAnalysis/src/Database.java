@@ -21,24 +21,18 @@ public class Database {
 		data = new ArrayList<Team>();
 		FileReader fileInput = new FileReader(filename);
 		BufferedReader file = new BufferedReader(fileInput);
-		String line = file.readLine();
+		String line = file.readLine(); //Get rid of header line
 		
+		//For each match entry
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
-			if (teamNumber == 3505) teamNumber = 3504;
-			if (teamNumber == 6396) teamNumber = 6936;
-			if (teamNumber == 667) teamNumber = 677;
-			if (teamNumber == 114) teamNumber = 144;
-			if (teamNumber == 3202) teamNumber = 3201;
-			if (teamNumber == 1377) teamNumber = 1317;
-			if (teamNumber == 3294) teamNumber = 3492;
 			
-			//create match
+			//Create new match object
 			Match match = new Match(lineInput);
-			
-			
 			int index = getTeamIndex(teamNumber);
+			
+			//Find or create team
 			Team team;
 			if (index == -1) 
 			{
@@ -114,31 +108,6 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public void printStats(int teamNumber, PrintStream output)
-	{
-		output.println("Team Stats for team #" + teamNumber + ":");
-		Team team = data.get(getTeamIndex(teamNumber));
-		team.printStats(output);
-	}
-	
-	public void printMatches(int teamNumber, PrintStream output)
-	{
-		output.println("Matches for team #" + teamNumber + ":");
-		Team team = data.get(getTeamIndex(teamNumber));
-		team.printMatches(output);
-
-	}
-	
-	public boolean isTeamInDatabase(int teamNumber)
-	{
-		for (int i = 0; i < data.size(); i++)
-		{
-			if (data.get(i).teamNumber == teamNumber)
-				return true;
-		}
-		return false;
-	}
-	
 	public int getTeamIndex(int teamNumber)
 	{
 		for (int i = 0; i < data.size(); i++)
@@ -146,11 +115,13 @@ public class Database {
 			if (data.get(i).teamNumber == teamNumber)
 				return i;
 		}
-		return -1;
+		return -1; //team not in database
 	}
 	
 	public void writeDataSheets(String foldername) throws IOException
 	{
+		sortByRobotScore();
+		
 		for (int i = 0; i < data.size(); i++)
 		{
 			String filename = foldername + "/" + Integer.toString(data.get(i).teamNumber) + ".txt";
@@ -162,6 +133,7 @@ public class Database {
 	
 	public void writeRankedList(String filename) throws IOException
 	{
+		sortByRobotScore();
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
@@ -179,19 +151,17 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeMaxCubesList(String filename) throws IOException
+	public void writeMaxCubesList(String filename, boolean includeEZ) throws IOException
 	{
-		sortByMaxCubes();
+		sortByMaxCubes(includeEZ);
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
 		for (int i = 0; i < data.size(); i++)
 		{
-			double score = ((int)(data.get(i).getAverageRobotScore()*100))/100.0;
-			double cubes = ((int)(data.get(i).getAverageCubesPlaced()*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			//fout.write("Avg Cubes Placed = " + cubes);
-			fout.write("Max Cubes Placed = " + data.get(i).getMaxCubes());
+			fout.write("Max Cubes Placed = " + data.get(i).getMaxCubes(includeEZ));
 			fout.write(", Can climb?: " + (data.get(i).canRobotClimb() ? "Yes" : "No"));
 			fout.newLine();
 		}
@@ -235,12 +205,12 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeGoodScaleRobots(String filename) throws IOException
+	public void writeGoodScaleRobots(String filename, int threshold) throws IOException
 	{
 		ArrayList<Team> goodScaleRobots = new ArrayList<Team>();
 		for (int i = 0; i < data.size(); i++)
 		{
-			if (data.get(i).getMaxScaleScore() >= 5)
+			if (data.get(i).getMaxScaleScore() >= threshold)
 				goodScaleRobots.add(data.get(i));
 		}
 		
@@ -263,7 +233,7 @@ public class Database {
 		
 	}
 	
-	public void sortByMaxCubes()
+	public void sortByMaxCubes(boolean includeEZ)
 	{
 		
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
@@ -273,7 +243,7 @@ public class Database {
 			Team max = data.get(0);
 			for(int i = 1; i < data.size(); i++)
 			{
-				if(data.get(i).getMaxCubes() > max.getMaxCubes())
+				if(data.get(i).getMaxCubes(includeEZ) > max.getMaxCubes(includeEZ))
 					max = data.get(i);
 			}
 			sortedTeams.add(max);
@@ -284,12 +254,12 @@ public class Database {
 		
 	}
 	
-	public void writeGoodSwitchRobots(String filename) throws IOException
+	public void writeGoodSwitchRobots(String filename, int threshold) throws IOException
 	{
 		ArrayList<Team> goodSwitchRobots = new ArrayList<Team>();
 		for (int i = 0; i < data.size(); i++)
 		{
-			if (data.get(i).getMaxSwitchScore() >= 4)
+			if (data.get(i).getMaxSwitchScore() >= threshold)
 				goodSwitchRobots.add(data.get(i));
 		}
 		

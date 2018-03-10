@@ -100,7 +100,7 @@ public class Team {
 		return max;
 	}
 	
-	public double getMaxCubes()
+	public double getMaxCubes(boolean includeEZ)
 	{
 		double max = 0;
 		for (int i = 0; i < matches.size(); i++)
@@ -112,7 +112,7 @@ public class Team {
 			if(matches.get(i).autoFunction.contains("Scale")) total+=1;
 			//if(matches.get(i).autoFunction.contains("Switch")) total+=1;
 			if(total > max ) max = total;
-			//total += matches.get(i).cubesEZ;
+			if (includeEZ) total += matches.get(i).cubesEZ;
 			//total += matches.get(i).cubesSwitch;
 			//total +=  (matches.get(i).cubesScale);
 			//if (matches.get(i).endgameFunction.contains("Successful")) total += 3;
@@ -364,8 +364,6 @@ public class Team {
 		fout.newLine();
 
 	}
-	
-	
 	
 	public void writeMatches(BufferedWriter fout) throws IOException
 	{
