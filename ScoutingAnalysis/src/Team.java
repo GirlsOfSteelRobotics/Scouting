@@ -70,12 +70,22 @@ public class Team {
 		return max;
 	}
 	
-	public double getMaxSwitchScore(boolean includeAuto)
+	public double getMaxCubesInSwitch(boolean includeAuto)
 	{
 		double max = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
 			if(matches.get(i).getCubesSwitch(includeAuto) > max) max = matches.get(i).getCubesSwitch(includeAuto);
+		}
+		return max;
+	}
+	
+	public double getMaxCubesInEZ(boolean includeAuto)
+	{
+		double max = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).getCubesEZ(includeAuto) > max) max = matches.get(i).getCubesEZ(includeAuto);
 		}
 		return max;
 	}
@@ -105,7 +115,7 @@ public class Team {
 		return (total)/matches.size();
 	}
 	
-	public double getAverageCubesPlaced(boolean includeAuto)
+	public double getAverageCubesPlaced(boolean includeEZ, boolean includeAuto)
 	{
 		double total = 0;
 		for (int i = 0; i < matches.size(); i++)
@@ -116,6 +126,40 @@ public class Team {
 		}
 		return (total)/matches.size();
 	}
+	
+	public String getClimbingAbility()
+	{
+		double climbs = 0;
+		double lifts = 0;
+		double climbAndLift = 0;
+		
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).endgameFunction.contains("+")) climbAndLift++;
+			else if(matches.get(i).endgameFunction.contains("Lifted")) lifts++;
+			else if(matches.get(i).endgameFunction.contains("Successful")) climbs++;
+		}
+		
+		if (climbAndLift/matches.size() > 0.1) return "Climb + Lift";
+		else if (climbs/matches.size() > 0.1) return "Successful";
+		else if (lifts/matches.size() > 0.1) return "Lift Others";
+		else return "None";
+	}
+	
+	public double getClimbPercentage()
+	{
+		double num = 0;
+		
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if(matches.get(i).endgameFunction.contains("+")) num++;
+			else if(matches.get(i).endgameFunction.contains("Lifted")) num++;
+			else if(matches.get(i).endgameFunction.contains("Successful")) num++;
+		}
+		
+		return 100*num/matches.size();
+	}
+	
 	public String getRobotType() 
 	{
 		int total = 0;

@@ -27,7 +27,7 @@ public class Database {
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
-			
+	
 			//Create new match object
 			Match match = new Match(lineInput);
 			int index = getTeamIndex(teamNumber);
@@ -98,7 +98,7 @@ public class Database {
 			Team max = data.get(0);
 			for(int i = 1; i < data.size(); i++)
 			{
-				if(data.get(i).getMaxSwitchScore(includeAuto) > max.getMaxSwitchScore(includeAuto))
+				if(data.get(i).getMaxCubesInSwitch(includeAuto) > max.getMaxCubesInSwitch(includeAuto))
 					max = data.get(i);
 			}
 			sortedTeams.add(max);
@@ -139,11 +139,48 @@ public class Database {
 		
 		for (int i = 0; i < data.size(); i++)
 		{
-			double cubes = ((int)(data.get(i).getAverageCubesPlaced(includeAuto)*100))/100.0;
+			double cubes = ((int)(data.get(i).getAverageCubesPlaced(true, includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			fout.write("Avg Cubes Placed = " + cubes);
 			//fout.write(", Max Cubes Placed = " + data.get(i).getMaxCubes());
 			fout.write(", Can climb?: " + (data.get(i).canRobotClimb() ? "Yes" : "No"));
+			fout.newLine();
+		}
+		
+		fout.close();
+	}
+	
+	public void writeCSVfile(String filename) throws IOException
+	{
+		sortByRobotScore();
+		FileWriter outFile = new FileWriter(filename);
+		BufferedWriter fout = new BufferedWriter(outFile);
+		
+		//Write Header
+		fout.write("Team Ranking" + ",");
+		fout.write("Team Number" + ",");
+		fout.write("Robot Score" + ",");
+		fout.write("Climbing Ability" + ",");
+		fout.write("Climb/Lift Percentage" + ",");
+		fout.write("Max Cubes in Game" + ",");
+		fout.write("Max Cubes in Scale*" + ",");
+		fout.write("Max Cubes in Switch*" + ",");
+		fout.write("Max Cubes in EZ*" + ",");
+		fout.write("*does not include autonomous" + ",");
+		fout.newLine();
+		
+		for (int i = 0; i < data.size(); i++)
+		{
+			Team team = data.get(i);
+			fout.write((i+1) + ",");
+			fout.write(team.teamNumber + ",");
+			fout.write(team.getAverageRobotScore() + ",");
+			fout.write(team.getClimbingAbility() + ",");
+			fout.write(team.getClimbPercentage() + ",");
+			fout.write(team.getMaxCubes(true, true) + ",");
+			fout.write(team.getMaxCubesInScale(false) + ",");
+			fout.write(team.getMaxCubesInSwitch(false) + ",");
+			fout.write(team.getMaxCubesInEZ(false) + ",");
 			fout.newLine();
 		}
 		
@@ -195,7 +232,7 @@ public class Database {
 		for (int i = 0; i < data.size(); i++)
 		{
 			double score = ((int)(data.get(i).getAverageRobotScore()*100))/100.0;
-			double Switch = ((int)(data.get(i).getMaxSwitchScore(includeAuto)*100))/100.0;
+			double Switch = ((int)(data.get(i).getMaxCubesInSwitch(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Switch Score = " + Switch);
 			fout.newLine();
@@ -258,7 +295,7 @@ public class Database {
 		ArrayList<Team> goodSwitchRobots = new ArrayList<Team>();
 		for (int i = 0; i < data.size(); i++)
 		{
-			if (data.get(i).getMaxSwitchScore(includeAuto) >= threshold)
+			if (data.get(i).getMaxCubesInSwitch(includeAuto) >= threshold)
 				goodSwitchRobots.add(data.get(i));
 		}
 		
@@ -270,7 +307,7 @@ public class Database {
 		for (int i = 0; i < goodSwitchRobots.size(); i++)
 		{
 			double score = ((int)(goodSwitchRobots.get(i).getAverageRobotScore()*100))/100.0;
-			double Switch = ((int)(goodSwitchRobots.get(i).getMaxSwitchScore(includeAuto)*100))/100.0;
+			double Switch = ((int)(goodSwitchRobots.get(i).getMaxCubesInSwitch(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + goodSwitchRobots.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Switch Score = " + Switch);
 			fout.write(", Can climb?: " + (goodSwitchRobots.get(i).canRobotClimb() ? "Yes" : "No"));

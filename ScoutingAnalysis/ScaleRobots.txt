@@ -1,1 +1,0 @@
-1. Team 6414: Avg robot score = 37.6, Max Scale Score = 10.0, Can climb?: No

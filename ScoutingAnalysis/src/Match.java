@@ -33,6 +33,7 @@ public class Match {
 	
 	public Match(String[] lineInput)
 	{
+		
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
 		autoPosition = getString(lineInput[4]);
