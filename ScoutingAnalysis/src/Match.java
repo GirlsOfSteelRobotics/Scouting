@@ -7,11 +7,14 @@ public class Match {
 	public int matchNumber;
 	public String autoFunction;
 	public String autoPosition;
+	public String switchPosition;
+	public String scalePosition;
 	public String autoComments;
 	public double autoRating;
 	public int cubesEZ;
 	public int cubesSwitch;
 	public int cubesScale;
+	public int cubesFailed;
 	String robotFunctions;
 	public double cycleRating;
 	public double drivingRating;
@@ -22,50 +25,101 @@ public class Match {
 	public int opponentPoints;
 	public String generalComments;
 	
+	public static double EZ_POINTS = 0.65;
+	public static double SWITCH_POINTS = 1.0;
+	public static double SCALE_POINTS = 1.75;
+	public static double CLIMB_POINTS = 3.0;
+	public static double LIFT_POINTS = 2.5;
+	
 	public Match(String[] lineInput)
 	{
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
-		if (matchNumber == 4611) matchNumber = 37;
-		autoFunction = getString(lineInput[4]);
-		autoPosition = getString(lineInput[5]);
-		autoComments = getString(lineInput[6]);
-		autoRating = getInt(lineInput[7]);
+		autoPosition = getString(lineInput[4]);
+		switchPosition = getString(lineInput[5]);
+		scalePosition = getString(lineInput[6]);
+		autoFunction = getString(lineInput[7]);
 		
-		cubesEZ = getInt(lineInput[8]);
-		cubesSwitch = getInt(lineInput[9]);
-		cubesScale = getInt(lineInput[10]);
+		autoRating = getInt(lineInput[8]);
+		autoComments = getString(lineInput[9]);
 		
-		robotFunctions = getString(lineInput[11]);
-		cycleRating = getInt(lineInput[12]);
-		drivingRating = getInt(lineInput[13]);
+		cubesEZ = getInt(lineInput[10]);
+		cubesSwitch = getInt(lineInput[11]);
+		cubesScale = getInt(lineInput[12]);
+		cubesFailed = getInt(lineInput[13]);
 		
-		endgameFunction = getString(lineInput[14]);
-		robotGoal = getString(lineInput[15]);
-		result = getString(lineInput[16]);
+		robotFunctions = getString(lineInput[14]);
+		cycleRating = getInt(lineInput[15]);
+		drivingRating = getInt(lineInput[16]);
+		
+		endgameFunction = getString(lineInput[17]);
+		generalComments = getString(lineInput[18]);
+		robotGoal = getString(lineInput[19]);
+		result = getString(lineInput[20]);
 
-		alliancePoints = getInt(lineInput[17]);
-		opponentPoints = getInt(lineInput[18]);
-		generalComments = getString(lineInput[19]);
+		alliancePoints = getInt(lineInput[21]);
+		opponentPoints = getInt(lineInput[22]);
+		
 	}
 	
-	public void printMatch(PrintStream output)
+	public double getMatchScore(boolean includeAuto)
 	{
-		output.println("Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints);
-		output.println("\tComments: " + generalComments);
+		double score = 0;
+		//Autonomous + Teleop
+		score += getCubesEZ(includeAuto) * EZ_POINTS;
+		score += getCubesSwitch(includeAuto) * SWITCH_POINTS;
+		score += getCubesScale(includeAuto) * SCALE_POINTS;
+
+		//Endgame
+		if(endgameFunction.contains("+")) score += (CLIMB_POINTS + LIFT_POINTS);
+		else if(endgameFunction.contains("Lifted")) score += LIFT_POINTS;
+		else if(endgameFunction.contains("Climb")) score += CLIMB_POINTS;
+		
+		return score;
+		
+	}
+	
+	public double getCubesSwitch(boolean includeAuto)
+	{
+		double switchCubes = 0;
+		
+		switchCubes += cubesSwitch;
+		if(includeAuto && autoFunction.contains("SWITCH")) switchCubes += 1;
+		
+		return switchCubes;
+	}
+	
+	public double getCubesScale(boolean includeAuto)
+	{
+		double scaleCubes = 0;
+		
+		scaleCubes += cubesScale;
+		if(includeAuto && autoFunction.contains("SCALE")) scaleCubes += 1;
+		
+		return scaleCubes;
+	}
+	
+	public double getCubesEZ(boolean includeAuto)
+	{
+		double EZCubes = 0;
+		
+		EZCubes += cubesEZ;
+		if(includeAuto && autoFunction.contains("EZ")) EZCubes += 1;
+		
+		return EZCubes;
 	}
 	
 	public void writeMatch(BufferedWriter fout) throws IOException
 	{
 		fout.write(matchType + " Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints + ", ");
-		fout.write(cubesEZ + " cubes in EZ, " + cubesSwitch + " cubes in Switch, " + cubesScale + " cubes in Scale");
+		fout.write(getCubesEZ(false) + " cubes in EZ, " + getCubesSwitch(false) + " cubes in Switch, " + getCubesScale(false) + " cubes in Scale");
 		if (endgameFunction.contains("Successful")) fout.write(", successfully climbed");
 		else if (endgameFunction.contains("Attempted")) fout.write(", attempted climbed");
 		else if (endgameFunction.contains("Platform")) fout.write(", platform");
 		else if (endgameFunction.contains("Neither")) fout.write(", no endgame");
+		else if (endgameFunction.contains("+")) fout.write(", climbed and lifted others");
+		else if (endgameFunction.contains("Lifted")) fout.write(", lifted others");
 		fout.newLine();
-		//fout.write("\tComments: " + generalComments);
-		//fout.newLine();
 	}
 	
 	private static String getString(String input)

@@ -1,0 +1,2 @@
+1. Team 6414: Avg robot score = 37.6, Max Scale Score = 10.0
+2. Team 3504: Avg robot score = 7.05, Max Scale Score = 1.0

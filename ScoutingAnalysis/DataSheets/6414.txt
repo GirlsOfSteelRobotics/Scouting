@@ -1,12 +1,12 @@
-Team #3504 - 1 matches played
-GoS Strategy Ranking: 2
+Team #6414 - 1 matches played
+GoS Strategy Ranking: 1
 
 --------------- General Stats ---------------
 Win Percentage = 100.0%
-Average Score Difference = 130.0
+Average Score Difference = 22.0
 Robot Type = Offense
-Average Auto Rating = 4.0 out of 5
-Average Robot Score = 7.05
+Average Auto Rating = 5.0 out of 5
+Average Robot Score = 37.6
 
 --------------- Autonomous Stats ---------------
 % matches crossed baseline = 100%
@@ -15,24 +15,24 @@ Average Robot Score = 7.05
 % matches did not move = 0%
 Starting Position: 0% left, 0% middle, 0% right
 All auto comments:
+	Match #63: Did anyone put any cubes in EZ in auto? Is there value to that?
 
 --------------- Teleop Stats ---------------
-Average # cubes placed: 6.0
-	% cubes in EZ = 33%
-	% cubes in Switch = 50%
-	% cubes in Scale = 16%
+Average # cubes placed: 25.0
+	% cubes in EZ = 36%
+	% cubes in Switch = 24%
+	% cubes in Scale = 40%
 Can get cube from floor?: Yes
-Can get cube from portal?: No
+Can get cube from portal?: Yes
 Average cycle time rating = 2.0 out of 3
-Average driver rating = 2.0 out of 3
+Average driver rating = 1.0 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
-	% platform in matches = 100%
-	% did nothing in endgame = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 100%
 
 --------------- General Comments ---------------
-Practice Match #1: tippy at scale
 
 --------------- Match Data ---------------
-Practice Match #1: Win, 330 - 200, 2.0 cubes in EZ, 3.0 cubes in Switch, 1.0 cubes in Scale, platform
+Practice Match #63: Win, 66 - 44, 9.0 cubes in EZ, 6.0 cubes in Switch, 10.0 cubes in Scale, climbed and lifted others

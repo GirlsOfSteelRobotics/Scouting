@@ -1,16 +1,1 @@
-1. Team 4028: Avg robot score = 12.48, Max Scale Score = 6.0, Can climb?: Yes
-2. Team 379: Avg robot score = 11.97, Max Scale Score = 6.0, Can climb?: Yes
-3. Team 302: Avg robot score = 11.66, Max Scale Score = 7.0, Can climb?: Yes
-4. Team 4362: Avg robot score = 9.81, Max Scale Score = 7.0, Can climb?: Yes
-5. Team 4145: Avg robot score = 9.51, Max Scale Score = 5.0, Can climb?: Yes
-6. Team 291: Avg robot score = 9.18, Max Scale Score = 5.0, Can climb?: No
-7. Team 554: Avg robot score = 8.81, Max Scale Score = 5.0, Can climb?: Yes
-8. Team 234: Avg robot score = 8.33, Max Scale Score = 5.0, Can climb?: Yes
-9. Team 3260: Avg robot score = 8.22, Max Scale Score = 5.0, Can climb?: Yes
-10. Team 3010: Avg robot score = 7.17, Max Scale Score = 5.0, Can climb?: No
-11. Team 2252: Avg robot score = 6.2, Max Scale Score = 5.0, Can climb?: Yes
-12. Team 3504: Avg robot score = 5.6, Max Scale Score = 5.0, Can climb?: No
-13. Team 3193: Avg robot score = 5.55, Max Scale Score = 5.0, Can climb?: No
-14. Team 1038: Avg robot score = 5.31, Max Scale Score = 6.0, Can climb?: No
-15. Team 3138: Avg robot score = 5.01, Max Scale Score = 6.0, Can climb?: No
-16. Team 6460: Avg robot score = 2.34, Max Scale Score = 5.0, Can climb?: No
+1. Team 6414: Avg robot score = 37.6, Max Scale Score = 10.0, Can climb?: No

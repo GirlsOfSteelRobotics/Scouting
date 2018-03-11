@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Database {
 	private ArrayList<Team> data;
 	
-	public Database(String filename) throws NumberFormatException, IOException
+	public Database(String filename, boolean includePracticeMatches) throws NumberFormatException, IOException
 	{
 		data = new ArrayList<Team>();
 		FileReader fileInput = new FileReader(filename);
@@ -44,7 +44,7 @@ public class Database {
 				team = data.get(index);
 			}
 			
-			if(!match.matchType.contains("Practice"))
+			if(includePracticeMatches || !match.matchType.contains("Practice"))
 				team.addMatch(match);
 		}
 		
@@ -70,7 +70,7 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public void sortByScaleScore()
+	public void sortByScaleScore(boolean includeAuto)
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		
@@ -79,7 +79,7 @@ public class Database {
 			Team max = data.get(0);
 			for(int i = 1; i < data.size(); i++)
 			{
-				if(data.get(i).getMaxScaleScore() > max.getMaxScaleScore())
+				if(data.get(i).getMaxCubesInScale(includeAuto) > max.getMaxCubesInScale(includeAuto))
 					max = data.get(i);
 			}
 			sortedTeams.add(max);
@@ -89,7 +89,7 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public void sortBySwitchScore()
+	public void sortBySwitchScore(boolean includeAuto)
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		
@@ -98,7 +98,7 @@ public class Database {
 			Team max = data.get(0);
 			for(int i = 1; i < data.size(); i++)
 			{
-				if(data.get(i).getMaxSwitchScore() > max.getMaxSwitchScore())
+				if(data.get(i).getMaxSwitchScore(includeAuto) > max.getMaxSwitchScore(includeAuto))
 					max = data.get(i);
 			}
 			sortedTeams.add(max);
@@ -131,7 +131,7 @@ public class Database {
 		
 	}
 	
-	public void writeRankedList(String filename) throws IOException
+	public void writeRankedList(String filename, boolean includeAuto) throws IOException
 	{
 		sortByRobotScore();
 		FileWriter outFile = new FileWriter(filename);
@@ -139,8 +139,7 @@ public class Database {
 		
 		for (int i = 0; i < data.size(); i++)
 		{
-			double score = ((int)(data.get(i).getAverageRobotScore()*100))/100.0;
-			double cubes = ((int)(data.get(i).getAverageCubesPlaced()*100))/100.0;
+			double cubes = ((int)(data.get(i).getAverageCubesPlaced(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			fout.write("Avg Cubes Placed = " + cubes);
 			//fout.write(", Max Cubes Placed = " + data.get(i).getMaxCubes());
@@ -151,9 +150,9 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeMaxCubesList(String filename, boolean includeEZ) throws IOException
+	public void writeMaxCubesList(String filename, boolean includeEZ, boolean includeAuto) throws IOException
 	{
-		sortByMaxCubes(includeEZ);
+		sortByMaxCubes(includeEZ, includeAuto);
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
@@ -161,7 +160,7 @@ public class Database {
 		{
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			//fout.write("Avg Cubes Placed = " + cubes);
-			fout.write("Max Cubes Placed = " + data.get(i).getMaxCubes(includeEZ));
+			fout.write("Max Cubes Placed = " + data.get(i).getMaxCubes(includeEZ, includeAuto));
 			fout.write(", Can climb?: " + (data.get(i).canRobotClimb() ? "Yes" : "No"));
 			fout.newLine();
 		}
@@ -169,16 +168,16 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeScaleRankedList(String filename) throws IOException
+	public void writeScaleRankedList(String filename, boolean includeAuto) throws IOException
 	{
-		sortByScaleScore();
+		sortByScaleScore(includeAuto);
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
 		for (int i = 0; i < data.size(); i++)
 		{
 			double score = ((int)(data.get(i).getAverageRobotScore()*100))/100.0;
-			double scale = ((int)(data.get(i).getMaxScaleScore()*100))/100.0;
+			double scale = ((int)(data.get(i).getMaxCubesInScale(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Scale Score = " + scale);
 			fout.newLine();
@@ -187,16 +186,16 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeSwitchRankedList(String filename) throws IOException
+	public void writeSwitchRankedList(String filename, boolean includeAuto) throws IOException
 	{
-		sortBySwitchScore();
+		sortBySwitchScore(includeAuto);
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		
 		for (int i = 0; i < data.size(); i++)
 		{
 			double score = ((int)(data.get(i).getAverageRobotScore()*100))/100.0;
-			double Switch = ((int)(data.get(i).getMaxSwitchScore()*100))/100.0;
+			double Switch = ((int)(data.get(i).getMaxSwitchScore(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Switch Score = " + Switch);
 			fout.newLine();
@@ -205,12 +204,12 @@ public class Database {
 		fout.close();
 	}
 	
-	public void writeGoodScaleRobots(String filename, int threshold) throws IOException
+	public void writeGoodScaleRobots(String filename, int threshold, boolean includeAuto) throws IOException
 	{
 		ArrayList<Team> goodScaleRobots = new ArrayList<Team>();
 		for (int i = 0; i < data.size(); i++)
 		{
-			if (data.get(i).getMaxScaleScore() >= threshold)
+			if (data.get(i).getMaxCubesInScale(includeAuto) >= threshold)
 				goodScaleRobots.add(data.get(i));
 		}
 		
@@ -222,7 +221,7 @@ public class Database {
 		for (int i = 0; i < goodScaleRobots.size(); i++)
 		{
 			double score = ((int)(goodScaleRobots.get(i).getAverageRobotScore()*100))/100.0;
-			double scale = ((int)(goodScaleRobots.get(i).getMaxScaleScore()*100))/100.0;
+			double scale = ((int)(goodScaleRobots.get(i).getMaxCubesInScale(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + goodScaleRobots.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Scale Score = " + scale);
 			fout.write(", Can climb?: " + (goodScaleRobots.get(i).canRobotClimb() ? "Yes" : "No"));
@@ -233,7 +232,7 @@ public class Database {
 		
 	}
 	
-	public void sortByMaxCubes(boolean includeEZ)
+	public void sortByMaxCubes(boolean includeEZ, boolean includeAuto)
 	{
 		
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
@@ -243,7 +242,7 @@ public class Database {
 			Team max = data.get(0);
 			for(int i = 1; i < data.size(); i++)
 			{
-				if(data.get(i).getMaxCubes(includeEZ) > max.getMaxCubes(includeEZ))
+				if(data.get(i).getMaxCubes(includeEZ, includeAuto) > max.getMaxCubes(includeEZ, includeAuto))
 					max = data.get(i);
 			}
 			sortedTeams.add(max);
@@ -254,12 +253,12 @@ public class Database {
 		
 	}
 	
-	public void writeGoodSwitchRobots(String filename, int threshold) throws IOException
+	public void writeGoodSwitchRobots(String filename, int threshold, boolean includeAuto) throws IOException
 	{
 		ArrayList<Team> goodSwitchRobots = new ArrayList<Team>();
 		for (int i = 0; i < data.size(); i++)
 		{
-			if (data.get(i).getMaxSwitchScore() >= threshold)
+			if (data.get(i).getMaxSwitchScore(includeAuto) >= threshold)
 				goodSwitchRobots.add(data.get(i));
 		}
 		
@@ -271,7 +270,7 @@ public class Database {
 		for (int i = 0; i < goodSwitchRobots.size(); i++)
 		{
 			double score = ((int)(goodSwitchRobots.get(i).getAverageRobotScore()*100))/100.0;
-			double Switch = ((int)(goodSwitchRobots.get(i).getMaxSwitchScore()*100))/100.0;
+			double Switch = ((int)(goodSwitchRobots.get(i).getMaxSwitchScore(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + goodSwitchRobots.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Switch Score = " + Switch);
 			fout.write(", Can climb?: " + (goodSwitchRobots.get(i).canRobotClimb() ? "Yes" : "No"));
