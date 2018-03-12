@@ -1,0 +1,2 @@
+1. Team 6414: Avg robot score = 37.6, Max Switch Score = 6.0, Can climb?: No
+2. Team 3504: Avg robot score = 11.87, Max Switch Score = 6.0, Can climb?: No

@@ -80,6 +80,48 @@ public class Match {
 		
 	}
 	
+	public int getElementSide()
+	{
+		boolean middle;
+		boolean switchSide;
+		boolean scaleSide;
+		
+		if (autoPosition.contains("Middle")) return 4;
+		
+		//switch
+		if (autoPosition.contains("Left") && switchPosition.contains("Left")) switchSide = true;
+		else if (autoPosition.contains("Right") && switchPosition.contains("Right")) switchSide = true;
+		else switchSide = false;
+		
+		//scale
+		if (autoPosition.contains("Left") && scalePosition.contains("Left")) scaleSide = true;
+		else if (autoPosition.contains("Right") && scalePosition.contains("Right")) scaleSide = true;
+		else scaleSide = false;
+		
+		if (!switchSide && !scaleSide) return 0;
+		else if (switchSide && !scaleSide) return 1;
+		else if (!switchSide && scaleSide) return 2;
+		else if (switchSide && scaleSide) return 3;
+		else return -1;
+	}
+	
+	public int getAutoFunction()
+	{
+		boolean baseline = false;
+		boolean switchAuto = false;
+		boolean scaleAuto = false;
+		
+		if (autoFunction.contains("SWITCH")) switchAuto = true;
+		if (autoFunction.contains("SCALE")) scaleAuto = true;
+		if (autoFunction.contains("Baseline")) baseline = true;
+		
+		if (switchAuto && scaleAuto) return 4;
+		else if (switchAuto) return 2;
+		else if (scaleAuto) return 3;
+		else if (baseline) return 1;
+		else return 0;
+	}
+	
 	public double getCubesSwitch(boolean includeAuto)
 	{
 		double switchCubes = 0;

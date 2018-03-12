@@ -5,7 +5,7 @@ public class MainLauncher {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		System.out.println("Loading database...");
-		Database data = new Database("GPRScoutingData.csv", false); //filename, include practice matches?
+		Database data = new Database("GPRScoutingData.csv", true); //filename, include practice matches?
 		data.writeRankedList("RankedList.txt", true); //by avg robot score, includeAuto?
 		data.writeDataSheets("DataSheets");
 		//data.writeSwitchRankedList("MaxSwitchRanking.txt", false); //by max in switch, includeAuto?

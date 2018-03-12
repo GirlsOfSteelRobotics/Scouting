@@ -1,0 +1,2 @@
+1. Team 6414: Max Cubes Placed = 16.0, Can climb?: No
+2. Team 3504: Max Cubes Placed = 10.0, Can climb?: No

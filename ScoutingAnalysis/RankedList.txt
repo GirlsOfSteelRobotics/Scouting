@@ -1,0 +1,2 @@
+1. Team 6414: Avg Cubes Placed = 27.0, Can climb?: No
+2. Team 3504: Avg Cubes Placed = 10.5, Can climb?: No
