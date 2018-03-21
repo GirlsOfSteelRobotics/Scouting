@@ -40,10 +40,10 @@ public class Team {
 		return ((double)total)/matches.size();
 	}
 	
-	public int[][] getAutoStats()
+	public double[][] getAutoStats()
 	{
-		double[][] autoFunctions = new double[5][6];
-		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both, 4 = middle)
+		double[][] autoFunctions = new double[6][6];
+		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both, 4 = middle, 5 = total)
 		//Cols = what the robot did (0 = nothing, 1 = baseline, 2 = switch, 3 = scale, 4 = both, 5 = total)
 		
 		for (int i = 0; i < matches.size(); i++)
@@ -53,19 +53,38 @@ public class Team {
 			
 			autoFunctions[r][c]++;
 			autoFunctions[r][5]++;
-		}
-		
-		int ret[][] = new int[5][5];
-		
-		for (int r = 0; r < ret.length; r++)
-		{
-			for (int c = 0; c < ret[0].length; c++)
+			autoFunctions[5][c]++;
+			
+			if (c != 0 && c != 1)
 			{
-				ret[r][c] = (int)((autoFunctions[r][c]/autoFunctions[r][5])*100);
+				autoFunctions[r][1]++;
+				autoFunctions[5][1]++;
+			}
+		}
+
+		for (int r = 0; r < 5; r++)
+		{
+			for (int c = 0; c < 5; c++)
+			{
+				autoFunctions[r][c] = (int)((autoFunctions[r][c]/autoFunctions[r][5])*100);
 			}
 		}
 		
-		return ret;
+		return autoFunctions;
+	}
+	
+	public String getAutoAbility()
+	{
+		double[][] auto = getAutoStats();
+		if (auto[5][1] > 0)
+		{
+			String ret = "Baseline";
+			if (auto[5][2] > 0) ret += "; Switch";
+			if (auto[5][3] > 0) ret += "; Scale";
+			if (auto[5][4] > 0) ret += "; Switch AND Scale";
+			return ret;
+		}
+		else return "None";
 	}
 	
 	public double getAverageRobotScore()
@@ -85,7 +104,27 @@ public class Team {
 		{
 			total += matches.get(i).getCubesScale(includeAuto);
 		}
-		return (total)/matches.size();
+		return ((int)(((total)/matches.size())*100)/100.0);
+	}
+	
+	public double getAvgCubesInSwitch(boolean includeAuto)
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			total += matches.get(i).getCubesSwitch(includeAuto);
+		}
+		return ((int)(((total)/matches.size())*100)/100.0);
+	}
+	
+	public double getAvgCubesInEZ(boolean includeAuto)
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			total += matches.get(i).getCubesEZ(includeAuto);
+		}
+		return ((int)(((total)/matches.size())*100)/100.0);
 	}
 	
 	public double getMaxCubesInScale(boolean includeAuto)
@@ -163,7 +202,7 @@ public class Team {
 		
 		for (int i = 0; i < matches.size(); i++)
 		{
-			if(matches.get(i).endgameFunction.contains("+")) climbAndLift++;
+			if(matches.get(i).endgameFunction.contains("+")) {climbAndLift++; lifts++; climbs++;}
 			else if(matches.get(i).endgameFunction.contains("Lifted")) lifts++;
 			else if(matches.get(i).endgameFunction.contains("Successful")) climbs++;
 		}
@@ -186,6 +225,21 @@ public class Team {
 		}
 		
 		return 100*num/matches.size();
+	}
+	
+	public double getCubeSuccessRate()
+	{
+		double goodCubes = 0;
+		double cubesFailed = 0;
+		
+		for (int i = 0; i < matches.size(); i++)
+		{
+			Match m = matches.get(i);
+			goodCubes += m.getCubesEZ(false) + m.getCubesSwitch(false) + m.getCubesEZ(false);
+			cubesFailed = m.cubesFailed;
+		}
+		
+		return 100*(goodCubes / (goodCubes + cubesFailed));
 	}
 	
 	public String getRobotType() 
@@ -214,29 +268,65 @@ public class Team {
 		
 		fout.write("Team #" + teamNumber + " - " + matches.size() + " matches played");
 		fout.newLine();
-		fout.write("GoS Strategy Ranking: " + ranking);
 		fout.newLine();
+		writeQuickStats(fout, ranking);
 		fout.newLine();
-		writeGeneralStats(fout);
-		fout.newLine();
+		//writeGeneralStats(fout);
+		//fout.newLine();
 		writeAutoStats(fout);
 		fout.newLine();
 		writeTeleopStats(fout);
 		fout.newLine();
-		writeGeneralComments(fout);
-		fout.newLine();
+		//writeGeneralComments(fout);
+		//fout.newLine();
 		writeMatches(fout);
 		fout.close();
 	}
 	
+	public void writeQuickStats(BufferedWriter fout, int ranking) throws IOException
+	{
+		
+		double EZ = 0; double Switch = 0; double Scale = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			EZ += matches.get(i).cubesEZ;
+			Switch += matches.get(i).cubesSwitch;
+			Scale += matches.get(i).cubesScale;
+		}
+		
+		double totalCubes = EZ + Switch + Scale;
+		EZ = (EZ/totalCubes) * 100;
+		Switch = (Switch/totalCubes) * 100;
+		Scale = (Scale/totalCubes) * 100;
+		
+		fout.write("--------------- Quick Facts ----------------------");
+		fout.newLine();
+		fout.write("GoS Strategy Ranking: " + ranking);
+		fout.newLine();
+		fout.write("Robot Type = " + getRobotType());
+		fout.newLine();
+		fout.write("Average cubes placed: " + getAverageCubesPlaced(true, false));
+		fout.newLine();
+		fout.write("\tScale: \t" + (int)Scale + "% of cubes, max = " + getMaxCubesInScale(false) + ", avg = " + getAvgCubesInScale(false));
+		fout.newLine();
+		fout.write("\tSwitch:\t" + (int)Switch + "% of cubes, max = " + getMaxCubesInSwitch(false) + ", avg = " + getAvgCubesInSwitch(false));
+		fout.newLine();
+		fout.write("\tEZ: \t" + (int)EZ + "% of cubes, max = " + getMaxCubesInEZ(false) + ", avg = " + getAvgCubesInEZ(false));
+		fout.newLine();
+		fout.write("Auto Ability: " + getAutoAbility());
+		fout.newLine();
+		fout.write("Climbing Ability: " + getClimbingAbility());
+		fout.newLine();
+	}
+	
 	public void writeGeneralStats(BufferedWriter fout) throws IOException
 	{
-		fout.write("--------------- General Stats ---------------");
+		fout.write("--------------- General Stats --------------------");
 		fout.newLine();
 		fout.write("Win Percentage = " + (getWinPercentage()*100) + "%");
 		fout.newLine();
-		fout.write("Average Score Difference = " + getAverageScoreDiff());
-		fout.newLine();
+//		fout.write("Average Score Difference = " + getAverageScoreDiff());
+//		fout.newLine();
 		fout.write("Robot Type = " + getRobotType());
 		fout.newLine();
 		fout.write("Average Auto Rating = " + getAverageAutoRating() + " out of 5");
@@ -247,24 +337,26 @@ public class Team {
 	
 	public void writeAutoStats(BufferedWriter fout) throws IOException
 	{
-		fout.write("--------------- Autonomous Stats ---------------");
+		fout.write("--------------- Autonomous Stats -----------------");
+		fout.newLine();
+		fout.write("Average Auto Rating = " + getAverageAutoRating() + " out of 5");
 		fout.newLine();
 		
-		int[][] auto = getAutoStats();
+		double[][] auto = getAutoStats();
 		int index;
-		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both. 4 = middle)
-		//Cols = what the robot did (0 = nothing, 1 = baseline, 2 = switch, 3 = scale, 4 = both)
+		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both. 4 = middle, 5 = total)
+		//Cols = what the robot did (0 = nothing, 1 = baseline, 2 = switch, 3 = scale, 4 = both, 5 = total)
 		
 		index = 0;
-		int Nothing = auto[0][index] + auto[1][index] + auto[2][index] + auto[3][index] + auto[4][index];
+		int Nothing = (int)(100*auto[5][0] / matches.size());
 		index = 1;
-		int Baseline = auto[0][index] + auto[1][index] + auto[2][index] + auto[3][index] + auto[4][index];
+		int Baseline = (int)(100*auto[5][1] / matches.size());
 		index = 2;
-		int Switch = auto[0][index] + auto[1][index] + auto[2][index] + auto[3][index] + auto[4][index];
+		int Switch = (int)(100*auto[5][2] / matches.size());
 		index = 3;
-		int Scale = auto[0][index] + auto[1][index] + auto[2][index] + auto[3][index] + auto[4][index];
+		int Scale = (int)(100*auto[5][3] / matches.size());
 		index = 4;
-		int Both = auto[0][index] + auto[1][index] + auto[2][index] + auto[3][index] + auto[4][index];
+		int Both = (int)(100*auto[5][4] / matches.size());
 		
 		int outsideLeft = 0; int insideLeft = 0; int middle = 0; int insideRight = 0; int outsideRight = 0;
 		for (int i = 0; i < matches.size(); i++)
@@ -284,51 +376,65 @@ public class Team {
 		insideRight = (int)(((double)insideRight / matches.size()) * 100);
 		outsideRight = (int)(((double)outsideRight / matches.size()) * 100);
 		
-		fout.write("Overall Auto Stats:");
+//		fout.write("Overall Auto Stats:");
+//		fout.newLine();
+//		fout.write("\t% matches crossed baseline = " + Baseline + "%");
+//		fout.newLine();
+//		fout.write("\t% matches put cube in switch = " + Switch + "%");
+//		fout.newLine();
+//		fout.write("\t% matches put cube in scale = " + Scale + "%");
+//		fout.newLine();
+//		fout.write("\t% matches put cube in switch and scale = " + Both + "%");
+//		fout.newLine();
+//		fout.write("\t% matches did not move = " + Nothing + "%");
+//		fout.newLine();
+		fout.write("Starting Position: " + outsideLeft + "% out-left, " + insideLeft + "% in-left, " + middle + "% middle, " + insideRight + "% in-right, " + outsideRight + "% out-right");
 		fout.newLine();
-		fout.write("\t% matches crossed baseline = " + Baseline + "%");
-		fout.newLine();
-		fout.write("\t% matches put cube in switch = " + Switch + "%");
-		fout.newLine();
-		fout.write("\t% matches put cube in scale = " + Scale + "%");
-		fout.newLine();
-		fout.write("\t% matches put cube in switch and scale = " + Both + "%");
-		fout.newLine();
-		fout.write("\t% matches did not move = " + Nothing + "%");
-		fout.newLine();
-		fout.write("Starting Position: " + outsideLeft + "% outside left, " + insideLeft + "% inside left, " + middle + "% middle, " + insideRight + "% inside right, " + outsideRight + "% outside right");
 		fout.newLine();
 		
-		fout.write("Stats based on switch/scale colors:");
+		fout.write("Autonomous Abilities:");
+		fout.newLine();
+		
+		fout.write("\tOverall Auto Functions: ");
+		fout.write("\t" + Baseline + "% baseline, " + Switch + "% switch, " + Scale + "% scale, " + Both + "% both");
 		fout.newLine();
 		
 		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both)
 		//Cols = what the robot did (0 = nothing, 1 = baseline, 2 = switch, 3 = scale, 4 = both)
-		fout.write("\t Switch+Scale are on robot's side: ");
-		index = 3;
-		fout.write("\t" + auto[index][0] + "% nothing, " + auto[index][1] + "% baseline, " + auto[index][2] + "% switch, " + auto[index][3] + "% scale, " + auto[index][4] + "% both");
+		
+		fout.write("\t-----Based on plate color-----");
 		fout.newLine();
 		
-		fout.write("\t Switch is on robot's side: ");
+		fout.write("\tSwitch is on robot's side: ");
 		index = 1;
-		fout.write("\t" + auto[index][0] + "% nothing, " + auto[index][1] + "% baseline, " + auto[index][2] + "% switch, " + auto[index][3] + "% scale, " + auto[index][4] + "% both");
+		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
+		else fout.write("\tNo data");
 		fout.newLine();
 		
-		fout.write("\t Scale on robot's side: ");
+		fout.write("\tScale is on robot's side: ");
 		index = 2;
-		fout.write("\t" + auto[index][0] + "% nothing, " + auto[index][1] + "% baseline, " + auto[index][2] + "% switch, " + auto[index][3] + "% scale, " + auto[index][4] + "% both");
+		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
+		else fout.write("\tNo data");
 		fout.newLine();
 		
-		fout.write("\t Neither on robot's side: ");
+		fout.write("\tBoth are on robot's side: ");
+		index = 3;
+		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
+		else fout.write("\tNo data");
+		fout.newLine();
+		
+		fout.write("\tNeither on robot's side: ");
 		index = 0;
-		fout.write("\t" + auto[index][0] + "% nothing, " + auto[index][1] + "% baseline, " + auto[index][2] + "% switch, " + auto[index][3] + "% scale, " + auto[index][4] + "% both");
+		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
+		else fout.write("\tNo data");
 		fout.newLine();
 		
-		fout.write("\t Robot is in the middle: ");
+		fout.write("\tRobot is in the middle: ");
 		index = 0;
-		fout.write("\t" + auto[index][0] + "% nothing, " + auto[index][1] + "% baseline, " + auto[index][2] + "% switch, " + auto[index][3] + "% scale, " + auto[index][4] + "% both");
+		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
+		else fout.write("\tNo data");
 		fout.newLine();
-		
+		fout.newLine();
 		
 		fout.write("All auto comments:");
 		fout.newLine();
@@ -355,7 +461,7 @@ public class Team {
 	
 	public void writeTeleopStats(BufferedWriter fout) throws IOException
 	{
-		fout.write("--------------- Teleop Stats ---------------");
+		fout.write("--------------- Teleop Stats ---------------------");
 		fout.newLine();
 		double EZ = 0; double Switch = 0; double Scale = 0;
 		double pickCube = 0; double portal = 0;
@@ -395,6 +501,8 @@ public class Team {
 		platform = platform/matches.size();
 		neither = neither/matches.size();
 		
+		fout.write("Cube Success Rate: " + getCubeSuccessRate() + "%");
+		fout.newLine();
 		fout.write("Average # cubes placed: " + (totalCubes/matches.size()));
 		fout.newLine();
 		fout.write("\t% cubes in EZ = " + (int)EZ + "%");
@@ -429,7 +537,7 @@ public class Team {
 	
 	public void writeMatches(BufferedWriter fout) throws IOException
 	{
-		fout.write("--------------- Match Data ---------------");
+		fout.write("--------------- Match Data -----------------------");
 		fout.newLine();
 		for (int i = 0; i < matches.size(); i++)
 		{

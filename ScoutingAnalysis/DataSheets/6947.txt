@@ -1,0 +1,53 @@
+Team #6947 - 3 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 3
+Robot Type = Offense
+Average cubes placed: 22.666666666666668
+	Scale: 	30% of cubes, max = 10.0, avg = 7.0
+	Switch:	35% of cubes, max = 10.0, avg = 8.0
+	EZ: 	33% of cubes, max = 10.0, avg = 7.66
+Auto Ability: Baseline; Switch; Switch AND Scale
+Climbing Ability: Climb + Lift
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 5.0 out of 5
+Starting Position: 0% out-left, 33% in-left, 33% middle, 0% in-right, 33% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 33% switch, 0% scale, 66% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 50% switch, 0% scale, 50% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Practice Match #0: Very good
+	Practice Match #1: No comments 👍👍👍👍👍👍
+	Practice Match #3: Place do multiple cubes
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 87.5%
+Average # cubes placed: 22.666666666666668
+	% cubes in EZ = 33%
+	% cubes in Switch = 35%
+	% cubes in Scale = 30%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 3.0 out of 3
+Average driver rating = 3.0 out of 3
+Can robot climb?: Yes
+	% climb in matches = 33%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 66%
+
+--------------- Match Data -----------------------
+Practice #0: Loss, 137 - 187, 3 EZ, 4 Switch, 1 Scale, 10 Failed, climbed+lifted
+	Comments: Savage Tumaz #6947 Taiwan No.1~~~~~~~~~~~~~~~
+Practice #1: Win, 100 - 100, 10 EZ, 10 Switch, 10 Scale, 10 Failed, climbed+lifted
+	Comments: No comments✌️✌️✌️✌️✌️
+Practice #3: Tie, 1 - 1, 10 EZ, 10 Switch, 10 Scale, 10 Failed, climbed
+	Comments: Tippy

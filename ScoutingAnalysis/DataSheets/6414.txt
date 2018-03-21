@@ -1,46 +1,50 @@
-Team #6414 - 1 matches played
-GoS Strategy Ranking: 1
+Team #6414 - 3 matches played
 
---------------- General Stats ---------------
-Win Percentage = 100.0%
-Average Score Difference = 22.0
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 2
 Robot Type = Offense
-Average Auto Rating = 5.0 out of 5
-Average Robot Score = 37.6
+Average cubes placed: 27.666666666666668
+	Scale: 	36% of cubes, max = 10.0, avg = 10.0
+	Switch:	31% of cubes, max = 10.0, avg = 8.66
+	EZ: 	32% of cubes, max = 9.0, avg = 9.0
+Auto Ability: Baseline; Switch AND Scale
+Climbing Ability: Climb + Lift
 
---------------- Autonomous Stats ---------------
-Overall Auto Stats:
-	% matches crossed baseline = 0%
-	% matches put cube in switch = 0%
-	% matches put cube in scale = 0%
-	% matches put cube in switch and scale = 100%
-	% matches did not move = 0%
-Starting Position: 0% outside left, 100% inside left, 0% middle, 0% inside right, 0% outside right
-Stats based on switch/scale colors:
-	 Switch+Scale are on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 100% both
-	 Switch is on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Scale on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Neither on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Robot is in the middle: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 3.6666666666666665 out of 5
+Starting Position: 66% out-left, 33% in-left, 0% middle, 0% in-right, 0% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 33% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 33% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	No data
+
 All auto comments:
 	Practice Match #63: Did anyone put any cubes in EZ in auto? Is there value to that?
 
---------------- Teleop Stats ---------------
-Average # cubes placed: 25.0
-	% cubes in EZ = 36%
-	% cubes in Switch = 24%
-	% cubes in Scale = 40%
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 98.76543209876543%
+Average # cubes placed: 27.666666666666668
+	% cubes in EZ = 32%
+	% cubes in Switch = 31%
+	% cubes in Scale = 36%
 Can get cube from floor?: Yes
 Can get cube from portal?: Yes
 Average cycle time rating = 2.0 out of 3
-Average driver rating = 1.0 out of 3
+Average driver rating = 2.3333333333333335 out of 3
 Can robot climb?: No
 	% climb in matches = 0%
 	% attempted climb in matches = 0%
 	% platform in matches = 0%
 	% did nothing in endgame = 100%
 
---------------- General Comments ---------------
-
---------------- Match Data ---------------
-Practice Match #63: Win, 66 - 44, 9.0 cubes in EZ, 6.0 cubes in Switch, 10.0 cubes in Scale, climbed and lifted others
+--------------- Match Data -----------------------
+Practice #63: Win, 66 - 44, 9 EZ, 6 Switch, 10 Scale, 3 Failed, climbed+lifted
+Practice #1: Win, 1 - 0, 9 EZ, 10 Switch, 10 Scale, 1 Failed, climbed+lifted
+	Comments: Fast as flash
+Practice #1: Win, 1 - 0, 9 EZ, 10 Switch, 10 Scale, 1 Failed, climbed+lifted
+	Comments: Fast as flash

@@ -28,8 +28,8 @@ public class Match {
 	public static double EZ_POINTS = 0.65;
 	public static double SWITCH_POINTS = 1.0;
 	public static double SCALE_POINTS = 1.75;
-	public static double CLIMB_POINTS = 3.0;
-	public static double LIFT_POINTS = 2.5;
+	public static double CLIMB_POINTS = 2.0;
+	public static double LIFT_POINTS = 1.5;
 	
 	public Match(String[] lineInput)
 	{
@@ -82,7 +82,7 @@ public class Match {
 	
 	public int getElementSide()
 	{
-		boolean middle;
+
 		boolean switchSide;
 		boolean scaleSide;
 		
@@ -122,9 +122,9 @@ public class Match {
 		else return 0;
 	}
 	
-	public double getCubesSwitch(boolean includeAuto)
+	public int getCubesSwitch(boolean includeAuto)
 	{
-		double switchCubes = 0;
+		int switchCubes = 0;
 		
 		switchCubes += cubesSwitch;
 		if(includeAuto && autoFunction.contains("SWITCH")) switchCubes += 1;
@@ -132,9 +132,9 @@ public class Match {
 		return switchCubes;
 	}
 	
-	public double getCubesScale(boolean includeAuto)
+	public int getCubesScale(boolean includeAuto)
 	{
-		double scaleCubes = 0;
+		int scaleCubes = 0;
 		
 		scaleCubes += cubesScale;
 		if(includeAuto && autoFunction.contains("SCALE")) scaleCubes += 1;
@@ -142,9 +142,9 @@ public class Match {
 		return scaleCubes;
 	}
 	
-	public double getCubesEZ(boolean includeAuto)
+	public int getCubesEZ(boolean includeAuto)
 	{
-		double EZCubes = 0;
+		int EZCubes = 0;
 		
 		EZCubes += cubesEZ;
 		if(includeAuto && autoFunction.contains("EZ")) EZCubes += 1;
@@ -154,15 +154,21 @@ public class Match {
 	
 	public void writeMatch(BufferedWriter fout) throws IOException
 	{
-		fout.write(matchType + " Match #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints + ", ");
-		fout.write(getCubesEZ(false) + " cubes in EZ, " + getCubesSwitch(false) + " cubes in Switch, " + getCubesScale(false) + " cubes in Scale");
-		if (endgameFunction.contains("Successful")) fout.write(", successfully climbed");
-		else if (endgameFunction.contains("Attempted")) fout.write(", attempted climbed");
+		fout.write(matchType + " #" + matchNumber + ": " + result + ", " + alliancePoints + " - " + opponentPoints + ", ");
+		fout.write(getCubesEZ(false) + " EZ, " + getCubesSwitch(false) + " Switch, " + getCubesScale(false) + " Scale, " + cubesFailed + " Failed");
+		if (endgameFunction.contains("Successful")) fout.write(", climbed");
+		else if (endgameFunction.contains("Attempted")) fout.write(", attempted climb");
 		else if (endgameFunction.contains("Platform")) fout.write(", platform");
 		else if (endgameFunction.contains("Neither")) fout.write(", no endgame");
-		else if (endgameFunction.contains("+")) fout.write(", climbed and lifted others");
+		else if (endgameFunction.contains("+")) fout.write(", climbed+lifted");
 		else if (endgameFunction.contains("Lifted")) fout.write(", lifted others");
 		fout.newLine();
+		if (generalComments.length() != 0)
+		{
+			fout.write("\tComments: " + generalComments);
+			fout.newLine();
+		}
+		
 	}
 	
 	private static String getString(String input)

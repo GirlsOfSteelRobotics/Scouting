@@ -1,2 +1,5 @@
-1. Team 6414: Avg Cubes Placed = 27.0, Can climb?: No
-2. Team 3504: Avg Cubes Placed = 10.5, Can climb?: No
+1. Team 6969: Avg Cubes Placed = 33.0, Can climb?: No
+2. Team 6414: Avg Cubes Placed = 28.33, Can climb?: No
+3. Team 6947: Avg Cubes Placed = 24.66, Can climb?: Yes
+4. Team 3504: Avg Cubes Placed = 14.2, Can climb?: Yes
+5. Team 538: Avg Cubes Placed = 9.0, Can climb?: Yes

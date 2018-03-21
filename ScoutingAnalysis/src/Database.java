@@ -166,6 +166,7 @@ public class Database {
 		fout.write("Max Cubes in Scale*" + ",");
 		fout.write("Max Cubes in Switch*" + ",");
 		fout.write("Max Cubes in EZ*" + ",");
+		fout.write("Autonomous Functions" + ",");
 		fout.write("*does not include autonomous" + ",");
 		fout.newLine();
 		
@@ -181,6 +182,7 @@ public class Database {
 			fout.write(team.getMaxCubesInScale(false) + ",");
 			fout.write(team.getMaxCubesInSwitch(false) + ",");
 			fout.write(team.getMaxCubesInEZ(false) + ",");
+			fout.write(team.getAutoAbility() + ",");
 			fout.newLine();
 		}
 		

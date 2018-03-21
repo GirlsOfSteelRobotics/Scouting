@@ -13,7 +13,7 @@ public class MainLauncher {
 		data.writeGoodScaleRobots("ScaleRobots.txt", 5, false); //at least x cubes, sorted by robot score, includeAuto?
 		data.writeGoodSwitchRobots("SwitchRobots.txt", 4, false); //at least x cubes, sorted by robot score, includeAuto?
 		data.writeMaxCubesList("MaxCubesRanking.txt", false, false); //filename, inlcudeEZ?, includeAuto?
-		data.writeCSVfile("DataSummary.csv");
+		data.writeCSVfile("DataSummary.csv"); //for presentation to team
 	}
 
 }

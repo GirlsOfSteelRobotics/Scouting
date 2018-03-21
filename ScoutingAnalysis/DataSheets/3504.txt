@@ -1,47 +1,55 @@
-Team #3504 - 2 matches played
-GoS Strategy Ranking: 2
+Team #3504 - 5 matches played
 
---------------- General Stats ---------------
-Win Percentage = 75.0%
-Average Score Difference = 65.0
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 4
 Robot Type = Offense
-Average Auto Rating = 4.0 out of 5
-Average Robot Score = 11.875
+Average cubes placed: 12.6
+	Scale: 	31% of cubes, max = 10.0, avg = 4.0
+	Switch:	41% of cubes, max = 10.0, avg = 5.2
+	EZ: 	26% of cubes, max = 10.0, avg = 3.4
+Auto Ability: Baseline; Switch; Scale; Switch AND Scale
+Climbing Ability: Climb
 
---------------- Autonomous Stats ---------------
-Overall Auto Stats:
-	% matches crossed baseline = 0%
-	% matches put cube in switch = 50%
-	% matches put cube in scale = 50%
-	% matches put cube in switch and scale = 0%
-	% matches did not move = 0%
-Starting Position: 50% outside left, 0% inside left, 0% middle, 50% inside right, 0% outside right
-Stats based on switch/scale colors:
-	 Switch+Scale are on robot's side: 	0% nothing, 0% baseline, 50% switch, 50% scale, 0% both
-	 Switch is on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Scale on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Neither on robot's side: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
-	 Robot is in the middle: 	0% nothing, 0% baseline, 0% switch, 0% scale, 0% both
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 4.4 out of 5
+Starting Position: 60% out-left, 20% in-left, 0% middle, 20% in-right, 0% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 40% switch, 20% scale, 40% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 100% both
+	Both are on robot's side: 	100% baseline, 33% switch, 33% scale, 33% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	No data
+
 All auto comments:
+	Practice Match #222: 34 cubes
+	Qualification Match #8: GO maansi + rosie 
 
---------------- Teleop Stats ---------------
-Average # cubes placed: 9.5
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 93.75%
+Average # cubes placed: 12.6
 	% cubes in EZ = 26%
-	% cubes in Switch = 47%
-	% cubes in Scale = 26%
+	% cubes in Switch = 41%
+	% cubes in Scale = 31%
 Can get cube from floor?: Yes
-Can get cube from portal?: No
-Average cycle time rating = 2.0 out of 3
+Can get cube from portal?: Yes
+Average cycle time rating = 2.4 out of 3
 Average driver rating = 2.0 out of 3
-Can robot climb?: No
-	% climb in matches = 0%
+Can robot climb?: Yes
+	% climb in matches = 20%
 	% attempted climb in matches = 0%
-	% platform in matches = 100%
-	% did nothing in endgame = 0%
+	% platform in matches = 60%
+	% did nothing in endgame = 20%
 
---------------- General Comments ---------------
-Practice Match #1: tippy at scale
-
---------------- Match Data ---------------
-Practice Match #1: Win, 330 - 200, 2.0 cubes in EZ, 3.0 cubes in Switch, 1.0 cubes in Scale, platform
-Practice Match #2: Tie, 333 - 333, 3.0 cubes in EZ, 6.0 cubes in Switch, 4.0 cubes in Scale, platform
+--------------- Match Data -----------------------
+Practice #1: Win, 330 - 200, 2 EZ, 3 Switch, 1 Scale, 2 Failed, platform
+	Comments: tippy at scale
+Practice #2: Tie, 333 - 333, 3 EZ, 6 Switch, 4 Scale, 2 Failed, platform
+Practice #222: Win, 20000 - 144, 10 EZ, 10 Switch, 10 Scale, 1 Failed, climbed
+	Comments: zoom i love being a bad scouter nyehehehehe !!
+Practice #27: Loss, 2 - 700000, 0 EZ, 4 Switch, 2 Scale, 2 Failed, platform
+	Comments: V tippy
+Qualification #8: Win, 3504 - 0, 2 EZ, 3 Switch, 3 Scale, 4 Failed, lifted others
+	Comments: I <3 gos 
