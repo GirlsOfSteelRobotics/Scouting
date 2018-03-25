@@ -1,0 +1,65 @@
+Team #1787 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 24
+Robot Type = Offense
+Average cubes placed: 3.2222222222222223
+	Scale: 	27% of cubes, max = 3.0, avg = 0.88
+	Switch:	72% of cubes, max = 6.0, avg = 2.33
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.6666666666666665 out of 5
+Starting Position: 55% out-left, 0% in-left, 0% middle, 33% in-right, 11% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 33% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 40% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #10: Tried to put cube in switch but failed 
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 87.5%
+Average # cubes placed: 3.2222222222222223
+	% cubes in EZ = 0%
+	% cubes in Switch = 72%
+	% cubes in Scale = 27%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 1.6666666666666667 out of 3
+Average driver rating = 1.7777777777777777 out of 3
+Can robot climb?: Yes
+	% climb in matches = 66%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 33%
+
+--------------- Match Data -----------------------
+Qualification #5: Win, 408 - 230, 0 EZ, 4 Switch, 0 Scale, 1 Failed, climbed
+	Comments: Very slow and not super accurate with launching cubes
+Qualification #10: Loss, 185 - 438, 0 EZ, 0 Switch, 2 Scale, 0 Failed, climbed
+	Comments: Good aim when shooting into scale; very slow
+Qualification #19: Loss, 269 - 401, 0 EZ, 4 Switch, 1 Scale, 0 Failed, climbed
+	Comments: Climb was very fast. But cycle time was really slow. It’s a shooter bot. 
+Qualification #34: Win, 299 - 257, 0 EZ, 0 Switch, 3 Scale, 0 Failed, no endgame
+	Comments: Threw the cubes into scale instead of placing  them but seemed to work 
+Qualification #42: Loss, 351 - 398, 0 EZ, 0 Switch, 1 Scale, 3 Failed, climbed
+	Comments: Launcher of cubes into scale is inconsistent 
+Qualification #47: Win, 263 - 254, 0 EZ, 3 Switch, 1 Scale, 1 Failed, no endgame
+	Comments: Yellow card
+Qualification #53: Loss, 220 - 411, 0 EZ, 0 Switch, 0 Scale, 1 Failed, climbed
+	Comments: Shooter bot. Seemed to be having problems with intake. Kept picking up cubes and spitting them out for most of the match. Broke a plate off the scale somehow...
+Qualification #67: Loss, 201 - 360, 0 EZ, 6 Switch, 0 Scale, 2 Failed, climbed
+	Comments: Fast climb; overshot for scale 
+Qualification #78: Loss, 104 - 308, 0 EZ, 4 Switch, 0 Scale, 3 Failed, no endgame
+	Comments: Failed cubes would shoot over the switch and got a penalty because they got caught on the bottom of the scale near the end

@@ -1,4 +1,31 @@
-1. Team 6969: Avg robot score = 40.9, Max Switch Score = 10.0, Can climb?: No
-2. Team 6414: Avg robot score = 36.43, Max Switch Score = 10.0, Can climb?: No
-3. Team 6947: Avg robot score = 30.61, Max Switch Score = 10.0, Can climb?: Yes
-4. Team 3504: Avg robot score = 17.09, Max Switch Score = 10.0, Can climb?: Yes
+1. Team 217: Avg robot score = 12.66, Max Switch Score = 7.0, Climbing Ability: Climb
+2. Team 4028: Avg robot score = 10.52, Max Switch Score = 4.0, Climbing Ability: Climb
+3. Team 2252: Avg robot score = 10.25, Max Switch Score = 6.0, Climbing Ability: Climb + Lift
+4. Team 303: Avg robot score = 9.88, Max Switch Score = 5.0, Climbing Ability: Climb
+5. Team 4522: Avg robot score = 9.85, Max Switch Score = 5.0, Climbing Ability: Climb
+6. Team 4027: Avg robot score = 9.57, Max Switch Score = 5.0, Climbing Ability: None
+7. Team 870: Avg robot score = 9.46, Max Switch Score = 7.0, Climbing Ability: Climb
+8. Team 3504: Avg robot score = 9.25, Max Switch Score = 5.0, Climbing Ability: None
+9. Team 5842: Avg robot score = 8.96, Max Switch Score = 4.0, Climbing Ability: Climb
+10. Team 4145: Avg robot score = 8.94, Max Switch Score = 5.0, Climbing Ability: Climb
+11. Team 156: Avg robot score = 8.72, Max Switch Score = 7.0, Climbing Ability: Climb
+12. Team 4521: Avg robot score = 7.97, Max Switch Score = 8.0, Climbing Ability: Climb + Lift
+13. Team 48: Avg robot score = 7.73, Max Switch Score = 6.0, Climbing Ability: None
+14. Team 3171: Avg robot score = 7.57, Max Switch Score = 4.0, Climbing Ability: Climb
+15. Team 337: Avg robot score = 6.01, Max Switch Score = 6.0, Climbing Ability: Climb
+16. Team 6414: Avg robot score = 5.82, Max Switch Score = 5.0, Climbing Ability: None
+17. Team 3492: Avg robot score = 5.76, Max Switch Score = 4.0, Climbing Ability: None
+18. Team 6032: Avg robot score = 5.7, Max Switch Score = 4.0, Climbing Ability: None
+19. Team 1787: Avg robot score = 5.55, Max Switch Score = 6.0, Climbing Ability: Climb
+20. Team 7274: Avg robot score = 5.02, Max Switch Score = 4.0, Climbing Ability: None
+21. Team 5740: Avg robot score = 4.88, Max Switch Score = 8.0, Climbing Ability: None
+22. Team 2641: Avg robot score = 4.83, Max Switch Score = 4.0, Climbing Ability: Climb
+23. Team 1708: Avg robot score = 4.7, Max Switch Score = 5.0, Climbing Ability: None
+24. Team 3954: Avg robot score = 4.18, Max Switch Score = 6.0, Climbing Ability: None
+25. Team 3511: Avg robot score = 4.13, Max Switch Score = 4.0, Climbing Ability: Climb
+26. Team 5811: Avg robot score = 3.76, Max Switch Score = 6.0, Climbing Ability: None
+27. Team 2656: Avg robot score = 2.76, Max Switch Score = 7.0, Climbing Ability: None
+28. Team 4269: Avg robot score = 2.76, Max Switch Score = 4.0, Climbing Ability: None
+29. Team 117: Avg robot score = 2.4, Max Switch Score = 5.0, Climbing Ability: None
+30. Team 7165: Avg robot score = 2.35, Max Switch Score = 4.0, Climbing Ability: None
+31. Team 5077: Avg robot score = 1.22, Max Switch Score = 6.0, Climbing Ability: None

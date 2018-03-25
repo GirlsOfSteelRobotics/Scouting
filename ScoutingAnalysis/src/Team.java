@@ -207,7 +207,8 @@ public class Team {
 			else if(matches.get(i).endgameFunction.contains("Successful")) climbs++;
 		}
 		
-		if (climbAndLift/matches.size() > 0.1) return "Climb + Lift";
+		if (teamNumber == 4027) return "None";
+		else if (climbAndLift/matches.size() > 0.1) return "Climb + Lift";
 		else if (climbs/matches.size() > 0.1) return "Climb";
 		else if (lifts/matches.size() > 0.1) return "Lift Others";
 		else return "None";
@@ -430,7 +431,7 @@ public class Team {
 		fout.newLine();
 		
 		fout.write("\tRobot is in the middle: ");
-		index = 0;
+		index = 4;
 		if (auto[index][5] > 0) fout.write("\t" + (int)auto[index][1] + "% baseline, " + (int)(auto[index][2]) + "% switch, " + (int)(auto[index][3]) + "% scale, " + (int)auto[index][4] + "% both");
 		else fout.write("\tNo data");
 		fout.newLine();
@@ -466,7 +467,7 @@ public class Team {
 		double EZ = 0; double Switch = 0; double Scale = 0;
 		double pickCube = 0; double portal = 0;
 		double cycleRating = 0; double drivingRating = 0;
-		double climb = 0; double platform = 0; double attempt = 0; double neither = 0;
+		double climb = 0; double climbAndLift = 0; double lift = 0; double platform = 0; double attempt = 0; double neither = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
 			EZ += matches.get(i).cubesEZ;
@@ -482,6 +483,8 @@ public class Team {
 			if (matches.get(i).endgameFunction.contains("Successful")) climb++;
 			else if (matches.get(i).endgameFunction.contains("Attempted")) attempt++;
 			else if (matches.get(i).endgameFunction.contains("Platform")) platform++;
+			else if (matches.get(i).endgameFunction.contains("+")) {climbAndLift++; climb++; lift++;}
+			else if (matches.get(i).endgameFunction.contains("Lift")) lift++;
 			else neither++;
 		}
 		
@@ -500,6 +503,8 @@ public class Team {
 		attempt = attempt/matches.size();
 		platform = platform/matches.size();
 		neither = neither/matches.size();
+		lift = lift/matches.size();
+		climbAndLift = climbAndLift/matches.size();
 		
 		fout.write("Cube Success Rate: " + getCubeSuccessRate() + "%");
 		fout.newLine();
@@ -525,6 +530,10 @@ public class Team {
 		fout.write("Can robot climb?: " + ((climb > 0.1) ? "Yes" : "No"));
 		fout.newLine();
 		fout.write("\t% climb in matches = " + (int)(climb*100) + "%");
+		fout.newLine();
+		fout.write("\t% climb and lifted = " + (int)(climbAndLift*100) + "%");
+		fout.newLine();
+		fout.write("\t% lifted others = " + (int)(lift*100) + "%");
 		fout.newLine();
 		fout.write("\t% attempted climb in matches = " + (int)(attempt*100) + "%");
 		fout.newLine();

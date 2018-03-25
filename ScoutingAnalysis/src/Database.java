@@ -27,6 +27,14 @@ public class Database {
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
+			
+			if (teamNumber == 5872) teamNumber = 5842;
+			if (teamNumber == 27) teamNumber = 7274;
+			if (teamNumber == 2541) teamNumber = 2641;
+			if (teamNumber == 3855) teamNumber = 3955;
+			if (teamNumber == 3053) teamNumber = 2053;
+			if (teamNumber == 3842) teamNumber = 5842;
+			if (teamNumber == 6974) teamNumber = 6947;
 	
 			//Create new match object
 			Match match = new Match(lineInput);
@@ -46,6 +54,15 @@ public class Database {
 			
 			if(includePracticeMatches || !match.matchType.contains("Practice"))
 				team.addMatch(match);
+		}
+		
+		for (int i = 0; i < data.size(); i++)
+		{
+			if (data.get(i).matches.size() == 0) 
+			{
+				data.remove(i);
+				i--;
+			}
 		}
 		
 		file.close();
@@ -143,7 +160,7 @@ public class Database {
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			fout.write("Avg Cubes Placed = " + cubes);
 			//fout.write(", Max Cubes Placed = " + data.get(i).getMaxCubes());
-			fout.write(", Can climb?: " + (data.get(i).canRobotClimb() ? "Yes" : "No"));
+			fout.write(", Climbing Ability: " + data.get(i).getClimbingAbility());
 			fout.newLine();
 		}
 		
@@ -200,7 +217,7 @@ public class Database {
 			fout.write((i+1) + ". Team " + data.get(i).teamNumber + ": ");
 			//fout.write("Avg Cubes Placed = " + cubes);
 			fout.write("Max Cubes Placed = " + data.get(i).getMaxCubes(includeEZ, includeAuto));
-			fout.write(", Can climb?: " + (data.get(i).canRobotClimb() ? "Yes" : "No"));
+			fout.write(", Climbing Ability: " + data.get(i).getClimbingAbility());
 			fout.newLine();
 		}
 		
@@ -263,7 +280,36 @@ public class Database {
 			double scale = ((int)(goodScaleRobots.get(i).getMaxCubesInScale(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + goodScaleRobots.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Scale Score = " + scale);
-			fout.write(", Can climb?: " + (goodScaleRobots.get(i).canRobotClimb() ? "Yes" : "No"));
+			fout.write(", Climbing Ability: " + goodScaleRobots.get(i).getClimbingAbility());
+			fout.newLine();
+		}
+		
+		fout.close();
+		
+	}
+	
+	public void writeGoodEZRobots(String filename, int threshold, boolean includeAuto) throws IOException
+	{
+		ArrayList<Team> goodEZRobots = new ArrayList<Team>();
+		for (int i = 0; i < data.size(); i++)
+		{
+			if (data.get(i).getMaxCubesInEZ(includeAuto) >= threshold)
+				goodEZRobots.add(data.get(i));
+		}
+		
+		goodEZRobots = sortEZRobots(goodEZRobots);
+		
+		FileWriter outFile = new FileWriter(filename);
+		BufferedWriter fout = new BufferedWriter(outFile);
+		
+		for (int i = 0; i < goodEZRobots.size(); i++)
+		{
+			double Switch = ((int)(goodEZRobots.get(i).getMaxCubesInSwitch(includeAuto)*100))/100.0;
+			double EZ = ((int)(goodEZRobots.get(i).getMaxCubesInEZ(includeAuto)*100))/100.0;
+			fout.write((i+1) + ". Team " + goodEZRobots.get(i).teamNumber + ": ");
+			fout.write("Max EZ Score = " + EZ);
+			fout.write(", Max Switch Score = " + Switch);
+			fout.write(", Climbing Ability: " + goodEZRobots.get(i).getClimbingAbility());
 			fout.newLine();
 		}
 		
@@ -312,7 +358,7 @@ public class Database {
 			double Switch = ((int)(goodSwitchRobots.get(i).getMaxCubesInSwitch(includeAuto)*100))/100.0;
 			fout.write((i+1) + ". Team " + goodSwitchRobots.get(i).teamNumber + ": Avg robot score = " + score);
 			fout.write(", Max Switch Score = " + Switch);
-			fout.write(", Can climb?: " + (goodSwitchRobots.get(i).canRobotClimb() ? "Yes" : "No"));
+			fout.write(", Climbing Ability: " + goodSwitchRobots.get(i).getClimbingAbility());
 			fout.newLine();
 		}
 		
@@ -321,6 +367,25 @@ public class Database {
 	}
 	
 	public ArrayList<Team> sortScaleRobots(ArrayList<Team> unsortedRobots)
+	{
+		ArrayList<Team> sortedTeams = new ArrayList<Team>();
+		
+		while(unsortedRobots.size() != 0)
+		{
+			Team max = unsortedRobots.get(0);
+			for(int i = 1; i < unsortedRobots.size(); i++)
+			{
+				if(unsortedRobots.get(i).getAverageRobotScore() > max.getAverageRobotScore())
+					max = unsortedRobots.get(i);
+			}
+			sortedTeams.add(max);
+			unsortedRobots.remove(max);
+		}
+		
+		return sortedTeams;
+	}
+	
+	public ArrayList<Team> sortEZRobots(ArrayList<Team> unsortedRobots)
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		

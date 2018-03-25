@@ -1,0 +1,67 @@
+Team #2656 - 12 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 39
+Robot Type = Offense
+Average cubes placed: 3.6666666666666665
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	29% of cubes, max = 7.0, avg = 1.08
+	EZ: 	70% of cubes, max = 8.0, avg = 2.58
+Auto Ability: Baseline
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 1.9166666666666667 out of 5
+Starting Position: 66% out-left, 0% in-left, 0% middle, 0% in-right, 33% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	83% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	60% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #36: Crossed baseline. But was pushed back to the end.
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 98.68421052631578%
+Average # cubes placed: 3.6666666666666665
+	% cubes in EZ = 70%
+	% cubes in Switch = 29%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.5833333333333333 out of 3
+Average driver rating = 1.5 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 75%
+	% did nothing in endgame = 25%
+
+--------------- Match Data -----------------------
+Qualification #6: Win, 355 - 72, 3 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+Qualification #12: Win, 381 - 71, 0 EZ, 3 Switch, 0 Scale, 1 Failed, platform
+Qualification #21: Loss, 235 - 348, 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: Robot didn’t do much just kinda drove around 
+Qualification #27: Loss, 172 - 397, 0 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Only played defense and blocked other robots.
+Qualification #36: Win, 301 - 280, 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: Lost communication. 
+Qualification #44: Win, 472 - 181, 6 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Helped out a teammates stuck bot. Speedy little switch/EZ bot. 
+Qualification #55: Loss, 224 - 287, 0 EZ, 7 Switch, 0 Scale, 0 Failed, platform
+	Comments: Chased cubes a lot. Wasted a lot of time collecting cubes. 
+Qualification #66: Loss, 285 - 338, 8 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+Qualification #71: Loss, 124 - 399, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Light on drivers station was flashing. No connection? dt didn’t seem surprised tho. Closed their computer in the middle. Gave up I guess. 
+Elimination #2: Win, 382 - 340, 6 EZ, 0 Switch, 0 Scale, 1 Failed, platform
+	Comments: Really bad at handling cubes. Hard for them to get and put in exchange. They also basically only did exchange with bad cycle time. Only attempted platform but couldn’t get. If we took all of the cubes close to exchange they would be useless. 
+Elimination #6: Loss, 318 - 373, 4 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+Elimination #9: Loss, 312 - 416, 4 EZ, 1 Switch, 0 Scale, 1 Failed, platform
+	Comments: They were sloppy this round 

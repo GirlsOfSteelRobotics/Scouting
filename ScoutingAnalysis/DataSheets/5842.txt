@@ -1,0 +1,80 @@
+Team #5842 - 13 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 10
+Robot Type = Offense
+Average cubes placed: 5.3076923076923075
+	Scale: 	60% of cubes, max = 5.0, avg = 3.23
+	Switch:	26% of cubes, max = 4.0, avg = 1.38
+	EZ: 	13% of cubes, max = 4.0, avg = 0.69
+Auto Ability: Baseline; Switch; Scale
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.923076923076923 out of 5
+Starting Position: 46% out-left, 0% in-left, 0% middle, 0% in-right, 53% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	92% baseline, 15% switch, 23% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 50% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	83% baseline, 16% switch, 50% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #8: Attempted scale auto but crashed into another robot so it didn’t work 
+	Qualification Match #17: Tried to do a scale but dropped
+	Qualification Match #43: Moved really far and across 
+	Qualification Match #47: Put cube in the wrong side. 
+	Qualification Match #61: Fast
+	Qualification Match #66: Did not go far enough to cross baseline
+	Qualification Match #76: Tried to put cube in scale
+	Elimination Match #1: Got stuck on scale
+	Elimination Match #5: Missed scale
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 94.73684210526315%
+Average # cubes placed: 5.3076923076923075
+	% cubes in EZ = 13%
+	% cubes in Switch = 26%
+	% cubes in Scale = 60%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.9230769230769231 out of 3
+Average driver rating = 2.076923076923077 out of 3
+Can robot climb?: Yes
+	% climb in matches = 15%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 30%
+	% platform in matches = 15%
+	% did nothing in endgame = 38%
+
+--------------- Match Data -----------------------
+Qualification #8: Loss, 410 - 244, 0 EZ, 2 Switch, 3 Scale, 0 Failed, no endgame
+	Comments: Better off for collecting when cube is dropped from portal and onto floor. Awarded climb bc they were being blocked by the other team.
+Qualification #17: Loss, 151 - 267, 0 EZ, 0 Switch, 5 Scale, 1 Failed, attempted climb
+	Comments: Very aggressive throws for the scale that causes drops. Very tippy. Climbed but then fell. Collectors were glitchy so we had to slam into a wall. 
+Qualification #23: Loss, 269 - 329, 0 EZ, 2 Switch, 4 Scale, 0 Failed, attempted climb
+	Comments: Climbed but then fell down when robot was disabled. Idk if this counts. Robot is fast and stable. It did get caught on the scale and got a penalty but it corrected itself. 
+Qualification #34: Win, 299 - 257, 0 EZ, 0 Switch, 3 Scale, 2 Failed, platform
+	Comments: Sturdy little robot. Hardly tippy at all. 
+Qualification #43: Win, 397 - 292, 0 EZ, 2 Switch, 5 Scale, 1 Failed, attempted climb
+	Comments: Pretty tippy. Go less accurate as the match went on 
+Qualification #47: Loss, 254 - 263, 4 EZ, 0 Switch, 1 Scale, 1 Failed, no endgame
+	Comments: Tippy. Robot stopped working towards the end. 
+Qualification #61: Win, 426 - 201, 2 EZ, 4 Switch, 2 Scale, 0 Failed, climbed
+	Comments: Very fast and versatile; fell down on climb but didn’t touch platform
+Qualification #66: Win, 338 - 285, 2 EZ, 2 Switch, 2 Scale, 2 Failed, climbed
+	Comments: Their collector has these floppy wheels on it so it needs to push a cube against a wall in order to collect it. It makes the robot cycle time very slow. 
+Qualification #76: Win, 343 - 303, 1 EZ, 3 Switch, 2 Scale, 0 Failed, no endgame
+	Comments: Very flexible robot
+Elimination #1: Win, 299 - 136, 0 EZ, 0 Switch, 4 Scale, 0 Failed, platform
+Elimination #5: Win, 316 - 250, 0 EZ, 2 Switch, 3 Scale, 0 Failed, no endgame
+	Comments: Good at scale
+Elimination #11: Loss, 223 - 358, 0 EZ, 0 Switch, 4 Scale, 2 Failed, attempted climb
+	Comments: Didn’t have time to complete climb
+Elimination #13: Loss, 213 - 345, 0 EZ, 1 Switch, 4 Scale, 2 Failed, no endgame
+	Comments: Blocked by another robot in end game

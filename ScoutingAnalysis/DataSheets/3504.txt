@@ -1,55 +1,73 @@
-Team #3504 - 5 matches played
+Team #3504 - 14 matches played
 
 --------------- Quick Facts ----------------------
-GoS Strategy Ranking: 4
+GoS Strategy Ranking: 9
 Robot Type = Offense
-Average cubes placed: 12.6
-	Scale: 	31% of cubes, max = 10.0, avg = 4.0
-	Switch:	41% of cubes, max = 10.0, avg = 5.2
-	EZ: 	26% of cubes, max = 10.0, avg = 3.4
-Auto Ability: Baseline; Switch; Scale; Switch AND Scale
-Climbing Ability: Climb
+Average cubes placed: 5.571428571428571
+	Scale: 	71% of cubes, max = 8.0, avg = 4.0
+	Switch:	19% of cubes, max = 5.0, avg = 1.07
+	EZ: 	8% of cubes, max = 5.0, avg = 0.5
+Auto Ability: Baseline; Switch
+Climbing Ability: None
 
 --------------- Autonomous Stats -----------------
-Average Auto Rating = 4.4 out of 5
-Starting Position: 60% out-left, 20% in-left, 0% middle, 20% in-right, 0% out-right
+Average Auto Rating = 3.2857142857142856 out of 5
+Starting Position: 14% out-left, 0% in-left, 85% middle, 0% in-right, 0% out-right
 
 Autonomous Abilities:
-	Overall Auto Functions: 	100% baseline, 40% switch, 20% scale, 40% both
+	Overall Auto Functions: 	100% baseline, 85% switch, 0% scale, 0% both
 	-----Based on plate color-----
-	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
-	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 100% both
-	Both are on robot's side: 	100% baseline, 33% switch, 33% scale, 33% both
-	Neither on robot's side: 	No data
-	Robot is in the middle: 	No data
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
 
 All auto comments:
-	Practice Match #222: 34 cubes
-	Qualification Match #8: GO maansi + rosie 
+	Qualification Match #5: We put one cube in the switch. Fast auto.
+	Qualification Match #18: Very fast. 
+	Qualification Match #40: Attempted scale auto
 
 --------------- Teleop Stats ---------------------
-Cube Success Rate: 93.75%
-Average # cubes placed: 12.6
-	% cubes in EZ = 26%
-	% cubes in Switch = 41%
-	% cubes in Scale = 31%
+Cube Success Rate: 90.625%
+Average # cubes placed: 5.571428571428571
+	% cubes in EZ = 8%
+	% cubes in Switch = 19%
+	% cubes in Scale = 71%
 Can get cube from floor?: Yes
-Can get cube from portal?: Yes
-Average cycle time rating = 2.4 out of 3
+Can get cube from portal?: No
+Average cycle time rating = 1.9285714285714286 out of 3
 Average driver rating = 2.0 out of 3
-Can robot climb?: Yes
-	% climb in matches = 20%
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
 	% attempted climb in matches = 0%
-	% platform in matches = 60%
-	% did nothing in endgame = 20%
+	% platform in matches = 42%
+	% did nothing in endgame = 57%
 
 --------------- Match Data -----------------------
-Practice #1: Win, 330 - 200, 2 EZ, 3 Switch, 1 Scale, 2 Failed, platform
-	Comments: tippy at scale
-Practice #2: Tie, 333 - 333, 3 EZ, 6 Switch, 4 Scale, 2 Failed, platform
-Practice #222: Win, 20000 - 144, 10 EZ, 10 Switch, 10 Scale, 1 Failed, climbed
-	Comments: zoom i love being a bad scouter nyehehehehe !!
-Practice #27: Loss, 2 - 700000, 0 EZ, 4 Switch, 2 Scale, 2 Failed, platform
-	Comments: V tippy
-Qualification #8: Win, 3504 - 0, 2 EZ, 3 Switch, 3 Scale, 4 Failed, lifted others
-	Comments: I <3 gos 
+Qualification #5: Loss, 230 - 408, 0 EZ, 5 Switch, 3 Scale, 0 Failed, platform
+	Comments: Focused more on the switch.
+Qualification #12: Win, 381 - 71, 0 EZ, 0 Switch, 8 Scale, 0 Failed, platform
+Qualification #18: Loss, 199 - 373, 0 EZ, 0 Switch, 5 Scale, 2 Failed, no endgame
+	Comments: Lost some wheels on the collector. Dropped two scale cubes. 
+Qualification #31: Win, 324 - 170, 0 EZ, 5 Switch, 0 Scale, 0 Failed, platform
+	Comments: Interesting defense while holding cube. Everything seemed to be working well
+Qualification #40: Loss, 260 - 431, 0 EZ, 0 Switch, 6 Scale, 2 Failed, platform
+Qualification #49: Win, 338 - 288, 0 EZ, 0 Switch, 7 Scale, 1 Failed, platform
+	Comments: Almost tipped over. Very dangerous. The collecting is a little off. Seems to have trouble but great driving!
+Qualification #61: Win, 426 - 201, 5 EZ, 4 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Great bot :)
+Qualification #68: Loss, 312 - 379, 0 EZ, 0 Switch, 6 Scale, 1 Failed, platform
+	Comments: Awesome!!
+Qualification #73: Loss, 301 - 307, 2 EZ, 0 Switch, 6 Scale, 0 Failed, no endgame
+Elimination #4: Win, 361 - 281, 0 EZ, 0 Switch, 4 Scale, 0 Failed, no endgame
+	Comments: Woooo
+Elimination #8: Loss, 313 - 384, 0 EZ, 0 Switch, 2 Scale, 4 Failed, no endgame
+	Comments: We really struggled with putting cubes in when it was tipped up
+Elimination #10: Win, 331 - 308, 0 EZ, 1 Switch, 3 Scale, 1 Failed, no endgame
+	Comments: The other alliance kept blocking us
+Elimination #12: Loss, 291 - 370, 0 EZ, 0 Switch, 3 Scale, 1 Failed, no endgame
+	Comments: Motor fell off:(
+Elimination #14: Win, 442 - 309, 0 EZ, 0 Switch, 3 Scale, 3 Failed, no endgame

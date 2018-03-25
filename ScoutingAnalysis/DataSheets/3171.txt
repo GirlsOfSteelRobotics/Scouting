@@ -1,0 +1,69 @@
+Team #3171 - 12 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 18
+Robot Type = Offense
+Average cubes placed: 5.25
+	Scale: 	46% of cubes, max = 5.0, avg = 2.41
+	Switch:	33% of cubes, max = 4.0, avg = 1.75
+	EZ: 	20% of cubes, max = 8.0, avg = 1.08
+Auto Ability: Baseline; Switch; Scale
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.3333333333333335 out of 5
+Starting Position: 0% out-left, 0% in-left, 16% middle, 0% in-right, 83% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	75% baseline, 8% switch, 8% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 50% switch, 0% scale, 0% both
+	Scale is on robot's side: 	66% baseline, 0% switch, 33% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	0% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #3: Tried to drop cube into scale but missed 
+	Qualification Match #64: It turned in a circle and dropped the cube
+	Elimination Match #6: 1
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.25
+	% cubes in EZ = 20%
+	% cubes in Switch = 33%
+	% cubes in Scale = 46%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.1666666666666665 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: Yes
+	% climb in matches = 33%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 58%
+	% did nothing in endgame = 8%
+
+--------------- Match Data -----------------------
+Qualification #3: Win, 375 - 218, 3 EZ, 1 Switch, 2 Scale, 1 Failed, platform
+	Comments: Stable; very weak and EXTREMELY shaky claw (hard time grabbing and ripping cubes) ; pretty good at EZ
+Qualification #10: Win, 438 - 185, 0 EZ, 2 Switch, 4 Scale, 0 Failed, climbed
+	Comments: Very efficient but slow with second scale layer
+Qualification #18: Win, 373 - 199, 0 EZ, 1 Switch, 5 Scale, 3 Failed, climbed
+Qualification #27: Win, 397 - 172, 0 EZ, 2 Switch, 2 Scale, 0 Failed, platform
+	Comments: Robot froze a couple of times. Unclear as to why. It’s a bit tippy and the defense played against it was very effective at limiting its abilities. Efficient scale robot when it’s moving. 
+Qualification #38: Win, 585 - 165, 8 EZ, 2 Switch, 0 Scale, 0 Failed, platform
+	Comments: This alliance was stacked. Had one robot from other alliance defending it the entire time but it still did really well running cubes. 
+Qualification #50: Win, 362 - 151, 0 EZ, 4 Switch, 2 Scale, 2 Failed, platform
+	Comments: Hard time picking up cubes 
+Qualification #55: Loss, 89 - 373, 0 EZ, 1 Switch, 0 Scale, 3 Failed, no endgame
+	Comments: Rough. A hook that they use to climb with fell off and was dragging behind them and then got tangled in their chassis. Their lift doesn’t seem to be quite talll enough either when the scale is at its highest and the cube has shifted down in the collector. 
+Qualification #64: Win, 330 - 233, 2 EZ, 3 Switch, 0 Scale, 0 Failed, platform
+	Comments: Maybe could have gotten more in the ez but they were defended for a while
+Qualification #46: Win, 353 - 303, 0 EZ, 0 Switch, 5 Scale, 1 Failed, climbed
+Elimination #2: Win, 382 - 340, 0 EZ, 0 Switch, 3 Scale, 0 Failed, platform
+	Comments: Hit scale twice
+Elimination #6: Loss, 373 - 318, 0 EZ, 1 Switch, 3 Scale, 0 Failed, platform
+Elimination #9: Loss, 312 - 415, 0 EZ, 4 Switch, 3 Scale, 0 Failed, climbed

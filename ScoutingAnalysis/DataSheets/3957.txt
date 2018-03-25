@@ -1,0 +1,66 @@
+Team #3957 - 8 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 52
+Robot Type = Offense
+Average cubes placed: 0.375
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	66% of cubes, max = 1.0, avg = 0.25
+	EZ: 	33% of cubes, max = 1.0, avg = 0.12
+Auto Ability: Baseline
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.25 out of 5
+Starting Position: 75% out-left, 0% in-left, 0% middle, 0% in-right, 25% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	87% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	66% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Elimination Match #21: Very fast
+	Qualification Match #38: Medium pace. 
+	Qualification Match #64: Medium oace
+	Qualification Match #72: Didn’t make it across line
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 0.375
+	% cubes in EZ = 33%
+	% cubes in Switch = 66%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.0 out of 3
+Average driver rating = 1.125 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 25%
+	% did nothing in endgame = 75%
+
+--------------- Match Data -----------------------
+Qualification #17: Win, 267 - 151, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Cannot pick up cubes horrible 
+Elimination #21: Win, 348 - 235, 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: Collectors seemed to be broken. 
+Qualification #31: Loss, 170 - 324, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Didn’t do anything smh. Seems stable but does it matter?
+Qualification #38: Loss, 165 - 585, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Collector didn’t work. Really slow. Didn’t even really try defense. Did nothing. 
+Qualification #49: Win, 338 - 288, 1 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: LITERALLY SO BAD
+Qualification #54: Loss, 411 - 220, 0 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Didn’t really do much at all after 30 seconds
+Qualification #64: Win, 330 - 233, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: The collectors didn’t work. Awkward driving
+Qualification #72: Loss, 330 - 334, 0 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Their collector was very broken. Then they sat there for quite a bit. Then they got on the platform

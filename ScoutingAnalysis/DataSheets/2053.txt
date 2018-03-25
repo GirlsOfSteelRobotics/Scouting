@@ -1,0 +1,78 @@
+Team #2053 - 14 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 26
+Robot Type = Offense
+Average cubes placed: 4.214285714285714
+	Scale: 	13% of cubes, max = 3.0, avg = 0.57
+	Switch:	11% of cubes, max = 3.0, avg = 0.5
+	EZ: 	74% of cubes, max = 6.0, avg = 3.14
+Auto Ability: Baseline; Switch
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.357142857142857 out of 5
+Starting Position: 50% out-left, 0% in-left, 21% middle, 7% in-right, 21% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	92% baseline, 14% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	66% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 66% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #4: Moved quickly to scale but failed 
+	Qualification Match #13: Dropped cube without moving much on ground
+	Qualification Match #40: Hit another red robot
+	Qualification Match #44: Very fast. Attempted switch
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.214285714285714
+	% cubes in EZ = 74%
+	% cubes in Switch = 11%
+	% cubes in Scale = 13%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.6428571428571428 out of 3
+Average driver rating = 1.4285714285714286 out of 3
+Can robot climb?: Yes
+	% climb in matches = 35%
+	% climb and lifted = 0%
+	% lifted others = 21%
+	% attempted climb in matches = 14%
+	% platform in matches = 14%
+	% did nothing in endgame = 14%
+
+--------------- Match Data -----------------------
+Qualification #4: Win, 385 - 191, 6 EZ, 0 Switch, 1 Scale, 0 Failed, attempted climb
+	Comments: Probably could climb but diff robot tried and failed. 
+Qualification #13: Loss, 344 - 385, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Didn’t contribute to scoring at all
+Qualification #22: Loss, 162 - 320, 0 EZ, 0 Switch, 2 Scale, 2 Failed, climbed
+	Comments: Not that good
+Qualification #35: Win, 236 - 222, 6 EZ, 0 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Tried to lift two others but only one got onto it on time and it got lopsided. It couldn’t collect any cubes this match because of a bottom that went with their lift mechanism. It was at an angle and slightly raised so no cube could go into it. 
+Qualification #40: Loss, 260 - 431, 3 EZ, 0 Switch, 0 Scale, 0 Failed, attempted climb
+	Comments: Started smoking. Does have a double lift but wasn’t working n
+Qualification #44: Loss, 181 - 472, 1 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Collector broke after auto so the robot played very aggressive defense through the match
+Qualification #59: Win, 348 - 199, 3 EZ, 0 Switch, 1 Scale, 0 Failed, platform
+	Comments: Had a very hard time getting the cube off the ground 
+Qualification #69: Loss, 261 - 369, 0 EZ, 0 Switch, 0 Scale, 1 Failed, climbed
+	Comments: Has the cool wheels. Wandered aimlessly for most of the match. Very clumsy driving. DROPPED a robot it was lifting and may have broken it.
+Qualification #76: Loss, 303 - 353, 0 EZ, 2 Switch, 3 Scale, 0 Failed, climbed
+	Comments: THIS WAS 2053 I typed the wrong number
+Elimination #4: Win, 361 - 286, 5 EZ, 3 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Very good at switch and ez. 
+Elimination #8: Loss, 313 - 394, 6 EZ, 0 Switch, 0 Scale, 0 Failed, lifted others
+	Comments: Overall good at EZ. 
+Elimination #10: Win, 331 - 308, 4 EZ, 2 Switch, 1 Scale, 1 Failed, lifted others
+	Comments: Wasn’t fully lifted. 
+Qualification #12: Loss, 291 - 370, 4 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Attempted lift by another robot. 
+Elimination #14: Win, 442 - 300, 6 EZ, 0 Switch, 0 Scale, 0 Failed, lifted others
+	Comments: Collector wheel fell off. Good team work. 

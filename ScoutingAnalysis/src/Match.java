@@ -36,6 +36,8 @@ public class Match {
 		
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
+		if (matchNumber == 3955) matchNumber = 24;
+		if (matchNumber == 7274) matchNumber = 27;
 		autoPosition = getString(lineInput[4]);
 		switchPosition = getString(lineInput[5]);
 		scalePosition = getString(lineInput[6]);

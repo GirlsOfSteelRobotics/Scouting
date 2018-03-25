@@ -1,0 +1,82 @@
+Team #870 - 13 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 8
+Robot Type = Offense
+Average cubes placed: 6.3076923076923075
+	Scale: 	36% of cubes, max = 6.0, avg = 2.3
+	Switch:	26% of cubes, max = 7.0, avg = 1.69
+	EZ: 	36% of cubes, max = 8.0, avg = 2.3
+Auto Ability: Baseline; Switch
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 3.769230769230769 out of 5
+Starting Position: 7% out-left, 0% in-left, 84% middle, 0% in-right, 7% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 69% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 72% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #13: Went to the correct side but couldn’t get cube into switch
+	Qualification Match #24: One cube quickly
+	Qualification Match #32: 2 cubes
+	Qualification Match #32: Two cubes in switch
+	Qualification Match #38: Attempted to do switch but missed
+	Qualification Match #53: 2 cube auto and they grab a third
+	Qualification Match #58: Attempted scale but lost cube
+	Qualification Match #67: Missed the two cube switch auto. Didn’t get either cube in
+	Qualification Match #73: Tried for two in switch
+	Elimination Match #2: 2 cube switch
+	Elimination Match #6: 2 cubes in switch
+	Elimination Match #9: 2 cube switch auto
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 97.61904761904762%
+Average # cubes placed: 6.3076923076923075
+	% cubes in EZ = 36%
+	% cubes in Switch = 26%
+	% cubes in Scale = 36%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 2.3846153846153846 out of 3
+Average driver rating = 2.1538461538461537 out of 3
+Can robot climb?: Yes
+	% climb in matches = 61%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 15%
+	% platform in matches = 23%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #8: Win, 410 - 244, 4 EZ, 1 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Really efficient and fast in the beginning but kinda lost in the middle but pulled through at the end with the climb
+Qualification #13: Win, 385 - 344, 8 EZ, 2 Switch, 0 Scale, 1 Failed, attempted climb
+	Comments: Very fast EZ runner. Pretty fast climb too. They aren’t as good at the switch but can do it pretty well. 
+Qualification #24: Win, 447 - 285, 3 EZ, 3 Switch, 1 Scale, 1 Failed, climbed
+	Comments: Helped its partner get unstuck. Can do everything pretty quickly
+Qualification #32: Win, 384 - 198, 2 EZ, 2 Switch, 1 Scale, 0 Failed, platform
+Qualification #32: Win, 384 - 198, 2 EZ, 2 Switch, 1 Scale, 0 Failed, attempted climb
+	Comments: Something was wrong with the climber. Struggled to collect cubes a bit
+Qualification #38: Loss, 165 - 585, 6 EZ, 7 Switch, 0 Scale, 1 Failed, platform
+	Comments: Really interesting and reliable lift contraption. Fast cycles between switch near driver stations and EZ!
+Qualification #53: Loss, 392 - 279, 5 EZ, 1 Switch, 5 Scale, 0 Failed, climbed
+	Comments: Yes fast and reliable robot
+Qualification #58: Win, 452 - 275, 0 EZ, 0 Switch, 1 Scale, 4 Failed, platform
+	Comments: It was obviously a scale robot but kept missing the scale. Climbed? Couldn’t see.
+Qualification #67: Loss, 201 - 360, 0 EZ, 1 Switch, 4 Scale, 3 Failed, climbed
+	Comments: Has a rope/side climber so it can climb with another robot. Doesn’t take long to set it up. They kept trying to put cubes on the scale in a place where there were a lot of cubes and lot a couple cubes that way even thought there was an empty place to put them. 
+Qualification #73: Win, 307 - 301, 0 EZ, 0 Switch, 6 Scale, 0 Failed, climbed
+	Comments: Did decently at scale. Can’t stack a 2nd layer when it is tipped against them. 
+Elimination #2: Win, 382 - 340, 0 EZ, 1 Switch, 4 Scale, 1 Failed, climbed
+Elimination #6: Loss, 318 - 373, 0 EZ, 0 Switch, 4 Scale, 1 Failed, climbed
+	Comments: Pretty fast at moving around field
+Elimination #9: Loss, 381 - 416, 0 EZ, 2 Switch, 3 Scale, 2 Failed, climbed
+	Comments: Can climb with another robot on the same bar

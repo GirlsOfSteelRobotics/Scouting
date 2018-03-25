@@ -1,0 +1,70 @@
+Team #5811 - 12 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 34
+Robot Type = Offense
+Average cubes placed: 4.25
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	45% of cubes, max = 6.0, avg = 1.91
+	EZ: 	54% of cubes, max = 6.0, avg = 2.33
+Auto Ability: Baseline; Switch
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.3333333333333335 out of 5
+Starting Position: 41% out-left, 0% in-left, 50% middle, 0% in-right, 8% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	58% baseline, 33% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	66% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 50% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	50% baseline, 50% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #66: After switch picked up cube and went to front of EZ
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.25
+	% cubes in EZ = 54%
+	% cubes in Switch = 45%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.8333333333333333 out of 3
+Average driver rating = 2.0833333333333335 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 16%
+	% did nothing in endgame = 83%
+
+--------------- Match Data -----------------------
+Qualification #9: Win, 290 - 181, 6 EZ, 4 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Very fast and accurate. Great for EZ. A bit slower at the switch and has accuracy issues but would recommend. Went from being defense to offense halfway through match. 
+Qualification #15: Win, 415 - 213, 4 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: About halfway through they disconnected with their robot 
+Qualification #19: Win, 401 - 269, 4 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: No lift. Not that efficient
+Qualification #33: Loss, 246 - 456, 0 EZ, 3 Switch, 0 Scale, 2 Failed, no endgame
+	Comments: Attempted to be lifted by another robot but did not climb 
+Qualification #37: Loss, 251 - 335, 0 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame
+Qualification #50: Win, 362 - 151, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Lost connection right after auto
+Qualification #59: Win, 308 - 198, 0 EZ, 6 Switch, 0 Scale, 2 Failed, no endgame
+	Comments: Attempted to be lifted by another robot but fell off the platform
+Qualification #66: Win, 338 - 285, 1 EZ, 0 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Lost connection whole teleop 
+Qualification #72: Win, 307 - 301, 3 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Robot lost connection in middle of match
+Elimination #1: Win, 299 - 136, 4 EZ, 1 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Lost connection for a little bit 
+Elimination #5: Win, 316 - 250, 4 EZ, 5 Switch, 0 Scale, 0 Failed, platform
+	Comments: Claw unstable 
+Elimination #3: Loss, 213 - 345, 2 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Froze for most of the match

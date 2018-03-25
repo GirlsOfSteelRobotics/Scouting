@@ -1,0 +1,65 @@
+Team #2603 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 42
+Robot Type = Offense
+Average cubes placed: 2.2222222222222223
+	Scale: 	35% of cubes, max = 2.0, avg = 0.77
+	Switch:	35% of cubes, max = 2.0, avg = 0.77
+	EZ: 	30% of cubes, max = 4.0, avg = 0.66
+Auto Ability: Baseline
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.3333333333333335 out of 5
+Starting Position: 11% out-left, 0% in-left, 0% middle, 22% in-right, 66% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	77% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	50% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #69: Tried to get cube in
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 90.47619047619048%
+Average # cubes placed: 2.2222222222222223
+	% cubes in EZ = 30%
+	% cubes in Switch = 35%
+	% cubes in Scale = 35%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.1111111111111112 out of 3
+Average driver rating = 1.3333333333333333 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 22%
+	% did nothing in endgame = 77%
+
+--------------- Match Data -----------------------
+Qualification #8: Loss, 244 - 410, 0 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Had trouble picking up cubes.
+Qualification #15: Loss, 213 - 415, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Cannot pick up a cube to save their life 
+Qualification #26: Loss, 288 - 364, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: It didn’t do anything other than drive around. It’s defense playing wasn’t even good. Their collector doesn’t have wheels. Just two sticky metal sticks so they can’t really pick cubes up. 
+Qualification #31: Loss, 170 - 324, 4 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: On the slower side
+Qualification #36: Loss, 270 - 301, 0 EZ, 1 Switch, 2 Scale, 1 Failed, no endgame
+	Comments: Very very slow lift. Mediocre collection. Tippy
+Qualification #52: Loss, 279 - 392, 1 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Didn’t do anything
+Qualification #60: Win, 427 - 187, 0 EZ, 0 Switch, 2 Scale, 0 Failed, platform
+	Comments: Struggled to grab cubes....have pincher hands....team was also defending them
+Qualification #69: Loss, 261 - 369, 1 EZ, 1 Switch, 2 Scale, 0 Failed, no endgame
+	Comments: Collector is not a collector just a pincher. Very slow. Can place cubes carefullly but doesn’t really matter since they can’t really pick them up. 
+Qualification #78: Win, 308 - 104, 0 EZ, 1 Switch, 1 Scale, 2 Failed, no endgame
+	Comments: Terrible collector. Bad driving. Weak placement of cubes

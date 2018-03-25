@@ -1,0 +1,70 @@
+Team #5077 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 49
+Robot Type = Both
+Average cubes placed: 1.2222222222222223
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	100% of cubes, max = 6.0, avg = 1.22
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.0 out of 5
+Starting Position: 44% out-left, 11% in-left, 0% middle, 0% in-right, 44% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	44% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	33% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	50% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #6: Tried to throw cube into switch but it didn’t work.
+	Qualification Match #11: Flung but missed by a lot
+	Qualification Match #20: Tried to cross but djrnt 
+	Qualification Match #29: Attempted to throw cube in switch
+	Qualification Match #60: Didn’t quite cross baseline.
+	Qualification Match #64: Drove up to scale
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 1.2222222222222223
+	% cubes in EZ = 0%
+	% cubes in Switch = 100%
+	% cubes in Scale = 0%
+Can get cube from floor?: Yes
+Can get cube from portal?: Yes
+Average cycle time rating = 1.1111111111111112 out of 3
+Average driver rating = 1.3333333333333333 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 33%
+	% did nothing in endgame = 66%
+
+--------------- Match Data -----------------------
+Qualification #6: Loss, 72 - 355, 0 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Attachment really bad at picking up cubes. Struggled many times to pick up cubes.
+Qualification #11: Loss, 187 - 392, 0 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Wandered around doing nothing. Has wooden plank on robot. Sat there also doing nothing while enabled. Cannot pickup or grab cubes. Short w no lift mechanism. Platform but barely
+Qualification #20: Loss, 246 - 300, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: CANT PICK UP CUBES
+Qualification #29: Loss, 45 - 442, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Not able to pick up cubes
+Qualification #43: Loss, 292 - 397, 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: CANNOT PICK UP CUBES 
+Qualification #47: Loss, 254 - 263, 0 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Can only scoop cubes ( take some extremely long)
+Qualification #60: Win, 427 - 187, 0 EZ, 6 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Some odd pauses. Very good at switch. 
+Qualification #64: Loss, 233 - 330, 0 EZ, 1 Switch, 0 Scale, 1 Failed, platform
+	Comments: Almost put a cube in the wrong color. Bumper is loose. A bar fell off of their frame and is sitting in the chassis. Someone tried to lift it but it couldn’t. 
+Qualification #63: Loss, 301 - 307, 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: They’re robot fell apart like the part that held cubes so useless 

@@ -1,0 +1,67 @@
+Team #4050 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 36
+Robot Type = Offense
+Average cubes placed: 3.6666666666666665
+	Scale: 	6% of cubes, max = 2.0, avg = 0.22
+	Switch:	15% of cubes, max = 2.0, avg = 0.55
+	EZ: 	78% of cubes, max = 8.0, avg = 2.88
+Auto Ability: Baseline
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.2222222222222223 out of 5
+Starting Position: 55% out-left, 0% in-left, 0% middle, 11% in-right, 33% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #5: Very fast auto 
+	Qualification Match #18: Attempted scale in auto
+	Qualification Match #59: Went super far (to the scale)
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 3.6666666666666665
+	% cubes in EZ = 78%
+	% cubes in Switch = 15%
+	% cubes in Scale = 6%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.3333333333333333 out of 3
+Average driver rating = 1.4444444444444444 out of 3
+Can robot climb?: Yes
+	% climb in matches = 11%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 11%
+	% platform in matches = 22%
+	% did nothing in endgame = 55%
+
+--------------- Match Data -----------------------
+Qualification #5: Loss, 230 - 408, 4 EZ, 0 Switch, 0 Scale, 2 Failed, no endgame
+	Comments: No mechanisms : just drives and pushes cubes into EZ; no way of picking up cubes at all; got stuck underneath the scale; driving is not very well controlled 
+Qualification #18: Win, 373 - 199, 2 EZ, 1 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Very slow
+Qualification #23: Loss, 329 - 369, 3 EZ, 2 Switch, 0 Scale, 0 Failed, platform
+	Comments: Very unstable collector
+Qualification #28: Win, 442 - 45, 5 EZ, 0 Switch, 0 Scale, 1 Failed, platform
+	Comments: Their cube grabber wasn’t working well
+Qualification #37: Loss, 251 - 335, 0 EZ, 0 Switch, 2 Scale, 0 Failed, attempted climb
+	Comments: Couldn’t reach scale when it is tipped against them. Tippy. Bad collector. 
+Qualification #52: Win, 372 - 279, 0 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Lost connection after auto but got it back
+Qualification #59: Loss, 199 - 348, 0 EZ, 0 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Lost connection twice; collector just kept falling down; 
+Qualification #67: Tie, 0 - 0, 4 EZ, 1 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Looks like they may have had trouble with their collector/shooter 
+Qualification #74: Loss, 362 - 400, 8 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Almost got on platform

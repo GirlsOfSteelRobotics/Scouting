@@ -1,53 +1,68 @@
-Team #6947 - 3 matches played
+Team #6947 - 9 matches played
 
 --------------- Quick Facts ----------------------
-GoS Strategy Ranking: 3
+GoS Strategy Ranking: 33
 Robot Type = Offense
-Average cubes placed: 22.666666666666668
-	Scale: 	30% of cubes, max = 10.0, avg = 7.0
-	Switch:	35% of cubes, max = 10.0, avg = 8.0
-	EZ: 	33% of cubes, max = 10.0, avg = 7.66
-Auto Ability: Baseline; Switch; Switch AND Scale
-Climbing Ability: Climb + Lift
+Average cubes placed: 3.2222222222222223
+	Scale: 	24% of cubes, max = 2.0, avg = 0.77
+	Switch:	27% of cubes, max = 2.0, avg = 0.88
+	EZ: 	48% of cubes, max = 4.0, avg = 1.55
+Auto Ability: Baseline; Switch
+Climbing Ability: None
 
 --------------- Autonomous Stats -----------------
-Average Auto Rating = 5.0 out of 5
-Starting Position: 0% out-left, 33% in-left, 33% middle, 0% in-right, 33% out-right
+Average Auto Rating = 2.3333333333333335 out of 5
+Starting Position: 33% out-left, 11% in-left, 44% middle, 0% in-right, 11% out-right
 
 Autonomous Abilities:
-	Overall Auto Functions: 	100% baseline, 33% switch, 0% scale, 66% both
+	Overall Auto Functions: 	77% baseline, 11% switch, 0% scale, 0% both
 	-----Based on plate color-----
 	Switch is on robot's side: 	No data
-	Scale is on robot's side: 	100% baseline, 50% switch, 0% scale, 50% both
-	Both are on robot's side: 	No data
-	Neither on robot's side: 	No data
-	Robot is in the middle: 	No data
+	Scale is on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	75% baseline, 25% switch, 0% scale, 0% both
 
 All auto comments:
-	Practice Match #0: Very good
-	Practice Match #1: No comments 👍👍👍👍👍👍
-	Practice Match #3: Place do multiple cubes
+	Qualification Match #23: Quick
+	Qualification Match #35: Other robot got in the way
+	Qualification Match #50: Got right above the switch. 
+	Qualification Match #58: Dropped cube next to switch not inside 
+	Qualification Match #78: attempted switch failed
 
 --------------- Teleop Stats ---------------------
-Cube Success Rate: 87.5%
-Average # cubes placed: 22.666666666666668
-	% cubes in EZ = 33%
-	% cubes in Switch = 35%
-	% cubes in Scale = 30%
+Cube Success Rate: 100.0%
+Average # cubes placed: 3.2222222222222223
+	% cubes in EZ = 48%
+	% cubes in Switch = 27%
+	% cubes in Scale = 24%
 Can get cube from floor?: Yes
-Can get cube from portal?: Yes
-Average cycle time rating = 3.0 out of 3
-Average driver rating = 3.0 out of 3
-Can robot climb?: Yes
-	% climb in matches = 33%
-	% attempted climb in matches = 0%
-	% platform in matches = 0%
-	% did nothing in endgame = 66%
+Can get cube from portal?: No
+Average cycle time rating = 1.1111111111111112 out of 3
+Average driver rating = 1.3333333333333333 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 33%
+	% platform in matches = 22%
+	% did nothing in endgame = 44%
 
 --------------- Match Data -----------------------
-Practice #0: Loss, 137 - 187, 3 EZ, 4 Switch, 1 Scale, 10 Failed, climbed+lifted
-	Comments: Savage Tumaz #6947 Taiwan No.1~~~~~~~~~~~~~~~
-Practice #1: Win, 100 - 100, 10 EZ, 10 Switch, 10 Scale, 10 Failed, climbed+lifted
-	Comments: No comments✌️✌️✌️✌️✌️
-Practice #3: Tie, 1 - 1, 10 EZ, 10 Switch, 10 Scale, 10 Failed, climbed
-	Comments: Tippy
+Qualification #6: Loss, 72 - 355, 0 EZ, 1 Switch, 1 Scale, 2 Failed, attempted climb
+	Comments: Had difficulties collecting cubes especially when in the narrow orientation. Often dropped them plus it was slow. Ran out of time to finish climbing. Almost fell over because it hit the scale going onto the platform.
+Qualification #17: Loss, 267 - 151, 0 EZ, 0 Switch, 2 Scale, 0 Failed, no endgame
+	Comments: Just stopped half way through and didnt move for the rest of the match
+Qualification #23: Loss, 269 - 329, 2 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame
+	Comments: Very slow to collect and pace
+Qualification #35: Loss, 222 - 236, 0 EZ, 1 Switch, 1 Scale, 0 Failed, no endgame
+	Comments: Tipped over halfway through the match. Struggled to collect cubes. :(
+Qualification #39: Loss, 215 - 395, 2 EZ, 0 Switch, 2 Scale, 0 Failed, platform
+	Comments: Very slow lift
+Qualification #50: Win, 327 - 141, 3 EZ, 1 Switch, 0 Scale, 0 Failed, attempted climb
+	Comments: Wheel of my collector fell off during the beginning. Climber couldn’t grab. 
+Qualification #58: Loss, 275 - 452, 4 EZ, 0 Switch, 0 Scale, 0 Failed, attempted climb
+	Comments: Difficulty collecting cubes 
+Qualification #68: Loss, 312 - 379, 0 EZ, 1 Switch, 1 Scale, 1 Failed, platform
+	Comments: Dropped cubes a lot. Got a scale tho. Get a penalty. Not sure why but they were over near the clothesline cubes so maybe something with that. 
+Qualification #78: Loss, 104 - 308, 3 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame

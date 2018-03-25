@@ -1,0 +1,80 @@
+Team #2252 - 14 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 3
+Robot Type = Offense
+Average cubes placed: 4.714285714285714
+	Scale: 	65% of cubes, max = 5.0, avg = 3.07
+	Switch:	34% of cubes, max = 6.0, avg = 1.64
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch; Scale
+Climbing Ability: Climb + Lift
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 3.5 out of 5
+Starting Position: 0% out-left, 0% in-left, 21% middle, 0% in-right, 78% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	78% baseline, 14% switch, 50% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	50% baseline, 0% switch, 25% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 66% scale, 0% both
+	Robot is in the middle: 	66% baseline, 66% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #3: Tried to do left switch from middle starting position
+	Qualification Match #28: Hella good auto. Opposite side scale. So fast maybe 8 seconds. 
+	Qualification Match #43: Attempted second scale
+	Qualification Match #52: Tried for opposite side scale but missed
+	Qualification Match #71: 2 cube auto
+	Elimination Match #8: Missed scale 
+	Elimination Match #10: Missed scale 
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.714285714285714
+	% cubes in EZ = 0%
+	% cubes in Switch = 34%
+	% cubes in Scale = 65%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 2.0714285714285716 out of 3
+Average driver rating = 2.0 out of 3
+Can robot climb?: Yes
+	% climb in matches = 71%
+	% climb and lifted = 35%
+	% lifted others = 42%
+	% attempted climb in matches = 7%
+	% platform in matches = 0%
+	% did nothing in endgame = 14%
+
+--------------- Match Data -----------------------
+Qualification #3: Loss, 218 - 375, 0 EZ, 5 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Didn’t get crap together until middle. had bars on left that fell for one robot to climb with them but other robot couldn’t not get on
+Qualification #14: Loss, 274 - 370, 0 EZ, 0 Switch, 4 Scale, 2 Failed, climbed
+	Comments: Some difficulty collecting. Good with first layer scale but struggled a little with second. Can lift others but they didn’t get on in time.
+Qualification #19: Loss, 269 - 401, 0 EZ, 1 Switch, 1 Scale, 2 Failed, no endgame
+	Comments: One failed for each the switch and scale.  Disconnected from robot about halfway through on the other teams platform so got fouled
+Qualification #28: Win, 461 - 224, 0 EZ, 5 Switch, 0 Scale, 0 Failed, climbed+lifted
+	Comments: Lifted one other robot. Overall good job. 
+Qualification #43: Loss, 292 - 397, 0 EZ, 0 Switch, 5 Scale, 0 Failed, climbed+lifted
+	Comments: Nice placement on scale although not the fastest
+Qualification #52: Win, 392 - 279, 0 EZ, 0 Switch, 5 Scale, 1 Failed, climbed
+	Comments: Tried to lift partners but they didn’t get on in time
+Qualification #57: Win, 475 - 115, 0 EZ, 6 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Did not want to interfere with the other two robots’ climbs during endgame. Got caught in some heavy defense but still had a decent cycle time.
+Qualification #68: Win, 379 - 312, 0 EZ, 0 Switch, 3 Scale, 3 Failed, climbed
+Qualification #71: Win, 334 - 330, 0 EZ, 2 Switch, 4 Scale, 1 Failed, climbed+lifted
+	Comments: Very good robot. Has a little trouble putting cubes up when scale is fully tilted
+Elimination #4: Win, 381 - 236, 0 EZ, 4 Switch, 1 Scale, 0 Failed, lifted others
+	Comments: Difficulty picking up cubes 
+Elimination #8: Loss, 313 - 384, 0 EZ, 0 Switch, 5 Scale, 0 Failed, climbed+lifted
+	Comments: Good aim
+Elimination #10: Win, 331 - 308, 0 EZ, 0 Switch, 5 Scale, 0 Failed, climbed
+	Comments: Crashed into scale; attempted to lift another but failed 
+Elimination #12: Loss, 291 - 383, 0 EZ, 0 Switch, 5 Scale, 0 Failed, attempted climb
+	Comments: Could have climbed without 2053
+Elimination #14: Win, 442 - 306, 0 EZ, 0 Switch, 5 Scale, 0 Failed, climbed+lifted
+	Comments: Fast and good at collecting 

@@ -1,4 +1,16 @@
-1. Team 6969: Avg robot score = 40.9, Max Scale Score = 10.0, Can climb?: No
-2. Team 6414: Avg robot score = 36.43, Max Scale Score = 10.0, Can climb?: No
-3. Team 6947: Avg robot score = 30.61, Max Scale Score = 10.0, Can climb?: Yes
-4. Team 3504: Avg robot score = 17.09, Max Scale Score = 10.0, Can climb?: Yes
+1. Team 217: Avg robot score = 12.66, Max Scale Score = 8.0, Climbing Ability: Climb
+2. Team 4028: Avg robot score = 10.52, Max Scale Score = 6.0, Climbing Ability: Climb
+3. Team 2252: Avg robot score = 10.25, Max Scale Score = 5.0, Climbing Ability: Climb + Lift
+4. Team 303: Avg robot score = 9.88, Max Scale Score = 6.0, Climbing Ability: Climb
+5. Team 4522: Avg robot score = 9.85, Max Scale Score = 6.0, Climbing Ability: Climb
+6. Team 3260: Avg robot score = 9.64, Max Scale Score = 7.0, Climbing Ability: Climb
+7. Team 4027: Avg robot score = 9.57, Max Scale Score = 7.0, Climbing Ability: None
+8. Team 870: Avg robot score = 9.46, Max Scale Score = 6.0, Climbing Ability: Climb
+9. Team 3504: Avg robot score = 9.25, Max Scale Score = 8.0, Climbing Ability: None
+10. Team 5842: Avg robot score = 8.96, Max Scale Score = 5.0, Climbing Ability: Climb
+11. Team 4145: Avg robot score = 8.94, Max Scale Score = 6.0, Climbing Ability: Climb
+12. Team 5472: Avg robot score = 8.61, Max Scale Score = 7.0, Climbing Ability: None
+13. Team 4930: Avg robot score = 8.55, Max Scale Score = 6.0, Climbing Ability: Climb
+14. Team 48: Avg robot score = 7.73, Max Scale Score = 6.0, Climbing Ability: None
+15. Team 4991: Avg robot score = 7.59, Max Scale Score = 5.0, Climbing Ability: Climb
+16. Team 3171: Avg robot score = 7.57, Max Scale Score = 5.0, Climbing Ability: Climb

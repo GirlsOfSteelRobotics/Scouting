@@ -1,0 +1,66 @@
+Team #4150 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 38
+Robot Type = Offense
+Average cubes placed: 2.3333333333333335
+	Scale: 	42% of cubes, max = 3.0, avg = 1.0
+	Switch:	23% of cubes, max = 2.0, avg = 0.55
+	EZ: 	33% of cubes, max = 4.0, avg = 0.77
+Auto Ability: Baseline
+Climbing Ability: None
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.111111111111111 out of 5
+Starting Position: 88% out-left, 0% in-left, 0% middle, 0% in-right, 11% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	88% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	66% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #27: Not sure what it tried to do but went straight forward past switch but not to scale
+	Qualification Match #42: Medium speed 
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 86.36363636363636%
+Average # cubes placed: 2.3333333333333335
+	% cubes in EZ = 33%
+	% cubes in Switch = 23%
+	% cubes in Scale = 42%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.1111111111111112 out of 3
+Average driver rating = 1.2222222222222223 out of 3
+Can robot climb?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 88%
+	% did nothing in endgame = 11%
+
+--------------- Match Data -----------------------
+Qualification #9: Win, 290 - 181, 0 EZ, 0 Switch, 1 Scale, 1 Failed, platform
+	Comments: Tippy; hard time grabbing cubes(only got one)
+Qualification #14: Loss, 370 - 274, 4 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Comments: Couldn’t easily pick up cubes
+Qualification #23: Win, 329 - 269, 0 EZ, 1 Switch, 2 Scale, 1 Failed, platform
+	Comments: Slowwwww
+Qualification #27: Win, 397 - 172, 3 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Comments: Struggles to grab cubes. Slow and awkward EZ. Moves slowly. Almost onto platform 
+Qualification #42: Loss, 351 - 398, 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Comments: Poor collector. Mainly just pushed blocks around. 
+Qualification #48: Loss, 197 - 442, 0 EZ, 0 Switch, 1 Scale, 1 Failed, platform
+	Comments: Kinda just scooted around the field not doing much
+Qualification #57: Loss, 115 - 472, 0 EZ, 2 Switch, 1 Scale, 0 Failed, platform
+	Comments: Hard time picking up cubes 
+Qualification #69: Win, 369 - 261, 0 EZ, 0 Switch, 3 Scale, 1 Failed, platform
+	Comments: Struggled to pick up cubes...got stuck on scale for a few seconds
+Qualification #75: Win, 334 - 117, 0 EZ, 1 Switch, 1 Scale, 3 Failed, platform
+	Comments: Terrible collector. Dropped cubes a lot. Couldn’t release them far enough on to the platforms so they kept falling. 

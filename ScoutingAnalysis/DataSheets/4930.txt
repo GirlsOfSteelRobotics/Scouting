@@ -1,0 +1,64 @@
+Team #4930 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 14
+Robot Type = Offense
+Average cubes placed: 4.777777777777778
+	Scale: 	48% of cubes, max = 6.0, avg = 2.33
+	Switch:	18% of cubes, max = 3.0, avg = 0.88
+	EZ: 	32% of cubes, max = 7.0, avg = 1.55
+Auto Ability: Baseline; Switch
+Climbing Ability: Climb
+
+--------------- Autonomous Stats -----------------
+Average Auto Rating = 2.888888888888889 out of 5
+Starting Position: 11% out-left, 0% in-left, 88% middle, 0% in-right, 0% out-right
+
+Autonomous Abilities:
+	Overall Auto Functions: 	88% baseline, 55% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	87% baseline, 62% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #7: Held up start of match because too tall.  Put one cube in switch.
+	Qualification Match #18: 1
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 94.73684210526315%
+Average # cubes placed: 4.777777777777778
+	% cubes in EZ = 32%
+	% cubes in Switch = 18%
+	% cubes in Scale = 48%
+Can get cube from floor?: Yes
+Can get cube from portal?: No
+Average cycle time rating = 1.6666666666666667 out of 3
+Average driver rating = 1.7777777777777777 out of 3
+Can robot climb?: Yes
+	% climb in matches = 44%
+	% climb and lifted = 0%
+	% lifted others = 11%
+	% attempted climb in matches = 44%
+	% platform in matches = 0%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #7: Loss, 256 - 298, 0 EZ, 0 Switch, 4 Scale, 2 Failed, attempted climb
+	Comments: Took a while to release cube on scale
+Qualification #13: Loss, 344 - 385, 0 EZ, 0 Switch, 2 Scale, 2 Failed, attempted climb
+	Comments: Tipped another robot over - got a yellow card
+Qualification #18: Win, 373 - 199, 1 EZ, 0 Switch, 0 Scale, 0 Failed, climbed
+Qualification #28: Win, 461 - 224, 7 EZ, 0 Switch, 0 Scale, 0 Failed, lifted others
+	Comments: Not the best at grabbing cubes and keeping them
+Qualification #39: Win, 395 - 215, 6 EZ, 0 Switch, 0 Scale, 0 Failed, climbed
+	Comments: Weird robot. Small and fat and not normal 
+Qualification #46: Loss, 118 - 390, 0 EZ, 3 Switch, 4 Scale, 0 Failed, climbed
+Qualification #53: Win, 411 - 220, 0 EZ, 2 Switch, 1 Scale, 0 Failed, attempted climb
+	Comments: Attempted climb and lifting other robot but poor lineup
+Qualification #66: Loss, 285 - 338, 0 EZ, 0 Switch, 6 Scale, 0 Failed, attempted climb
+	Comments: Wasn’t very tippy but not that bad overall 
+Qualification #70: Loss, 233 - 255, 0 EZ, 3 Switch, 4 Scale, 2 Failed, climbed
+	Comments: Pretty consistently did stuff
