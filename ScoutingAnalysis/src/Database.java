@@ -27,15 +27,7 @@ public class Database {
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
-			
-			if (teamNumber == 5872) teamNumber = 5842;
-			if (teamNumber == 27) teamNumber = 7274;
-			if (teamNumber == 2541) teamNumber = 2641;
-			if (teamNumber == 3855) teamNumber = 3955;
-			if (teamNumber == 3053) teamNumber = 2053;
-			if (teamNumber == 3842) teamNumber = 5842;
-			if (teamNumber == 6974) teamNumber = 6947;
-	
+
 			//Create new match object
 			Match match = new Match(lineInput);
 			int index = getTeamIndex(teamNumber);
@@ -184,6 +176,7 @@ public class Database {
 		fout.write("Max Cubes in Switch*" + ",");
 		fout.write("Max Cubes in EZ*" + ",");
 		fout.write("Autonomous Functions" + ",");
+		fout.write("Multiple Cube Auto?" + ",");
 		fout.write("*does not include autonomous" + ",");
 		fout.newLine();
 		
@@ -200,6 +193,7 @@ public class Database {
 			fout.write(team.getMaxCubesInSwitch(false) + ",");
 			fout.write(team.getMaxCubesInEZ(false) + ",");
 			fout.write(team.getAutoAbility() + ",");
+			fout.write((team.hasMultipleCubeAuto() ? "Yes" : "No") + ",");
 			fout.newLine();
 		}
 		
@@ -269,7 +263,7 @@ public class Database {
 				goodScaleRobots.add(data.get(i));
 		}
 		
-		goodScaleRobots = sortScaleRobots(goodScaleRobots);
+		goodScaleRobots = sortByRobotScoreNoClimb(goodScaleRobots);
 		
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
@@ -278,7 +272,7 @@ public class Database {
 		{
 			double score = ((int)(goodScaleRobots.get(i).getAverageRobotScore()*100))/100.0;
 			double scale = ((int)(goodScaleRobots.get(i).getMaxCubesInScale(includeAuto)*100))/100.0;
-			fout.write((i+1) + ". Team " + goodScaleRobots.get(i).teamNumber + ": Avg robot score = " + score);
+			fout.write((i+1) + ". Team " + goodScaleRobots.get(i).teamNumber + ": Avg robot score* = " + score);
 			fout.write(", Max Scale Score = " + scale);
 			fout.write(", Climbing Ability: " + goodScaleRobots.get(i).getClimbingAbility());
 			fout.newLine();
@@ -297,7 +291,7 @@ public class Database {
 				goodEZRobots.add(data.get(i));
 		}
 		
-		goodEZRobots = sortEZRobots(goodEZRobots);
+		goodEZRobots = sortByRobotScoreNoClimb(goodEZRobots);
 		
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
@@ -347,7 +341,7 @@ public class Database {
 				goodSwitchRobots.add(data.get(i));
 		}
 		
-		goodSwitchRobots = sortSwitchRobots(goodSwitchRobots);
+		goodSwitchRobots = sortByRobotScoreNoClimb(goodSwitchRobots);
 		
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
@@ -356,7 +350,7 @@ public class Database {
 		{
 			double score = ((int)(goodSwitchRobots.get(i).getAverageRobotScore()*100))/100.0;
 			double Switch = ((int)(goodSwitchRobots.get(i).getMaxCubesInSwitch(includeAuto)*100))/100.0;
-			fout.write((i+1) + ". Team " + goodSwitchRobots.get(i).teamNumber + ": Avg robot score = " + score);
+			fout.write((i+1) + ". Team " + goodSwitchRobots.get(i).teamNumber + ": Avg robot score* = " + score);
 			fout.write(", Max Switch Score = " + Switch);
 			fout.write(", Climbing Ability: " + goodSwitchRobots.get(i).getClimbingAbility());
 			fout.newLine();
@@ -414,6 +408,25 @@ public class Database {
 			for(int i = 1; i < unsortedRobots.size(); i++)
 			{
 				if(unsortedRobots.get(i).getAverageRobotScore() > max.getAverageRobotScore())
+					max = unsortedRobots.get(i);
+			}
+			sortedTeams.add(max);
+			unsortedRobots.remove(max);
+		}
+		
+		return sortedTeams;
+	}
+	
+	public ArrayList<Team> sortByRobotScoreNoClimb(ArrayList<Team> unsortedRobots)
+	{
+		ArrayList<Team> sortedTeams = new ArrayList<Team>();
+		
+		while(unsortedRobots.size() != 0)
+		{
+			Team max = unsortedRobots.get(0);
+			for(int i = 1; i < unsortedRobots.size(); i++)
+			{
+				if(unsortedRobots.get(i).getAverageRobotScoreNoClimb() > max.getAverageRobotScoreNoClimb())
 					max = unsortedRobots.get(i);
 			}
 			sortedTeams.add(max);

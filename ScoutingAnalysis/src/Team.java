@@ -1,11 +1,8 @@
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+
 
 
 public class Team {
@@ -28,17 +25,7 @@ public class Team {
 		}
 		return wins/matches.size();
 	}
-	
-	public double getAverageScoreDiff()
-	{
-		int total = 0;
-		for (int i = 0; i < matches.size(); i++)
-		{
-			total += matches.get(i).alliancePoints;
-			total -= matches.get(i).opponentPoints;
-		}
-		return ((double)total)/matches.size();
-	}
+
 	
 	public double[][] getAutoStats()
 	{
@@ -93,6 +80,16 @@ public class Team {
 		for (int i = 0; i < matches.size(); i++)
 		{
 			total += matches.get(i).getMatchScore(true);
+		}
+		return (total)/matches.size();
+	}
+	
+	public double getAverageRobotScoreNoClimb()
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			total += matches.get(i).getMatchScoreNoClimb(true);
 		}
 		return (total)/matches.size();
 	}
@@ -171,16 +168,7 @@ public class Team {
 		}
 		return max;
 	}
-	
-	public double getAverageAutoRating()
-	{
-		double total = 0;
-		for (int i = 0; i < matches.size(); i++)
-		{
-			total += matches.get(i).autoRating;
-		}
-		return (total)/matches.size();
-	}
+
 	
 	public double getAverageCubesPlaced(boolean includeEZ, boolean includeAuto)
 	{
@@ -194,6 +182,18 @@ public class Team {
 		return (total)/matches.size();
 	}
 	
+	public double getAveragePartnerRating()
+	{
+		double total = 0;
+		for (int i = 0; i < matches.size(); i++)
+		{
+			total += matches.get(i).partnerRating;
+		}
+		double average = total / matches.size();
+		average = ((double)((int)(100 * average)) / 100.0);
+		return average;
+	}
+	
 	public String getClimbingAbility()
 	{
 		double climbs = 0;
@@ -202,13 +202,16 @@ public class Team {
 		
 		for (int i = 0; i < matches.size(); i++)
 		{
-			if(matches.get(i).endgameFunction.contains("+")) {climbAndLift++; lifts++; climbs++;}
-			else if(matches.get(i).endgameFunction.contains("Lifted")) lifts++;
-			else if(matches.get(i).endgameFunction.contains("Successful")) climbs++;
+			if (matches.get(i).endgameFunction.equals("Climb")) 
+			{
+				if (matches.get(i).robotsLifted == 0) climbs++;
+				else {climbs++; climbAndLift++;}
+			}
+			else if (matches.get(i).robotsLifted > 0) lifts++;
 		}
 		
-		if (teamNumber == 4027) return "None";
-		else if (climbAndLift/matches.size() > 0.1) return "Climb + Lift";
+		
+		if (climbAndLift/matches.size() > 0.1) return "Climb + Lift";
 		else if (climbs/matches.size() > 0.1) return "Climb";
 		else if (lifts/matches.size() > 0.1) return "Lift Others";
 		else return "None";
@@ -220,9 +223,8 @@ public class Team {
 		
 		for (int i = 0; i < matches.size(); i++)
 		{
-			if(matches.get(i).endgameFunction.contains("+")) num++;
-			else if(matches.get(i).endgameFunction.contains("Lifted")) num++;
-			else if(matches.get(i).endgameFunction.contains("Successful")) num++;
+			if(matches.get(i).endgameFunction.equals("Climb")) num++;
+			else if(matches.get(i).robotsLifted > 0) num++;
 		}
 		
 		return 100*num/matches.size();
@@ -241,19 +243,6 @@ public class Team {
 		}
 		
 		return 100*(goodCubes / (goodCubes + cubesFailed));
-	}
-	
-	public String getRobotType() 
-	{
-		int total = 0;
-		for (int i = 0; i < matches.size(); i++)
-		{
-			if (matches.get(i).robotGoal.contains("Offense")) total += 1;
-			else if (matches.get(i).robotGoal.contains("Defense")) total -= 1;
-		}
-		if (total > 0) return "Offense";
-		else if (total < 0) return "Defense";
-		else return "Both";
 	}
 	
 	public void addMatch(Match match)
@@ -304,8 +293,6 @@ public class Team {
 		fout.newLine();
 		fout.write("GoS Strategy Ranking: " + ranking);
 		fout.newLine();
-		fout.write("Robot Type = " + getRobotType());
-		fout.newLine();
 		fout.write("Average cubes placed: " + getAverageCubesPlaced(true, false));
 		fout.newLine();
 		fout.write("\tScale: \t" + (int)Scale + "% of cubes, max = " + getMaxCubesInScale(false) + ", avg = " + getAvgCubesInScale(false));
@@ -316,7 +303,11 @@ public class Team {
 		fout.newLine();
 		fout.write("Auto Ability: " + getAutoAbility());
 		fout.newLine();
-		fout.write("Climbing Ability: " + getClimbingAbility());
+		fout.write("\tMulitple Cube Auto: " + (hasMultipleCubeAuto() ? "Yes" : "No"));
+		fout.newLine();
+		fout.write("Climbing Ability: " + getClimbingAbility() + " (" + getClimbSide() + ")");
+		fout.newLine();
+		fout.write("Partner Rating: " + getAveragePartnerRating() + " out of 5");
 		fout.newLine();
 	}
 	
@@ -326,12 +317,6 @@ public class Team {
 		fout.newLine();
 		fout.write("Win Percentage = " + (getWinPercentage()*100) + "%");
 		fout.newLine();
-//		fout.write("Average Score Difference = " + getAverageScoreDiff());
-//		fout.newLine();
-		fout.write("Robot Type = " + getRobotType());
-		fout.newLine();
-		fout.write("Average Auto Rating = " + getAverageAutoRating() + " out of 5");
-		fout.newLine();
 		fout.write("Average Robot Score = " + getAverageRobotScore());
 		fout.newLine();
 	}
@@ -339,8 +324,6 @@ public class Team {
 	public void writeAutoStats(BufferedWriter fout) throws IOException
 	{
 		fout.write("--------------- Autonomous Stats -----------------");
-		fout.newLine();
-		fout.write("Average Auto Rating = " + getAverageAutoRating() + " out of 5");
 		fout.newLine();
 		
 		double[][] auto = getAutoStats();
@@ -358,39 +341,7 @@ public class Team {
 		int Scale = (int)(100*auto[5][3] / matches.size());
 		index = 4;
 		int Both = (int)(100*auto[5][4] / matches.size());
-		
-		int outsideLeft = 0; int insideLeft = 0; int middle = 0; int insideRight = 0; int outsideRight = 0;
-		for (int i = 0; i < matches.size(); i++)
-		{
-			String pos = matches.get(i).autoPosition;
-			
-			if (pos.equals("Outside Left")) outsideLeft++;
-			else if (pos.equals("Inside Left")) insideLeft++;
-			else if (pos.equals("Inside Right")) insideRight++;
-			else if (pos.equals("Outside Right")) outsideRight++;
-			else if (pos.equals("Middle")) middle++;
-		}
-		
-		insideLeft = (int)(((double)insideLeft / matches.size()) * 100);
-		outsideLeft = (int)(((double)outsideLeft / matches.size()) * 100);
-		middle = (int)(((double)middle / matches.size()) * 100);
-		insideRight = (int)(((double)insideRight / matches.size()) * 100);
-		outsideRight = (int)(((double)outsideRight / matches.size()) * 100);
-		
-//		fout.write("Overall Auto Stats:");
-//		fout.newLine();
-//		fout.write("\t% matches crossed baseline = " + Baseline + "%");
-//		fout.newLine();
-//		fout.write("\t% matches put cube in switch = " + Switch + "%");
-//		fout.newLine();
-//		fout.write("\t% matches put cube in scale = " + Scale + "%");
-//		fout.newLine();
-//		fout.write("\t% matches put cube in switch and scale = " + Both + "%");
-//		fout.newLine();
-//		fout.write("\t% matches did not move = " + Nothing + "%");
-//		fout.newLine();
-		fout.write("Starting Position: " + outsideLeft + "% out-left, " + insideLeft + "% in-left, " + middle + "% middle, " + insideRight + "% in-right, " + outsideRight + "% out-right");
-		fout.newLine();
+
 		fout.newLine();
 		
 		fout.write("Autonomous Abilities:");
@@ -466,7 +417,6 @@ public class Team {
 		fout.newLine();
 		double EZ = 0; double Switch = 0; double Scale = 0;
 		double pickCube = 0; double portal = 0;
-		double cycleRating = 0; double drivingRating = 0;
 		double climb = 0; double climbAndLift = 0; double lift = 0; double platform = 0; double attempt = 0; double neither = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
@@ -474,17 +424,17 @@ public class Team {
 			Switch += matches.get(i).cubesSwitch;
 			Scale += matches.get(i).cubesScale;
 			
-			if (matches.get(i).robotFunctions.contains("Pick")) pickCube++;
-			if (matches.get(i).robotFunctions.contains("portal")) portal++;
+			if (matches.get(i).cubeCollection.contains("Pick")) pickCube++;
+			if (matches.get(i).cubeCollection.contains("portal")) portal++;
 			
-			cycleRating += matches.get(i).cycleRating;
-			drivingRating += matches.get(i).drivingRating;
-			
-			if (matches.get(i).endgameFunction.contains("Successful")) climb++;
+			if (matches.get(i).endgameFunction.equals("Climb")) 
+			{
+				if (matches.get(i).robotsLifted == 0) climb++;
+				else {climb++; climbAndLift++;}
+			}
 			else if (matches.get(i).endgameFunction.contains("Attempted")) attempt++;
 			else if (matches.get(i).endgameFunction.contains("Platform")) platform++;
-			else if (matches.get(i).endgameFunction.contains("+")) {climbAndLift++; climb++; lift++;}
-			else if (matches.get(i).endgameFunction.contains("Lift")) lift++;
+			else if (matches.get(i).robotsLifted > 0) lift++;
 			else neither++;
 		}
 		
@@ -495,9 +445,6 @@ public class Team {
 		
 		pickCube = pickCube / matches.size();
 		portal = portal / matches.size();
-		
-		cycleRating = cycleRating / matches.size();
-		drivingRating = drivingRating / matches.size();
 		
 		climb = climb/matches.size();
 		attempt = attempt/matches.size();
@@ -521,13 +468,8 @@ public class Team {
 		fout.newLine();
 		fout.write("Can get cube from portal?: " + ((portal > 0.1) ? "Yes" : "No"));
 		fout.newLine();
-		
-		fout.write("Average cycle time rating = " + cycleRating + " out of 3");
-		fout.newLine();
-		fout.write("Average driver rating = " + drivingRating + " out of 3");
-		fout.newLine();
-		
-		fout.write("Can robot climb?: " + ((climb > 0.1) ? "Yes" : "No"));
+
+		fout.write("Can robot climb/lift?: " + (((climb > 0.1) || (lift > 0.1) || (climbAndLift > 0.1)) ? "Yes" : "No"));
 		fout.newLine();
 		fout.write("\t% climb in matches = " + (int)(climb*100) + "%");
 		fout.newLine();
@@ -566,6 +508,57 @@ public class Team {
 				fout.newLine();
 			}
 		}
+	}
+	
+	public String getClimbSide()
+	{
+		double left = 0;
+		double right = 0;
+		double middle = 0;
+		
+		for (int i = 0; i < matches.size(); i++)
+		{
+			Match m = matches.get(i);
+			if (m.endgameFunction.equals("Climb"))
+			{
+				if (m.climbPosition == Match.FieldSide.left) left++;
+				else if (m.climbPosition == Match.FieldSide.right) right++;
+				else if (m.climbPosition == Match.FieldSide.middle) middle++;
+			}
+		}
+		
+		String ret = "";
+		if (left > 0) 
+		{
+			ret += "Left";
+			if (middle > 0) ret += "; Middle";
+			if (right > 0) ret += "; Right";
+		}
+		else if (middle > 0)
+		{
+			ret += "Middle";
+			if (right > 0) ret += "; Right";
+		}
+		else if (right > 0)
+		{
+			ret += "Right";
+		}
+		else ret = "None/Other";
+		
+		
+		return ret;
+	}
+	
+	public boolean hasMultipleCubeAuto()
+	{
+		boolean mult = false;
+		
+		for (int i = 0; i < matches.size(); i++)
+		{
+			if((matches.get(i).autoCubesSwitch + matches.get(i).autoCubesScale) > 0) mult = true;
+		}
+		
+		return mult;
 	}
 
 

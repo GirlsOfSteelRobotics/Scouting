@@ -1,70 +1,47 @@
-Team #4028 - 11 matches played
+Team #4028 - 1 matches played
 
 --------------- Quick Facts ----------------------
-GoS Strategy Ranking: 2
-Robot Type = Offense
-Average cubes placed: 4.7272727272727275
-	Scale: 	80% of cubes, max = 6.0, avg = 3.81
-	Switch:	19% of cubes, max = 4.0, avg = 0.9
+GoS Strategy Ranking: 1
+Average cubes placed: 7.0
+	Scale: 	100% of cubes, max = 7.0, avg = 7.0
+	Switch:	0% of cubes, max = 0.0, avg = 0.0
 	EZ: 	0% of cubes, max = 0.0, avg = 0.0
-Auto Ability: Baseline; Switch; Scale; Switch AND Scale
-Climbing Ability: Climb
+Auto Ability: Baseline; Scale
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb (Left)
+Partner Rating: 5.0 out of 5
 
 --------------- Autonomous Stats -----------------
-Average Auto Rating = 3.8181818181818183 out of 5
-Starting Position: 90% out-left, 0% in-left, 9% middle, 0% in-right, 0% out-right
 
 Autonomous Abilities:
-	Overall Auto Functions: 	81% baseline, 9% switch, 36% scale, 27% both
+	Overall Auto Functions: 	100% baseline, 0% switch, 100% scale, 0% both
 	-----Based on plate color-----
 	Switch is on robot's side: 	No data
-	Scale is on robot's side: 	66% baseline, 0% switch, 66% scale, 0% both
-	Both are on robot's side: 	100% baseline, 25% switch, 25% scale, 25% both
-	Neither on robot's side: 	100% baseline, 0% switch, 33% scale, 66% both
-	Robot is in the middle: 	0% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	No data
 
 All auto comments:
-	Qualification Match #15: Didn’t do the scale this time. 
-	Qualification Match #25: Moved but didn’t cross. It was odd
-	Qualification Match #51: 1
-	Qualification Match #57: One cube in scale one in switch.
-	Elimination Match #5: 1
+	Qualification Match #2: Very quick
 
 --------------- Teleop Stats ---------------------
-Cube Success Rate: 100.0%
-Average # cubes placed: 4.7272727272727275
+Cube Success Rate: 0.0%
+Average # cubes placed: 7.0
 	% cubes in EZ = 0%
-	% cubes in Switch = 19%
-	% cubes in Scale = 80%
-Can get cube from floor?: Yes
+	% cubes in Switch = 0%
+	% cubes in Scale = 100%
+Can get cube from floor?: No
 Can get cube from portal?: No
-Average cycle time rating = 2.4545454545454546 out of 3
-Average driver rating = 2.6363636363636362 out of 3
-Can robot climb?: Yes
-	% climb in matches = 63%
+Can robot climb/lift?: Yes
+	% climb in matches = 100%
 	% climb and lifted = 0%
 	% lifted others = 0%
-	% attempted climb in matches = 9%
-	% platform in matches = 9%
-	% did nothing in endgame = 18%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 0%
 
 --------------- Match Data -----------------------
-Qualification #5: Win, 408 - 230, 0 EZ, 1 Switch, 4 Scale, 0 Failed, climbed
-	Comments: Amazing auto. Smooth climb. Reliable with everything.
-Qualification #15: Win, 415 - 213, 0 EZ, 0 Switch, 4 Scale, 0 Failed, climbed
-	Comments: Moved very slowly today. Seemed less polished. 
-Qualification #25: Win, 328 - 227, 0 EZ, 1 Switch, 5 Scale, 1 Failed, climbed
-	Comments: Seemed to be an off match. Moved slower than usual. 
-Qualification #30: Win, 427 - 191, 0 EZ, 4 Switch, 3 Scale, 0 Failed, platform
-	Comments: As usual beak is amazing 
-Qualification #38: Win, 525 - 130, 0 EZ, 3 Switch, 1 Scale, 0 Failed, climbed
-Qualification #51: Win, 402 - 297, 0 EZ, 0 Switch, 6 Scale, 0 Failed, climbed
-Qualification #57: Win, 472 - 115, 0 EZ, 0 Switch, 3 Scale, 0 Failed, climbed
-	Comments: Stopped delivering cubes with about 45 seconds left and lined up to climb.  The alliance was ahead by a lot which is probably why they stopped working on cubes. Successfully double climbed with 4522. 
-Qualification #62: Win, 433 - 269, 0 EZ, 1 Switch, 4 Scale, 0 Failed, climbed
-	Comments: Can climb with another robot hanging onto the bar (doesn’t take up much space on the climber) AMAZING ROBOT
-Qualification #76: Loss, 303 - 353, 0 EZ, 0 Switch, 6 Scale, 1 Failed, no endgame
-	Comments: Picked up and placed a cube when it was in the sideways narrow orientation. Robot seems slower than at MVR
-Elimination #1: Loss, 136 - 299, 0 EZ, 0 Switch, 3 Scale, 1 Failed, no endgame
-	Comments: Pretty bad. Didn’t do much
-Elimination #5: Loss, 316 - 250, 0 EZ, 0 Switch, 3 Scale, 0 Failed, attempted climb
+Qualification #2: 0 EZ, 0 Switch, 7 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: yes, Right Switch(x0), Left Scale(x2)
+	Comments: Very good when scale tipped down already from auto
