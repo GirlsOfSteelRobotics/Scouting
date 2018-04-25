@@ -1,0 +1,23 @@
+Alliance #7 - 2 matches played
+
+----------------------------------------
+Quarterfinal Match #4
+AUTONOMOUS: 2 cubes in switch, 2 cubes in scale
+TELEOP: (total = 11 scale, 2 switch, 0 EZ)
+Team 3504: 5 in scale, 2 in switch, 0 in EZ
+	Strategy: Doubled teams the scale with beak and then moved on to own switch
+Team 4028: 6 in scale, 0 in switch, 0 in EZ
+	Strategy: Double teamed scale with gos and then maintained it
+ENDGAME: (#robots in air = 2)
+	Team 3504: Climb, lifted 0 OTHER robots
+	Team 4028: Climb, lifted 0 OTHER robots
+
+----------------------------------------
+Semifinal Match #2
+AUTONOMOUS: 1 cubes in switch, 1 cubes in scale
+TELEOP: (total = 4 scale, 2 switch, 0 EZ)
+Team 4028: 4 in scale, 2 in switch, 0 in EZ
+	Strategy: Other alliance defended against climb
+ENDGAME: (#robots in air = 0)
+	Team 4028: Attempted Climb, lifted 0 OTHER robots
+

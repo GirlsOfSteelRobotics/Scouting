@@ -43,5 +43,5 @@ Can robot climb/lift?: Yes
 
 --------------- Match Data -----------------------
 Qualification #7: 0 EZ, 2 Switch, 5 Scale, 1 Failed, climbed
-	Auto: Start Pos = Middle, Baseline?: yes, Left Switch(x2), Right Scale(x0)
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x2), Right Scale(x0)
 	Comments: Very good with scale placement. Collecting kind of slow.

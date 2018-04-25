@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ElimDatabase {
 
-	private ArrayList<ElimAlliance> alliances;
+	public ArrayList<ElimAlliance> alliances;
 	
 	public ElimDatabase(String filename) throws IOException
 	{
@@ -21,7 +21,7 @@ public class ElimDatabase {
 			int allianceNumber = Match.getInt(lineInput[2]);
 			
 			//Create new match object
-			ElimMatch match = new ElimMatch(lineInput);
+			ElimTeamData match = new ElimTeamData(lineInput);
 			int index = getAllianceIndex(allianceNumber);
 			
 			//Find or create team
@@ -59,5 +59,16 @@ public class ElimDatabase {
 				return i;
 		}
 		return -1; //alliance not in database
+	}
+	
+	public void writeElimDataSheets(String foldername) throws IOException
+	{
+		for (int i = 0; i < alliances.size(); i++)
+		{
+			String filename = foldername + "/Alliance" + Integer.toString(alliances.get(i).allianceNumber) + "-Darwin.txt";
+			System.out.println("Writing " + filename);
+			alliances.get(i).writeDataFile(filename, i+1);
+		}
+		
 	}
 }

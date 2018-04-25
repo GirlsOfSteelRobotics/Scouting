@@ -3,6 +3,9 @@ import java.io.IOException;
 public class MainLauncher {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		ElimDatabase elimData = new ElimDatabase("ElimsScoutingData.csv");
+		elimData.writeElimDataSheets("ElimDataSheets");
+		
 		
 		System.out.println("Loading database...");
 		Database data = new Database("ChampsScoutingData.csv", false); //filename, include practice matches?

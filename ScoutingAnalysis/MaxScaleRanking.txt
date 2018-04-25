@@ -1,2 +1,0 @@
-1. Team 4028: Avg robot score = 17.75, Max Scale Score = 7.0
-2. Team 3504: Avg robot score = 14.75, Max Scale Score = 5.0
