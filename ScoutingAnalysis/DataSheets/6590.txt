@@ -1,0 +1,75 @@
+Team #6590 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 60
+Average cubes placed: 4.3
+	Scale: 	4% of cubes, max = 2.0, avg = 0.2
+	Switch:	74% of cubes, max = 6.0, avg = 3.2
+	EZ: 	20% of cubes, max = 3.0, avg = 0.9
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: None (Left)
+Partner Rating: 2.2 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 40% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 50% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 50% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #21: Just dropped a cube dramatically 
+	Qualification Match #29: Pretty fast. 
+	Qualification Match #57: Failed switch 
+	Qualification Match #93: Meh
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 96.15384615384616%
+Average # cubes placed: 4.3
+	% cubes in EZ = 20%
+	% cubes in Switch = 74%
+	% cubes in Scale = 4%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 10%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 60%
+	% did nothing in endgame = 30%
+
+--------------- Match Data -----------------------
+Qualification #10: 0 EZ, 6 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Robot attempted to put a cube in scale but failed
+Qualification #21: 3 EZ, 3 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Pretty good switch and EZ. Some collector problems but not too bad. 
+Qualification #29: 3 EZ, 3 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Held two cubes at a time but was not penalized for it. 
+Qualification #44: 0 EZ, 3 Switch, 0 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Got stuck in another robot at 1 point; has difficulty sucking in cubes
+Qualification #49: 0 EZ, 4 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Good at getting cubes from floor and quickly putting them in switch
+Qualification #57: 0 EZ, 3 Switch, 2 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Hard time dropping cubes 
+Qualification #71: 0 EZ, 5 Switch, 0 Scale, 1 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
+Qualification #86: 0 EZ, 2 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Still need to pee 😞
+Qualification #93: 3 EZ, 2 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Pretty bad. Collecter was super dinky it was just two 80 20 s with pistons. During teleop it accidentally pushed all of the cubes in its pile to the other team. During end game it moved around in a confused circle before committing two fouls while trying to get to the platform
+Qualification #112: 0 EZ, 1 Switch, 0 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x1), Right Scale(x0)

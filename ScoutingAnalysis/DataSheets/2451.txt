@@ -1,0 +1,76 @@
+Team #2451 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 29
+Average cubes placed: 5.6
+	Scale: 	26% of cubes, max = 6.0, avg = 1.5
+	Switch:	62% of cubes, max = 6.0, avg = 3.5
+	EZ: 	10% of cubes, max = 3.0, avg = 0.6
+Auto Ability: Baseline; Switch; Scale; Switch AND Scale
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb (Left; Middle)
+Partner Rating: 2.8 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 20% switch, 30% scale, 10% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 25% switch, 50% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 50% scale, 50% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #16: Very fast. Throw the block
+	Qualification Match #45: Bumped into another robot. 
+	Qualification Match #58: Fast
+	Qualification Match #71: Atttempted to get 2 cubes burn missed one
+	Qualification Match #95: White male middle aged groach. Mehhhhh. Actually maybe he’s 20. Can’t tell.
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 95.91836734693877%
+Average # cubes placed: 5.6
+	% cubes in EZ = 10%
+	% cubes in Switch = 62%
+	% cubes in Scale = 26%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 30%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 20%
+	% platform in matches = 20%
+	% did nothing in endgame = 30%
+
+--------------- Match Data -----------------------
+Qualification #8: 0 EZ, 5 Switch, 3 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Shooter mechanism; very accurate and fast 
+Qualification #16: 0 EZ, 4 Switch, 1 Scale, 2 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: Some collecting difficulties. Throwing isn’t very accurate. 
+Qualification #27: 3 EZ, 6 Switch, 1 Scale, 1 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+Qualification #45: 0 EZ, 5 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: Tried to get on the platform but didn’t quite make it. Shooter style bot
+Qualification #50: 3 EZ, 0 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+Qualification #58: 0 EZ, 5 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Left Scale(x1)
+	Comments: Fast; hard time picking up cubes 
+Qualification #71: 0 EZ, 0 Switch, 6 Scale, 1 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+	Comments: Tried double climb but was two inches too short. Very good at defending scale
+Qualification #82: 0 EZ, 3 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Played defense on other teams side wellness 
+Qualification #95: 0 EZ, 6 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x2), Left Scale(x0)
+	Comments: Great switch robot. Good defense
+Qualification #106: 0 EZ, 1 Switch, 3 Scale, 2 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Threw a cube outside the field with its launcher. Only took up a little space on the bar and climbed fast

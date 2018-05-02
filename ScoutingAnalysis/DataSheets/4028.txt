@@ -1,36 +1,37 @@
-Team #4028 - 1 matches played
+Team #4028 - 8 matches played
 
 --------------- Quick Facts ----------------------
-GoS Strategy Ranking: 1
-Average cubes placed: 7.0
-	Scale: 	100% of cubes, max = 7.0, avg = 7.0
-	Switch:	0% of cubes, max = 0.0, avg = 0.0
+GoS Strategy Ranking: 6
+Average cubes placed: 4.0
+	Scale: 	87% of cubes, max = 5.0, avg = 3.5
+	Switch:	12% of cubes, max = 3.0, avg = 0.5
 	EZ: 	0% of cubes, max = 0.0, avg = 0.0
-Auto Ability: Baseline; Scale
+Auto Ability: Baseline; Scale; Switch AND Scale
 	Mulitple Cube Auto: Yes
-Climbing Ability: Climb (Left)
-Partner Rating: 5.0 out of 5
+Climbing Ability: Climb (Middle; Right)
+Partner Rating: 4.75 out of 5
 
 --------------- Autonomous Stats -----------------
 
 Autonomous Abilities:
-	Overall Auto Functions: 	100% baseline, 0% switch, 100% scale, 0% both
+	Overall Auto Functions: 	100% baseline, 0% switch, 87% scale, 12% both
 	-----Based on plate color-----
-	Switch is on robot's side: 	No data
-	Scale is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
-	Both are on robot's side: 	No data
+	Switch is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 50% scale, 50% both
+	Both are on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
 	Neither on robot's side: 	No data
-	Robot is in the middle: 	No data
+	Robot is in the middle: 	100% baseline, 0% switch, 100% scale, 0% both
 
 All auto comments:
-	Qualification Match #2: Very quick
+	Qualification Match #12: Missed one in scale 
+	Qualification Match #62: Same side scale then far side switch. It was good
 
 --------------- Teleop Stats ---------------------
-Cube Success Rate: 0.0%
-Average # cubes placed: 7.0
+Cube Success Rate: 80.0%
+Average # cubes placed: 4.0
 	% cubes in EZ = 0%
-	% cubes in Switch = 0%
-	% cubes in Scale = 100%
+	% cubes in Switch = 12%
+	% cubes in Scale = 87%
 Can get cube from floor?: No
 Can get cube from portal?: No
 Can robot climb/lift?: Yes
@@ -42,6 +43,25 @@ Can robot climb/lift?: Yes
 	% did nothing in endgame = 0%
 
 --------------- Match Data -----------------------
-Qualification #2: 0 EZ, 0 Switch, 7 Scale, 1 Failed, climbed
-	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x2)
-	Comments: Very good when scale tipped down already from auto
+Qualification #2: 0 EZ, 0 Switch, 3 Scale, 2 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x3)
+	Comments: Fast stable and good automous period
+Qualification #12: 0 EZ, 0 Switch, 3 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x2)
+	Comments: Slower than usual; kept missing scale 
+Qualification #30: 0 EZ, 1 Switch, 2 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x2)
+	Comments: Uhmazing
+Qualification #42: 0 EZ, 0 Switch, 4 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x1)
+	Comments: Good scale placer
+Qualification #53: 0 EZ, 0 Switch, 5 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+	Comments: Climbed on middle part of bar but all the way to the right so other robot could climb in middle too
+Qualification #62: 0 EZ, 0 Switch, 4 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x1), Left Scale(x1)
+	Comments: Effective defense played agianst them. Pinned against wall when coming back from portal. Teammate did a bad job with neat stacks so one of the cubes that they tried to place fell off. 
+Qualification #86: 0 EZ, 3 Switch, 4 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+Qualification #105: 0 EZ, 0 Switch, 3 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)

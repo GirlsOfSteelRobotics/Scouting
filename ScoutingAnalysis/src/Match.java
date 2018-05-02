@@ -30,7 +30,7 @@ public class Match {
 	}
 	
 	
-	public static double EZ_POINTS = 0.65;
+	public static double EZ_POINTS = 0.64;
 	public static double SWITCH_POINTS = 1.0;
 	public static double SCALE_POINTS = 1.3;
 	public static double CLIMB_POINTS = 1.5;
@@ -42,6 +42,8 @@ public class Match {
 		
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
+		
+		if (matchNumber == 3572) matchNumber = 25;
 		
 		s = getString(lineInput[4]);
 		if (s.contains("Left")) startingPosition = FieldSide.left;
@@ -85,15 +87,64 @@ public class Match {
 		generalComments = getString(lineInput[19]);
 		result = getString(lineInput[20]);
 		partnerRating = getInt(lineInput[21]);
+		
+		//Corrections
+		if (matchType.equals("Qualification") && matchNumber == 1)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.left;
+		}
+		
+		else if (matchType.equals("Qualification") && matchNumber == 68)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.left;
+		}
+		
+		else if (matchType.equals("Qualification") && matchNumber == 70)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.right;
+		}
+		
+		else if (matchType.equals("Qualification") && matchNumber == 76)
+		{
+			switchPosition = FieldSide.left;
+			scalePosition = FieldSide.left;
+		}
+		
+		else if (matchType.equals("Qualification") && matchNumber == 77)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.right;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 78)
+		{
+			switchPosition = FieldSide.left;
+			scalePosition = FieldSide.right;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 92)
+		{
+			switchPosition = FieldSide.left;
+			scalePosition = FieldSide.right;
+		}
 	}
 	
 	public double getMatchScore(boolean includeAuto)
 	{
 		double score = 0;
-		//Autonomous + Teleop
-		score += getCubesEZ(includeAuto) * EZ_POINTS;
-		score += getCubesSwitch(includeAuto) * SWITCH_POINTS;
-		score += getCubesScale(includeAuto) * SCALE_POINTS;
+		
+		//Auto
+		if (includeAuto)
+		{
+			score += autoCubesSwitch * (2 * SWITCH_POINTS);
+			score += autoCubesScale * (2 * SCALE_POINTS);
+		}
+		
+		//Teleop
+		score += getCubesEZ(false) * EZ_POINTS;
+		score += getCubesSwitch(false) * SWITCH_POINTS;
+		score += getCubesScale(false) * SCALE_POINTS;
 
 		//Endgame
 		if(endgameFunction.equals("Climb")) score += CLIMB_POINTS;
@@ -106,10 +157,18 @@ public class Match {
 	public double getMatchScoreNoClimb(boolean includeAuto)
 	{
 		double score = 0;
-		//Autonomous + Teleop
-		score += getCubesEZ(includeAuto) * EZ_POINTS;
-		score += getCubesSwitch(includeAuto) * SWITCH_POINTS;
-		score += getCubesScale(includeAuto) * SCALE_POINTS;
+
+		//Auto
+		if (includeAuto)
+		{
+			score += autoCubesSwitch * (1.5 * SWITCH_POINTS);
+			score += autoCubesScale * (1.5 * SCALE_POINTS);
+		}
+		
+		//Teleop
+		score += getCubesEZ(false) * EZ_POINTS;
+		score += getCubesSwitch(false) * SWITCH_POINTS;
+		score += getCubesScale(false) * SCALE_POINTS;
 		
 		return score;
 		

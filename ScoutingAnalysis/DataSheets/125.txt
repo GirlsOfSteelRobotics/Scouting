@@ -1,0 +1,71 @@
+Team #125 - 9 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 22
+Average cubes placed: 5.444444444444445
+	Scale: 	75% of cubes, max = 7.0, avg = 4.11
+	Switch:	14% of cubes, max = 3.0, avg = 0.77
+	EZ: 	10% of cubes, max = 2.0, avg = 0.55
+Auto Ability: Baseline; Switch; Scale
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb (Middle)
+Partner Rating: 3.22 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 33% switch, 33% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 75% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #37: Did nothing after cross the line
+	Qualification Match #49: Good pace. Grabbed a second cube. 
+	Qualification Match #109: Very fast
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 85.0%
+Average # cubes placed: 5.444444444444445
+	% cubes in EZ = 10%
+	% cubes in Switch = 14%
+	% cubes in Scale = 75%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 11%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 22%
+	% platform in matches = 33%
+	% did nothing in endgame = 33%
+
+--------------- Match Data -----------------------
+Qualification #1: 0 EZ, 0 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x2), Left Scale(x0)
+	Comments: Just moving around
+Qualification #17: 2 EZ, 1 Switch, 4 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x2), Right Scale(x0)
+Qualification #24: 0 EZ, 0 Switch, 5 Scale, 2 Failed, attempted climb
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x2), Right Scale(x0)
+	Comments: Attempted to climb and lift a robot behind it but the didn’t get on. Pretty accurate with scale- attempted third layer.
+Qualification #37: 0 EZ, 1 Switch, 3 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Climber has an attach lift behind it but was in successful to lift teammate 
+Qualification #49: 1 EZ, 1 Switch, 3 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: Pretty good. Gave of gave up at the end when the cubes ran out (didn’t do anything for the last 50 seconds)
+Qualification #65: 2 EZ, 0 Switch, 3 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #73: 0 EZ, 1 Switch, 4 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: had ability to lift another robot but didn’t for some reason
+Qualification #82: 0 EZ, 3 Switch, 7 Scale, 2 Failed, attempted climb, lifted 1others
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Not sure out this robot could lift another since the ramp was behind the. Also seemed that the rope was not long enough or caught on something for it to climb. Otherwise very fast and good driving. 
+Qualification #109: 0 EZ, 0 Switch, 7 Scale, 3 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x1)
+	Comments: Knocked a couple off the scale. Hit the alliance partners robot so they couldn’t climb. 

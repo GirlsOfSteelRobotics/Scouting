@@ -1,0 +1,72 @@
+Team #247 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 49
+Average cubes placed: 5.3
+	Scale: 	28% of cubes, max = 3.0, avg = 1.5
+	Switch:	22% of cubes, max = 3.0, avg = 1.2
+	EZ: 	49% of cubes, max = 9.0, avg = 2.6
+Auto Ability: Baseline; Switch; Scale
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 2.1 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 40% switch, 20% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 66% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 33% switch, 66% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 50% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #20: Super high lift system. 
+	Qualification Match #52: Failed switch auto( penalty for crossing into other half of the field)
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.3
+	% cubes in EZ = 49%
+	% cubes in Switch = 22%
+	% cubes in Scale = 28%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 30%
+	% did nothing in endgame = 70%
+
+--------------- Match Data -----------------------
+Qualification #9: 0 EZ, 2 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+Qualification #20: 3 EZ, 3 Switch, 1 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
+	Comments: Pretty good. Definitely a little shaky
+Qualification #34: 1 EZ, 2 Switch, 3 Scale, 1 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Was lifted by a platform robot 
+Qualification #40: 4 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+	Comments: Generally moderate robot. Nothing special yet did it’s job. Played 1/3 the match as defense. 
+Qualification #52: 0 EZ, 0 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Lost connection 
+Qualification #58: 1 EZ, 3 Switch, 3 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+Qualification #72: 1 EZ, 1 Switch, 2 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Right Scale(x0)
+	Comments: Kept hitting us when we were knocked down. Literally. 
+Qualification #85: 0 EZ, 1 Switch, 3 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+Qualification #93: 7 EZ, 0 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+	Comments: Precise ez placer
+Qualification #109: 9 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: It took a long time to collect the cube it got from the portal

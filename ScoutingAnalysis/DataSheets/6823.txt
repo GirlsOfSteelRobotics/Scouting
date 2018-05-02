@@ -1,0 +1,67 @@
+Team #6823 - 8 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 54
+Average cubes placed: 6.875
+	Scale: 	1% of cubes, max = 1.0, avg = 0.12
+	Switch:	25% of cubes, max = 5.0, avg = 1.75
+	EZ: 	72% of cubes, max = 9.0, avg = 5.0
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 2.5 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	87% baseline, 25% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	50% baseline, 50% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 33% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #37: No auto
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 6.875
+	% cubes in EZ = 72%
+	% cubes in Switch = 25%
+	% cubes in Scale = 1%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 50%
+	% did nothing in endgame = 50%
+
+--------------- Match Data -----------------------
+Qualification #6: 5 EZ, 0 Switch, 1 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Scored on wrong side of the scale 
+Qualification #20: 7 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Kind of slower
+Qualification #25: 9 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: One of the best switch/ez bots before it ran out of cubes and did nothing
+Qualification #37: 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: No, Right Switch(x0), Left Scale(x0)
+	Comments: Lost connection 
+Qualification #55: 3 EZ, 3 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+Qualification #61: 3 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Pretty slow
+Qualification #71: 4 EZ, 5 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Fairly good at switch
+Qualification #112: 9 EZ, 2 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Very good at defending scale while stuffing ez

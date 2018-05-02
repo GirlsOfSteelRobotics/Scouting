@@ -27,7 +27,19 @@ public class Database {
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
-
+			
+			if (teamNumber == 25) teamNumber = 3572;
+			if (teamNumber == 1017) teamNumber = 1018;
+			if (teamNumber == 2795) teamNumber = 2791;
+			if (teamNumber == 4192) teamNumber = 4198;
+			if (teamNumber == 5604) teamNumber = 5406;
+			if (teamNumber == 6974) teamNumber = 6947;
+			if (teamNumber == 3236) teamNumber = 3536;
+			if (teamNumber == 5884) teamNumber = 5883;
+			if (teamNumber == 579) teamNumber = 578;
+			if (teamNumber == 5063) teamNumber = 5036;
+			if (teamNumber == 3532) teamNumber = 3542;
+			
 			//Create new match object
 			Match match = new Match(lineInput);
 			int index = getTeamIndex(teamNumber);
@@ -45,7 +57,10 @@ public class Database {
 			}
 			
 			if(includePracticeMatches || !match.matchType.contains("Practice"))
-				team.addMatch(match);
+			{
+				if (teamNumber != 504 && teamNumber != 3823) team.addMatch(match);
+			}
+				
 		}
 		
 		for (int i = 0; i < data.size(); i++)

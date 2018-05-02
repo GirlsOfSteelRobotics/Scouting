@@ -1,0 +1,76 @@
+Team #5740 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 68
+Average cubes placed: 3.1
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	58% of cubes, max = 5.0, avg = 1.8
+	EZ: 	41% of cubes, max = 5.0, avg = 1.3
+Auto Ability: Baseline
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 1.8 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	90% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	66% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #1: Had a cube in robot
+	Qualification Match #30: Just moved. 
+	Qualification Match #38: Disconnected
+	Qualification Match #94: Mediocre 
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 97.77777777777777%
+Average # cubes placed: 3.1
+	% cubes in EZ = 41%
+	% cubes in Switch = 58%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 10%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 30%
+	% did nothing in endgame = 60%
+
+--------------- Match Data -----------------------
+Qualification #1: 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Their robot stopped working right after autonomous so it didn’t move the entire time during teleop 
+Qualification #13: 2 EZ, 5 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: All cubes were put into opposite switch 
+Qualification #30: 0 EZ, 3 Switch, 0 Scale, 2 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Doesn’t handle defense very well. Not very accurate bucket style bot. 
+Qualification #38: 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: No, Right Switch(x0), Left Scale(x0)
+	Comments: Robot was disconnected. 
+Qualification #45: 3 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Little bit clumsy putting in ez and switch. Didn’t make it on another robots ramp in time
+Qualification #61: 0 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+Qualification #74: 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Couldn’t rewkk pick up cubes and didn’t do anything basically 
+Qualification #85: 5 EZ, 0 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Slow 
+Qualification #94: 3 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Super fast ez robot. Good at putting cubes in opponents switch. During end game another robot played defense on it and got stuck. Could not get undone so was not even able to go to the platform.
+Qualification #103: 0 EZ, 5 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Pretty slow. Doesn’t have many capabilities. 

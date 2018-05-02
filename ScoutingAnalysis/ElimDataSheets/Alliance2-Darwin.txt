@@ -1,0 +1,11 @@
+Alliance #2 - 1 matches played
+
+----------------------------------------
+Quarterfinal Match #3
+AUTONOMOUS: 1 cubes in switch, 0 cubes in scale
+TELEOP: (total = 0 scale, 4 switch, 3 EZ)
+Team 5811: 0 in scale, 4 in switch, 3 in EZ
+	Strategy: very focused on opponent switch
+ENDGAME: (#robots in air = 1)
+	Team 5811: Climb, lifted 0 OTHER robots
+

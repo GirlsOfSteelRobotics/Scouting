@@ -1,0 +1,76 @@
+Team #3130 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 13
+Average cubes placed: 5.3
+	Scale: 	50% of cubes, max = 6.0, avg = 2.7
+	Switch:	49% of cubes, max = 7.0, avg = 2.6
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch; Scale
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb (Left; Middle; Right)
+Partner Rating: 3.2 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 10% switch, 60% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 66% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 50% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Robot is in the middle: 	100% baseline, 50% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #22: Wild
+	Qualification Match #27: Super fast and awesome. 
+	Qualification Match #61: Failed scale and penalty 
+	Qualification Match #91: Dropone cube
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 96.29629629629629%
+Average # cubes placed: 5.3
+	% cubes in EZ = 0%
+	% cubes in Switch = 49%
+	% cubes in Scale = 50%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 70%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 10%
+	% platform in matches = 10%
+	% did nothing in endgame = 10%
+
+--------------- Match Data -----------------------
+Qualification #9: 0 EZ, 3 Switch, 4 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Fairly quick climb...very efficient at placing cubes
+Qualification #22: 0 EZ, 4 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x1)
+	Comments: Super erratic lift behavior and driving... idk what was going on. Pretty quick between portal and opponent switch
+Qualification #27: 0 EZ, 2 Switch, 3 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x2)
+	Comments: Knocked some blocks off. Used only a small portion of the bar to climb. 
+Qualification #36: 0 EZ, 7 Switch, 2 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x3)
+	Comments: Climbed with friend. Sloppy cube placement on scale. 
+Qualification #47: 0 EZ, 0 Switch, 6 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x1)
+Qualification #61: 0 EZ, 0 Switch, 5 Scale, 1 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Penalty for hanging on scale 
+Qualification #73: 0 EZ, 0 Switch, 1 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Slow do nothing
+Qualification #86: 0 EZ, 6 Switch, 0 Scale, 2 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x2), Left Scale(x0)
+	Comments: Move fast but not good at getting cube 
+Qualification #91: 0 EZ, 0 Switch, 2 Scale, 2 Failed, attempted climb
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x2)
+	Comments: Hoot was tangled. Fast
+Qualification #102: 0 EZ, 4 Switch, 4 Scale, 1 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x1)
+	Comments: Looked like it could climb but didnt

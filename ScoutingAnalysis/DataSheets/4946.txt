@@ -1,0 +1,74 @@
+Team #4946 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 39
+Average cubes placed: 5.7
+	Scale: 	38% of cubes, max = 6.0, avg = 2.2
+	Switch:	21% of cubes, max = 3.0, avg = 1.2
+	EZ: 	40% of cubes, max = 6.0, avg = 2.29
+Auto Ability: Baseline; Switch; Scale
+	Mulitple Cube Auto: No
+Climbing Ability: Climb (Middle; Right)
+Partner Rating: 3.4 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	90% baseline, 40% switch, 20% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	83% baseline, 50% switch, 16% scale, 0% both
+
+All auto comments:
+	Qualification Match #66: Fast
+	Qualification Match #100: Tried to collect a second cube but missed
+	Qualification Match #106: Didn’t do anything rip
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 95.08196721311475%
+Average # cubes placed: 5.7
+	% cubes in EZ = 40%
+	% cubes in Switch = 21%
+	% cubes in Scale = 38%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 20%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 30%
+	% platform in matches = 10%
+	% did nothing in endgame = 40%
+
+--------------- Match Data -----------------------
+Qualification #6: 6 EZ, 2 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: Started off really fast to ez but slowe
+Qualification #12: 5 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Didn’t reach platform because it was playing defense at end
+Qualification #29: 0 EZ, 0 Switch, 3 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #36: 0 EZ, 1 Switch, 3 Scale, 2 Failed, attempted climb
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Climbed then fell and couldn’t get back up in time. Pretty speedy. Would recommend
+Qualification #48: 0 EZ, 3 Switch, 2 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+Qualification #66: 1 EZ, 1 Switch, 6 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x1)
+	Comments: Really fast scale 
+Qualification #76: 4 EZ, 3 Switch, 0 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
+	Comments: Fast but had some problems on lifting the cube up at first
+Qualification #82: 5 EZ, 0 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: I think their collector and lift were broke. It was shoving around cubes the whole match.
+Qualification #100: 2 EZ, 0 Switch, 6 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Very stable robot. Slight collector difficulties but not a big issue. 
+Qualification #106: 0 EZ, 1 Switch, 2 Scale, 3 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: No, Left Switch(x0), Right Scale(x0)
+	Comments: Seems flimsy

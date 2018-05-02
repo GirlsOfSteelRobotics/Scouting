@@ -1,0 +1,74 @@
+Team #6947 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 65
+Average cubes placed: 5.4
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	14% of cubes, max = 3.0, avg = 0.8
+	EZ: 	85% of cubes, max = 9.0, avg = 4.59
+Auto Ability: Baseline
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 1.8 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #11: Dropped cube when auto started
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.4
+	% cubes in EZ = 85%
+	% cubes in Switch = 14%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 10%
+	% attempted climb in matches = 0%
+	% platform in matches = 20%
+	% did nothing in endgame = 70%
+
+--------------- Match Data -----------------------
+Qualification #11: 0 EZ, 3 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Collector isn’t really good
+Qualification #18: 5 EZ, 0 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Overall slow cycle time. Not super precise with driving so struggled to aim in into EZ and collect cubes quickly 
+Qualification #33: 4 EZ, 1 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Slow collector 
+Qualification #39: 6 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Has a little bit of a difficult time grabbing cubes
+Qualification #48: 2 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame, lifted 2others
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Very slow
+Qualification #57: 2 EZ, 1 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Super slow
+Qualification #70: 8 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Weak collector 
+Qualification #79: 5 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: A little slow 
+Qualification #92: 9 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Slow but accurate 
+Qualification #102: 5 EZ, 0 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Got disconnected 

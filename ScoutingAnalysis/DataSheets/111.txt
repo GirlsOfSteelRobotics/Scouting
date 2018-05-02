@@ -1,0 +1,75 @@
+Team #111 - 10 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 59
+Average cubes placed: 4.8
+	Scale: 	50% of cubes, max = 5.0, avg = 2.4
+	Switch:	29% of cubes, max = 3.0, avg = 1.4
+	EZ: 	20% of cubes, max = 5.0, avg = 1.0
+Auto Ability: Baseline; Scale
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 2.7 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	80% baseline, 0% switch, 10% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 33% scale, 0% both
+	Scale is on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	0% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #6: No auto
+	Qualification Match #28: Attempted ez
+	Qualification Match #54: Screwed up auto logic
+	Qualification Match #65: Attempt scale
+	Qualification Match #70: Tried scale
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 97.14285714285714%
+Average # cubes placed: 4.8
+	% cubes in EZ = 20%
+	% cubes in Switch = 29%
+	% cubes in Scale = 50%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 30%
+	% did nothing in endgame = 70%
+
+--------------- Match Data -----------------------
+Qualification #6: 0 EZ, 0 Switch, 5 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: No, Right Switch(x0), Left Scale(x0)
+	Comments: Kept missing scsle
+Qualification #13: 1 EZ, 1 Switch, 2 Scale, 1 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Not precise at placing cube in the cube and tippy
+Qualification #28: 1 EZ, 3 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: No, Left Switch(x0), Right Scale(x0)
+	Comments: Difficulty collecting without pushing into wall but can collect sideways. Very versatile and not bad at anything. Super accurate with placing third layer on cube
+Qualification #34: 0 EZ, 2 Switch, 4 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Was lifted
+Qualification #54: 3 EZ, 3 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: SUoer clumsy and not the best drive team but has a lot of potential
+Qualification #65: 0 EZ, 0 Switch, 5 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: It had a hard time with scale placement
+Qualification #70: 0 EZ, 0 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Penalty for blocking the opponent 
+Qualification #86: 5 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+Qualification #97: 0 EZ, 0 Switch, 5 Scale, 2 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+Qualification #107: 0 EZ, 3 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)

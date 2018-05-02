@@ -555,7 +555,7 @@ public class Team {
 		
 		for (int i = 0; i < matches.size(); i++)
 		{
-			if((matches.get(i).autoCubesSwitch + matches.get(i).autoCubesScale) > 0) mult = true;
+			if((matches.get(i).autoCubesSwitch + matches.get(i).autoCubesScale) > 1) mult = true;
 		}
 		
 		return mult;
