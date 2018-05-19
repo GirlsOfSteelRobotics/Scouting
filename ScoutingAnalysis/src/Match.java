@@ -43,7 +43,7 @@ public class Match {
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
 		
-		if (matchNumber == 3572) matchNumber = 25;
+		//CORRECT MATCH NUMBERS
 		
 		s = getString(lineInput[4]);
 		if (s.contains("Left")) startingPosition = FieldSide.left;

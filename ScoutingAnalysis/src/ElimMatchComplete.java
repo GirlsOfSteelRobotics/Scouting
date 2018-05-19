@@ -20,9 +20,9 @@ public class ElimMatchComplete {
 	{
 		matchData.add(data);
 	}
-	
-	public void writeElimMatch(BufferedWriter fout) throws IOException
-	{
+
+	public void writeElimMatch(BufferedWriter fout) throws IOException {
+		// TODO Auto-generated method stub
 		fout.write("----------------------------------------");
 		fout.newLine();
 		fout.write(matchType + " Match #" + matchNumber);

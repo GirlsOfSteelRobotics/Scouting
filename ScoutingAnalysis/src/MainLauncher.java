@@ -8,7 +8,7 @@ public class MainLauncher {
 		
 		
 		System.out.println("Loading database...");
-		Database data = new Database("ChampsScoutingData.csv", true); //filename, include practice matches?
+		Database data = new Database("WOWScoutingData.csv", false); //filename, include practice matches?
 		data.writeRankedList("RankedList.txt", true); //by avg robot score, includeAuto?
 		data.writeDataSheets("DataSheets");
 		//data.writeSwitchRankedList("MaxSwitchRanking.txt", false); //by max in switch, includeAuto?
