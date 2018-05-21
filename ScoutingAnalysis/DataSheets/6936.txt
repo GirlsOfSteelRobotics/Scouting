@@ -1,70 +1,57 @@
-Team #6936 - 9 matches played
+Team #6936 - 5 matches played
 
 --------------- Quick Facts ----------------------
-GoS Strategy Ranking: 51
-Average cubes placed: 6.222222222222222
-	Scale: 	12% of cubes, max = 4.0, avg = 0.77
-	Switch:	30% of cubes, max = 4.0, avg = 1.88
-	EZ: 	57% of cubes, max = 8.0, avg = 3.55
+GoS Strategy Ranking: 28
+Average cubes placed: 4.8
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	33% of cubes, max = 3.0, avg = 1.6
+	EZ: 	66% of cubes, max = 5.0, avg = 3.2
 Auto Ability: Baseline; Switch
 	Mulitple Cube Auto: No
 Climbing Ability: None (None/Other)
-Partner Rating: 2.33 out of 5
+Partner Rating: 2.4 out of 5
 
 --------------- Autonomous Stats -----------------
 
 Autonomous Abilities:
-	Overall Auto Functions: 	100% baseline, 33% switch, 0% scale, 0% both
+	Overall Auto Functions: 	80% baseline, 20% switch, 0% scale, 0% both
 	-----Based on plate color-----
-	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
 	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
-	Both are on robot's side: 	100% baseline, 66% switch, 0% scale, 0% both
-	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
-	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
 
 All auto comments:
-	Qualification Match #42: Attempted to put in switch
 
 --------------- Teleop Stats ---------------------
-Cube Success Rate: 98.78048780487805%
-Average # cubes placed: 6.222222222222222
-	% cubes in EZ = 57%
-	% cubes in Switch = 30%
-	% cubes in Scale = 12%
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.8
+	% cubes in EZ = 66%
+	% cubes in Switch = 33%
+	% cubes in Scale = 0%
 Can get cube from floor?: No
 Can get cube from portal?: No
 Can robot climb/lift?: No
 	% climb in matches = 0%
 	% climb and lifted = 0%
 	% lifted others = 0%
-	% attempted climb in matches = 11%
-	% platform in matches = 44%
-	% did nothing in endgame = 44%
+	% attempted climb in matches = 60%
+	% platform in matches = 0%
+	% did nothing in endgame = 40%
 
 --------------- Match Data -----------------------
-Qualification #10: 4 EZ, 1 Switch, 1 Scale, 0 Failed, no endgame
-	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
-	Comments: Slow
-Qualification #16: 6 EZ, 3 Switch, 0 Scale, 0 Failed, no endgame
-	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
-	Comments: Fast EZ
-Qualification #32: 0 EZ, 1 Switch, 2 Scale, 1 Failed, platform
-	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
-	Comments: Chased around cubes. Very tippy. Very slow lift and inaccurate shooter. 
-Qualification #42: 8 EZ, 2 Switch, 0 Scale, 0 Failed, no endgame
-	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
-Qualification #54: 5 EZ, 2 Switch, 0 Scale, 0 Failed, attempted climb
+Qualification #3: 5 EZ, 0 Switch, 0 Scale, 0 Failed, attempted climb
 	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
-	Comments: fell over trying to climb
-Qualification #67: 2 EZ, 2 Switch, 0 Scale, 0 Failed, platform
-	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
-	Comments: Sometimes had trouble collecting cubes. Was lifted but seemed like it could have attempted climbing
-Qualification #74: 1 EZ, 4 Switch, 0 Scale, 2 Failed, platform
-	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
-	Comments: Struggled to hold cubes 
-Qualification #83: 6 EZ, 2 Switch, 0 Scale, 0 Failed, platform
-	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
-	Comments: Can only collect a cube if it is leveraged against a wall. Fast and accurate driving. Aggressive defense.
-Qualification #92: 0 EZ, 0 Switch, 4 Scale, 1 Failed, no endgame
-	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x1), Right Scale(x0)
-	Comments: Very slow in its movements.
+	Comments: Slow drivetrain as well as placing speed in the vault.
+Qualification #9: 3 EZ, 2 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: No, Right Switch(x0), Right Scale(x0)
+	Comments: Fell before it could climb. Also driving was pretty slow and hesitant 
+Qualification #15: 5 EZ, 1 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Tried to climb but tipped backwards
+Qualification #17: 0 EZ, 2 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Right Scale(x0)
+Qualification #22: 3 EZ, 3 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Pushed robot from other alliance onto platform 

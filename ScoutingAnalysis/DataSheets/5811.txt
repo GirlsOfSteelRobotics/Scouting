@@ -1,0 +1,52 @@
+Team #5811 - 3 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 7
+Average cubes placed: 8.666666666666666
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	65% of cubes, max = 7.0, avg = 5.66
+	EZ: 	34% of cubes, max = 5.0, avg = 3.0
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 3.33 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	66% baseline, 33% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	0% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 8.666666666666666
+	% cubes in EZ = 34%
+	% cubes in Switch = 65%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 100%
+
+--------------- Match Data -----------------------
+Qualification #7: 0 EZ, 6 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Couldn’t hold cubes well
+Qualification #14: 4 EZ, 7 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: No, Right Switch(x0), Right Scale(x0)
+	Comments: Fast
+Qualification #20: 5 EZ, 4 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Yay bonds

@@ -1,0 +1,57 @@
+Team #4085 - 5 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 14
+Average cubes placed: 4.8
+	Scale: 	25% of cubes, max = 3.0, avg = 1.2
+	Switch:	37% of cubes, max = 4.0, avg = 1.8
+	EZ: 	37% of cubes, max = 6.0, avg = 1.8
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 3.0 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 100% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 96.42857142857143%
+Average # cubes placed: 4.8
+	% cubes in EZ = 37%
+	% cubes in Switch = 37%
+	% cubes in Scale = 25%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 40%
+	% platform in matches = 40%
+	% did nothing in endgame = 20%
+
+--------------- Match Data -----------------------
+Qualification #1: 0 EZ, 0 Switch, 1 Scale, 0 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Hard to pick up cubes  prom floor
+Qualification #10: 0 EZ, 0 Switch, 3 Scale, 1 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+Qualification #13: 6 EZ, 2 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Slow drivetrain and placement speed
+Qualification #20: 0 EZ, 4 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Mainly tried to take the enemy’s switch.
+Qualification #24: 3 EZ, 3 Switch, 1 Scale, 1 Failed, attempted climb
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Gah so slow. So tippy. It did the whole match with its robot extended.

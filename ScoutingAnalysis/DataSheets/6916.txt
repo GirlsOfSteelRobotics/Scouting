@@ -1,0 +1,54 @@
+Team #6916 - 4 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 30
+Average cubes placed: 3.0
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	100% of cubes, max = 6.0, avg = 3.0
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 1.75 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 92.3076923076923%
+Average # cubes placed: 3.0
+	% cubes in EZ = 0%
+	% cubes in Switch = 100%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 100%
+
+--------------- Match Data -----------------------
+Qualification #5: 0 EZ, 6 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #8: 0 EZ, 4 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: ONLY a switch bot that can’t climb or do ez or pick up cubes from the ground. Can’t do second layer on switch. Not a great bot. 
+Qualification #16: 0 EZ, 2 Switch, 0 Scale, 3 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Got disabled during endgame.
+Qualification #19: 0 EZ, 0 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Sorta just drove around collecting cubes and then dropping them

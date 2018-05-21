@@ -1,0 +1,55 @@
+Team #4521 - 5 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 9
+Average cubes placed: 4.8
+	Scale: 	25% of cubes, max = 4.0, avg = 1.2
+	Switch:	62% of cubes, max = 7.0, avg = 3.0
+	EZ: 	12% of cubes, max = 3.0, avg = 0.6
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: Climb + Lift (Middle; Right)
+Partner Rating: 3.0 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 60% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 66% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.8
+	% cubes in EZ = 12%
+	% cubes in Switch = 62%
+	% cubes in Scale = 25%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 80%
+	% climb and lifted = 20%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 20%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #1: 0 EZ, 3 Switch, 0 Scale, 0 Failed, climbed, lifted 1others
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+Qualification #8: 0 EZ, 2 Switch, 2 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+Qualification #14: 0 EZ, 7 Switch, 0 Scale, 1 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: A slow boi but pretty good. Has collecting difficulties 
+Qualification #18: 3 EZ, 3 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Left Scale(x0)
+	Comments: Got cube stuck in between motors 
+Qualification #22: 0 EZ, 0 Switch, 4 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x1), Right Scale(x0)

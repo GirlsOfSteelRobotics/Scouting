@@ -27,6 +27,8 @@ public class Database {
 		while ((line = file.readLine()) != null) {
 			String[] lineInput = line.split(",");
 			int teamNumber = Match.getInt(lineInput[1]);
+			
+			if (teamNumber == 2652) teamNumber = 2656;
 
 			//Create new match object
 			Match match = new Match(lineInput);
@@ -175,12 +177,11 @@ public class Database {
 		fout.write("Climbing Ability" + ",");
 		fout.write("Climb/Lift Percentage" + ",");
 		fout.write("Max Cubes in Game" + ",");
-		fout.write("Max Cubes in Scale*" + ",");
-		fout.write("Max Cubes in Switch*" + ",");
-		fout.write("Max Cubes in EZ*" + ",");
+		fout.write("Max Scale - Teleop" + ",");
+		fout.write("Max Switch - Teleop" + ",");
+		fout.write("Max EZ - Teleop" + ",");
 		fout.write("Autonomous Functions" + ",");
 		fout.write("Multiple Cube Auto?" + ",");
-		fout.write("*does not include autonomous" + ",");
 		fout.newLine();
 		
 		for (int i = 0; i < data.size(); i++)

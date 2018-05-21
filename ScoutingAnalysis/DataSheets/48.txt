@@ -1,0 +1,56 @@
+Team #48 - 4 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 11
+Average cubes placed: 6.25
+	Scale: 	28% of cubes, max = 3.0, avg = 1.75
+	Switch:	32% of cubes, max = 3.0, avg = 2.0
+	EZ: 	40% of cubes, max = 7.0, avg = 2.5
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: Yes
+Climbing Ability: None (None/Other)
+Partner Rating: 2.75 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 50% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #10: Put cube in switch in WRONG SIDE during auto
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 96.55172413793103%
+Average # cubes placed: 6.25
+	% cubes in EZ = 40%
+	% cubes in Switch = 32%
+	% cubes in Scale = 28%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 25%
+	% platform in matches = 25%
+	% did nothing in endgame = 50%
+
+--------------- Match Data -----------------------
+Qualification #2: 0 EZ, 3 Switch, 2 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Middle, Baseline?: No, Right Switch(x1), Left Scale(x0)
+	Comments: The lift is slow when raising. Could get stuck or tip on the scale.
+Qualification #10: 3 EZ, 2 Switch, 3 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: BAD auto. :( decent robot besides that. 
+Qualification #14: 7 EZ, 1 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Fast drivetrain and intake.
+Qualification #21: 0 EZ, 2 Switch, 1 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x2), Left Scale(x0)
+	Comments: Drive team seemed unfocused. Heavily defended by 5740

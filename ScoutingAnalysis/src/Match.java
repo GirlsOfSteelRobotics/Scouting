@@ -92,42 +92,49 @@ public class Match {
 		if (matchType.equals("Qualification") && matchNumber == 1)
 		{
 			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.left;
-		}
-		
-		else if (matchType.equals("Qualification") && matchNumber == 68)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.left;
-		}
-		
-		else if (matchType.equals("Qualification") && matchNumber == 70)
-		{
-			switchPosition = FieldSide.right;
 			scalePosition = FieldSide.right;
 		}
-		
-		else if (matchType.equals("Qualification") && matchNumber == 76)
-		{
-			switchPosition = FieldSide.left;
-			scalePosition = FieldSide.left;
-		}
-		
-		else if (matchType.equals("Qualification") && matchNumber == 77)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 78)
+		else if (matchType.equals("Qualification") && matchNumber == 3)
 		{
 			switchPosition = FieldSide.left;
 			scalePosition = FieldSide.right;
 		}
-		else if (matchType.equals("Qualification") && matchNumber == 92)
+		else if (matchType.equals("Qualification") && matchNumber == 5)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.right;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 7)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.right;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 8)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.left;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 10)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.right;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 11)
 		{
 			switchPosition = FieldSide.left;
 			scalePosition = FieldSide.right;
 		}
+		else if (matchType.equals("Qualification") && matchNumber == 15)
+		{
+			switchPosition = FieldSide.right;
+			scalePosition = FieldSide.left;
+		}
+		else if (matchType.equals("Qualification") && matchNumber == 22)
+		{
+			switchPosition = FieldSide.left;
+			scalePosition = FieldSide.right;
+		}
+		
 	}
 	
 	public double getMatchScore(boolean includeAuto)

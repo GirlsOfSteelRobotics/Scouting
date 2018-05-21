@@ -1,0 +1,56 @@
+Team #7165 - 5 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 19
+Average cubes placed: 5.2
+	Scale: 	50% of cubes, max = 5.0, avg = 2.6
+	Switch:	23% of cubes, max = 2.0, avg = 1.2
+	EZ: 	26% of cubes, max = 7.0, avg = 1.4
+Auto Ability: Baseline
+	Mulitple Cube Auto: No
+Climbing Ability: Climb (Middle)
+Partner Rating: 2.8 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 95.23809523809523%
+Average # cubes placed: 5.2
+	% cubes in EZ = 26%
+	% cubes in Switch = 23%
+	% cubes in Scale = 50%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 40%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 20%
+	% did nothing in endgame = 40%
+
+--------------- Match Data -----------------------
+Qualification #4: 0 EZ, 0 Switch, 5 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Not very fast
+Qualification #7: 0 EZ, 1 Switch, 5 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #12: 0 EZ, 2 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+Qualification #18: 7 EZ, 1 Switch, 0 Scale, 2 Failed, no endgame
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Mostly did the cube exchange during the match. Got a foul for dropping a cube in the middle of the switch.
+Qualification #24: 0 EZ, 2 Switch, 3 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Not great cube placement. Actually got 4 in scale but this form was being weird. 

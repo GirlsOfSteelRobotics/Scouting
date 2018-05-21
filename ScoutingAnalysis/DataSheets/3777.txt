@@ -1,0 +1,56 @@
+Team #3777 - 5 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 20
+Average cubes placed: 4.0
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	100% of cubes, max = 6.0, avg = 4.0
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: Climb (Middle)
+Partner Rating: 2.4 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 20% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	No data
+
+All auto comments:
+	Qualification Match #14: Slow auto
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 4.0
+	% cubes in EZ = 0%
+	% cubes in Switch = 100%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 40%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 40%
+	% platform in matches = 0%
+	% did nothing in endgame = 20%
+
+--------------- Match Data -----------------------
+Qualification #4: 0 EZ, 4 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Right Scale(x0)
+	Comments: Cubes can easily fall out of the intake. Can be easily defended.
+Qualification #10: 0 EZ, 4 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #14: 0 EZ, 6 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+Qualification #17: 0 EZ, 4 Switch, 0 Scale, 1 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x1), Right Scale(x0)
+	Comments: It could climb but it didn’t 
+Qualification #23: 0 EZ, 2 Switch, 0 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x0), Left Scale(x0)

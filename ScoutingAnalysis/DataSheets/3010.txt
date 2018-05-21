@@ -1,0 +1,59 @@
+Team #3010 - 5 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 24
+Average cubes placed: 5.2
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	15% of cubes, max = 3.0, avg = 0.8
+	EZ: 	84% of cubes, max = 6.0, avg = 4.4
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 2.0 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	80% baseline, 40% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	0% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	100% baseline, 50% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #2: Didn’t move until very end. I’m not sure what was going on with it.
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.2
+	% cubes in EZ = 84%
+	% cubes in Switch = 15%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 80%
+	% did nothing in endgame = 20%
+
+--------------- Match Data -----------------------
+Qualification #2: 4 EZ, 0 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Right, Baseline?: No, Left Switch(x0), Right Scale(x0)
+	Comments: Climbed on 48’s robot. 
+Qualification #7: 6 EZ, 3 Switch, 0 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x1), Right Scale(x0)
+	Comments: Mostly defended the blue Alliance’s switch and placed cubes into the vault
+Qualification #16: 6 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x1), Left Scale(x0)
+	Comments: Had trouble opening collecter to collect cubes 
+Qualification #21: 0 EZ, 1 Switch, 0 Scale, 1 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Very tippy 
+Qualification #24: 6 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Collector got messed up part way through the match. Could no longer collect cubes. 

@@ -1,0 +1,57 @@
+Team #2252 - 4 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 4
+Average cubes placed: 5.25
+	Scale: 	80% of cubes, max = 9.0, avg = 4.25
+	Switch:	19% of cubes, max = 3.0, avg = 1.0
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Scale
+	Mulitple Cube Auto: No
+Climbing Ability: Climb + Lift (Middle)
+Partner Rating: 4.0 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 50% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Both are on robot's side: 	100% baseline, 0% switch, 100% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 0% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #1: Tried to do two but missed the second 
+	Qualification Match #6: Ran out of time for 2
+	Qualification Match #16: Attpemted far side scale
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.25
+	% cubes in EZ = 0%
+	% cubes in Switch = 19%
+	% cubes in Scale = 80%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 100%
+	% climb and lifted = 50%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 0%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #1: 0 EZ, 3 Switch, 2 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x1)
+	Comments: They tried to lift two other robots but one didn’t end up getting on and the one that did get on fell off. 
+Qualification #6: 0 EZ, 0 Switch, 9 Scale, 0 Failed, climbed, lifted 1others
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Right Scale(x1)
+	Comments: Very good robot. 
+Qualification #16: 0 EZ, 0 Switch, 3 Scale, 2 Failed, climbed, lifted 1others
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Poor job on scale. Messed up a lot. Awesome climb tho. 
+Qualification #18: 0 EZ, 1 Switch, 3 Scale, 0 Failed, climbed
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x0), Left Scale(x0)

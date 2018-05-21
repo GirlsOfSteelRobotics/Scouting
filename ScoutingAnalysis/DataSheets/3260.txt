@@ -1,0 +1,55 @@
+Team #3260 - 4 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 23
+Average cubes placed: 3.25
+	Scale: 	46% of cubes, max = 4.0, avg = 1.5
+	Switch:	53% of cubes, max = 3.0, avg = 1.75
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: No
+Climbing Ability: Climb (Middle)
+Partner Rating: 2.0 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	75% baseline, 25% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	50% baseline, 0% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	No data
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 3.25
+	% cubes in EZ = 0%
+	% cubes in Switch = 53%
+	% cubes in Scale = 46%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 25%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 25%
+	% platform in matches = 25%
+	% did nothing in endgame = 25%
+
+--------------- Match Data -----------------------
+Qualification #6: 0 EZ, 0 Switch, 1 Scale, 0 Failed, attempted climb
+	Auto: Start Pos = Left, Baseline?: No, Left Switch(x0), Right Scale(x0)
+	Comments: Hard to hold the cube   lost connection 
+Qualification #9: 0 EZ, 3 Switch, 4 Scale, 0 Failed, platform
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Sluggish. Robot struggled to line up somtimes. Was making a grinding motor sound. 
+Qualification #15: 0 EZ, 2 Switch, 1 Scale, 0 Failed, no endgame
+	Auto: Start Pos = Middle, Baseline?: No, Right Switch(x1), Left Scale(x0)
+	Comments: Is worse than the GOS
+Qualification #21: 0 EZ, 2 Switch, 0 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Left Scale(x0)
+	Comments: Is still worse than the GOS

@@ -1,0 +1,51 @@
+Team #7274 - 3 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 27
+Average cubes placed: 4.666666666666667
+	Scale: 	0% of cubes, max = 0.0, avg = 0.0
+	Switch:	64% of cubes, max = 4.0, avg = 3.0
+	EZ: 	35% of cubes, max = 5.0, avg = 1.66
+Auto Ability: Baseline
+	Mulitple Cube Auto: No
+Climbing Ability: None (None/Other)
+Partner Rating: 1.66 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 0% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	No data
+
+All auto comments:
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 86.36363636363636%
+Average # cubes placed: 4.666666666666667
+	% cubes in EZ = 35%
+	% cubes in Switch = 64%
+	% cubes in Scale = 0%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: No
+	% climb in matches = 0%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 100%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #1: 5 EZ, 4 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Had trouble putting cubes in ez 
+Qualification #7: 0 EZ, 1 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: It’s collector either broke or it can’t collect cubes at all. It just drove around playing defense. 
+Qualification #15: 0 EZ, 4 Switch, 0 Scale, 3 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Left Scale(x0)

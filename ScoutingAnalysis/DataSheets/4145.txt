@@ -1,0 +1,52 @@
+Team #4145 - 3 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 5
+Average cubes placed: 7.0
+	Scale: 	52% of cubes, max = 6.0, avg = 3.66
+	Switch:	0% of cubes, max = 0.0, avg = 0.0
+	EZ: 	47% of cubes, max = 9.0, avg = 3.33
+Auto Ability: Baseline; Switch
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb (Middle)
+Partner Rating: 3.33 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 33% switch, 0% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	No data
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Neither on robot's side: 	100% baseline, 0% switch, 0% scale, 0% both
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #9: Scale cube bounced off
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 7.0
+	% cubes in EZ = 47%
+	% cubes in Switch = 0%
+	% cubes in Scale = 52%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 66%
+	% climb and lifted = 0%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 33%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #2: 9 EZ, 0 Switch, 0 Scale, 0 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Right Switch(x2), Left Scale(x0)
+Qualification #9: 1 EZ, 0 Switch, 5 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: I couldn’t really see where’re it was climbing ; middle of the bar was my best guess. Climber may have broken after climb
+Qualification #18: 0 EZ, 0 Switch, 6 Scale, 0 Failed, climbed
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x0)
+	Comments: Ok scale bot

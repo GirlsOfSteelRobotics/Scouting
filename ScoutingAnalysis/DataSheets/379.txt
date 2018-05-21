@@ -1,0 +1,57 @@
+Team #379 - 4 matches played
+
+--------------- Quick Facts ----------------------
+GoS Strategy Ranking: 3
+Average cubes placed: 5.75
+	Scale: 	65% of cubes, max = 5.0, avg = 3.75
+	Switch:	34% of cubes, max = 4.0, avg = 2.0
+	EZ: 	0% of cubes, max = 0.0, avg = 0.0
+Auto Ability: Baseline; Switch; Scale
+	Mulitple Cube Auto: Yes
+Climbing Ability: Climb + Lift (Middle)
+Partner Rating: 4.25 out of 5
+
+--------------- Autonomous Stats -----------------
+
+Autonomous Abilities:
+	Overall Auto Functions: 	100% baseline, 50% switch, 25% scale, 0% both
+	-----Based on plate color-----
+	Switch is on robot's side: 	100% baseline, 100% switch, 0% scale, 0% both
+	Scale is on robot's side: 	No data
+	Both are on robot's side: 	No data
+	Neither on robot's side: 	100% baseline, 0% switch, 50% scale, 0% both
+	Robot is in the middle: 	100% baseline, 100% switch, 0% scale, 0% both
+
+All auto comments:
+	Qualification Match #3: Painfully uncomfortable dancing with MC. 
+	Qualification Match #12: Tried double scale
+
+--------------- Teleop Stats ---------------------
+Cube Success Rate: 100.0%
+Average # cubes placed: 5.75
+	% cubes in EZ = 0%
+	% cubes in Switch = 34%
+	% cubes in Scale = 65%
+Can get cube from floor?: No
+Can get cube from portal?: No
+Can robot climb/lift?: Yes
+	% climb in matches = 50%
+	% climb and lifted = 25%
+	% lifted others = 0%
+	% attempted climb in matches = 0%
+	% platform in matches = 50%
+	% did nothing in endgame = 0%
+
+--------------- Match Data -----------------------
+Qualification #3: 0 EZ, 2 Switch, 3 Scale, 0 Failed, platform
+	Auto: Start Pos = Left, Baseline?: Yes, Left Switch(x1), Right Scale(x0)
+	Comments: Fast
+Qualification #6: 0 EZ, 4 Switch, 2 Scale, 2 Failed, platform
+	Auto: Start Pos = Middle, Baseline?: Yes, Left Switch(x2), Right Scale(x0)
+	Comments: Not very accurate when placing cubes.
+Qualification #12: 0 EZ, 1 Switch, 5 Scale, 1 Failed, climbed, lifted 2others
+	Auto: Start Pos = Right, Baseline?: Yes, Left Switch(x0), Left Scale(x1)
+	Comments: Very good robot and good driving
+Qualification #20: 0 EZ, 1 Switch, 5 Scale, 0 Failed, climbed
+	Auto: Start Pos = Left, Baseline?: Yes, Right Switch(x0), Right Scale(x0)
+	Comments: Could lift others 
