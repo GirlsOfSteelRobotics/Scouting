@@ -27,7 +27,9 @@ public class Team {
 	}
 
 	
-	public double[][] getAutoStats()
+	public double[][] getAutoStats() 
+	//don't worry about this.. probably won't apply for next year
+	//i probably picked the most confusing way to store this data
 	{
 		double[][] autoFunctions = new double[6][6];
 		//Rows = element on their side (0 = neither, 1 = switch, 2 = scale, 3 = both, 4 = middle, 5 = total)

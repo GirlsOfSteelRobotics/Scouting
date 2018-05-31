@@ -18,54 +18,60 @@ public class Database {
 	
 	public Database(String filename, boolean includePracticeMatches) throws NumberFormatException, IOException
 	{
+		//Instantiate ArrayList of Teams
 		data = new ArrayList<Team>();
+		
+		//Create object to read in file
 		FileReader fileInput = new FileReader(filename);
 		BufferedReader file = new BufferedReader(fileInput);
 		String line = file.readLine(); //Get rid of header line
 		
-		//For each match entry
-		while ((line = file.readLine()) != null) {
-			String[] lineInput = line.split(",");
-			int teamNumber = Match.getInt(lineInput[1]);
+		//For each match entry (each row in the imported spreadsheet)
+		while ((line = file.readLine()) != null) { //reads in line, makes sure not null
+			String[] lineInput = line.split(","); //separates entries by commas (this is why comments can't have commas!)
+			int teamNumber = Match.getInt(lineInput[1]); //start reading at index 1 (index 0 is timestamp)
 			
-			if (teamNumber == 2652) teamNumber = 2656;
-
+			/*CORRECT TEAM NUMBERS HERE! Ex: if (teamNumber == 3501) teamNumber = 3504; */
+			
 			//Create new match object
 			Match match = new Match(lineInput);
+			
+			//Check if team already exists in database by getting its index (returns -1 if it doesn't exist)
 			int index = getTeamIndex(teamNumber);
 			
 			//Find or create team
-			Team team;
-			if (index == -1) 
+			Team team; //reference to the Team that we want to add the match to
+			if (index == -1) //if team not already in database
 			{
-				team = new Team(teamNumber);
-				data.add(team);
+				team = new Team(teamNumber); //create a new team
+				data.add(team); //add the team to the database (only does this once for each team)
 			}
-			else
+			else //team already exists in database
 			{
-				team = data.get(index);
+				team = data.get(index); //point "team" to the already existing object for that team number
 			}
 			
 			if(includePracticeMatches || !match.matchType.contains("Practice"))
 			{
-				team.addMatch(match);
+				team.addMatch(match); //add the match data to that team's arraylist of matches
 			}
 				
 		}
 		
+		//remove any teams that don't have matches
 		for (int i = 0; i < data.size(); i++)
 		{
 			if (data.get(i).matches.size() == 0) 
 			{
 				data.remove(i);
-				i--;
+				i--; //this ensures we don't skip over the next team
 			}
 		}
 		
-		file.close();
+		file.close(); //!!!
 	}
 	
-	public void sortByRobotScore()
+	public void sortByRobotScore() //pretty self explanatory
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		
@@ -84,7 +90,7 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public void sortByScaleScore(boolean includeAuto)
+	public void sortByScaleScore(boolean includeAuto)//pretty self explanatory
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		
@@ -103,7 +109,7 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public void sortBySwitchScore(boolean includeAuto)
+	public void sortBySwitchScore(boolean includeAuto)//pretty self explanatory
 	{
 		ArrayList<Team> sortedTeams = new ArrayList<Team>();
 		
@@ -122,7 +128,8 @@ public class Database {
 		data = sortedTeams;
 	}
 	
-	public int getTeamIndex(int teamNumber)
+	public int getTeamIndex(int teamNumber) //return the index of that team number in the arraylist of teams
+	//returns -1 if team doesnt exist in database
 	{
 		for (int i = 0; i < data.size(); i++)
 		{
@@ -134,13 +141,13 @@ public class Database {
 	
 	public void writeDataSheets(String foldername) throws IOException
 	{
-		sortByRobotScore();
+		sortByRobotScore(); //this is so that they're in ranked order and we can print out ranking by index
 		
 		for (int i = 0; i < data.size(); i++)
 		{
-			String filename = foldername + "/" + Integer.toString(data.get(i).teamNumber) + ".txt";
+			String filename = foldername + "/" + Integer.toString(data.get(i).teamNumber) + ".txt"; //generate file name
 			System.out.println("Writing " + filename);
-			data.get(i).writeStatFile(filename, i+1);
+			data.get(i).writeStatFile(filename, i+1); //i+1 = team ranking (since we sorted)
 		}
 		
 	}
@@ -165,8 +172,10 @@ public class Database {
 	}
 	
 	public void writeCSVfile(String filename) throws IOException
+	//same way we write other files, but separate everything with commas to appear in different cells
+	//this is basically the opposite of what we're doing when we read in the spreadsheet
 	{
-		sortByRobotScore();
+		sortByRobotScore(); //so the teams appear in ranked otder
 		FileWriter outFile = new FileWriter(filename);
 		BufferedWriter fout = new BufferedWriter(outFile);
 		

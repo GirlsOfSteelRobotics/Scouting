@@ -25,7 +25,7 @@ public class Match {
 	public String result;
 	public int partnerRating;
 	
-	public enum FieldSide {
+	public enum FieldSide { //basically just another variable type with the following options for values
 		left, right, middle, none
 	}
 	
@@ -36,15 +36,16 @@ public class Match {
 	public static double CLIMB_POINTS = 1.5;
 	public static double LIFT_POINTS = 1.0;
 	
-	public Match(String[] lineInput)
+	public Match(String[] lineInput) //pass in the same array of string (remember we separated this by commas in Database.java)
 	{
 		String s;
 		
 		matchType = getString(lineInput[2]);
 		matchNumber = getInt(lineInput[3]);
 		
-		//CORRECT MATCH NUMBERS
+		//CORRECT MATCH NUMBERS HERE
 		
+		//Assign values to all the variables:
 		s = getString(lineInput[4]);
 		if (s.contains("Left")) startingPosition = FieldSide.left;
 		else if (s.contains("Right")) startingPosition = FieldSide.right;
@@ -88,52 +89,13 @@ public class Match {
 		result = getString(lineInput[20]);
 		partnerRating = getInt(lineInput[21]);
 		
-		//Corrections
+		/*Correct all other issues here. Ex:
 		if (matchType.equals("Qualification") && matchNumber == 1)
 		{
 			switchPosition = FieldSide.right;
 			scalePosition = FieldSide.right;
 		}
-		else if (matchType.equals("Qualification") && matchNumber == 3)
-		{
-			switchPosition = FieldSide.left;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 5)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 7)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 8)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.left;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 10)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 11)
-		{
-			switchPosition = FieldSide.left;
-			scalePosition = FieldSide.right;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 15)
-		{
-			switchPosition = FieldSide.right;
-			scalePosition = FieldSide.left;
-		}
-		else if (matchType.equals("Qualification") && matchNumber == 22)
-		{
-			switchPosition = FieldSide.left;
-			scalePosition = FieldSide.right;
-		}
+		*/
 		
 	}
 	
@@ -264,14 +226,14 @@ public class Match {
 		
 	}
 	
-	private static String getString(String input)
+	private static String getString(String input) //trims off quotations on either side
 	{
 		if (input.length() == 0) return "";
 		if (input.charAt(0) == '"') return input.substring(1, input.length()-1);
 		else return input;
 	}
 	
-	public static int getInt(String input)
+	public static int getInt(String input) //trims quatation marks and spaces from either side and returns the resulting int
 	{
 		if (input.charAt(0) == '"')
 		{
