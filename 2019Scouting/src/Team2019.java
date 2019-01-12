@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class Team2019 
 {
 	public int teamNumber;
-	public ArrayList<Match> matches;
+	public ArrayList<Match2019> matches;
 	
-	public Team(int teamNum)
+	public Team2019(int teamNum)
 	{
 		teamNumber = teamNum;
-		matches = new ArrayList<Match>();
+		matches = new ArrayList<Match2019>();
 	}
 	
 	public double getWinPercentage()
@@ -24,6 +24,8 @@ public class Team2019
 		}
 		return wins/matches.size();
 	}
+	
+	
 
 	
 }
