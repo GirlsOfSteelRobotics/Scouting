@@ -8,8 +8,9 @@ public class Match2019
 	// public String matchType;
 	public int teamNumber;
 	public int matchNumber;
-	public boolean platform2;
-	public boolean platform1;
+	public String matchType; //think more about this
+	public int platformStartingLevel;
+	
 	public int autoCargoInRocket;
 	public int autoCargoInShip;
 	public int autoHatchInRocket;
@@ -41,6 +42,7 @@ public class Match2019
 		String s;
 		teamNumber = Integer.parseInt((lineInput[2]));
 		matchNumber = Integer.parseInt((lineInput[3]));
+		
 		
 		
 		

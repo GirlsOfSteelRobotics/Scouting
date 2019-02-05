@@ -14,18 +14,21 @@ public class Team2019
 		matches = new ArrayList<Match2019>();
 	}
 	
-	public double getWinPercentage()
+	//in auto we need
+	// number of cargo in ship, cargo in rocket (in all three levels, each one), hatch in ship, hatch in rocket, platform starting level
+	
+	public String get
+	
+	
+	public double getAverageRobotScore()
 	{
-		double wins = 0;
+		double total = 0;
 		for (int i = 0; i < matches.size(); i++)
 		{
-			if (matches.get(i).result.equals("Win")) wins+=1;
-			else if (matches.get(i).result.equals("Tie")) wins+=0.5;
+			total += matches.get(i).getMatchScore(true);
 		}
-		return wins/matches.size();
+		return (total)/matches.size();
 	}
-	
-	
 
 	
 }
